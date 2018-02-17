@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/cardview_light_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pattern"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:text="test"
+                android:gravity="center"
+                style="@style/AlertDialog.AppCompat.Light"
+                />
+
+            <TextView
+                android:id="@+id/item1"
+                android:text="one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/pattern"
+                android:textAlignment="center"
+                android:layout_marginBottom="5sp"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/item2"
+                android:text="two"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:textSize="20sp"
+                style="@style/AlertDialog.AppCompat.Light"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item1"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/item3"
+                android:text="three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                style="@style/AlertDialog.AppCompat.Light"
+
+                android:layout_marginTop="5sp"
+                android:textSize="20sp"
+                android:minHeight="0dp"
+                android:layout_below="@+id/item2"
+                android:textAlignment="center"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
