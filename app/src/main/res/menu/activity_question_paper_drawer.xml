@@ -11,7 +11,7 @@
         <item
             android:id="@+id/Practicals"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Pracicals" />
+            android:title="Practicals" />
         <item
             android:id="@+id/Syllabus"
             android:icon="@drawable/ic_menu_slideshow"
