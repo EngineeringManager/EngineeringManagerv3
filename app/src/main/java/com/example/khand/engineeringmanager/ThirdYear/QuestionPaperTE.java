@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import com.example.khand.engineeringmanager.R;
 import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEAdapter;
 import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,8 @@ public class QuestionPaperTE extends AppCompatActivity {
     private QuestionPaperSEAdapter adapter;
     List<com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList> QuestionPaperSEList;
 
+    //For Banner Ads
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -27,6 +31,11 @@ public class QuestionPaperTE extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         int numberOfColumns = 2;
+
+        // Banner Ads
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
