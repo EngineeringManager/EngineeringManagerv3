@@ -29,6 +29,7 @@ public class QuestionPaper extends AppCompatActivity
     private RecyclerView recyclerView;
     private AdapterQuestionPaperMain adapter;
     List<QuestionPaperItems> questionPaperItems;
+    //For Banner Ads
     private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class QuestionPaper extends AppCompatActivity
         setContentView(R.layout.activity_question_paper);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        // Banner Ads
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
