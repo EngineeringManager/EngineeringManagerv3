@@ -16,11 +16,7 @@
             android:name=".Home"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".QuestionPaper"
@@ -36,7 +32,14 @@
         <activity android:name=".webview" />
         <activity android:name=".SecondYear.QuestionPaperSE" />
         <activity android:name=".ThirdYear.QuestionPaperTE" />
-        <activity android:name=".FourthYear.QuestionPaperBE"></activity>
+        <activity android:name=".FourthYear.QuestionPaperBE" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
