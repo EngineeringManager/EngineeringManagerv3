@@ -8,7 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.khand.engineeringmanager.firstYear.QuestionPaperFirstYear;
+import com.example.khand.engineeringmanager.FourthYear.QuestionPaperBE;
+import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSE;
+import com.example.khand.engineeringmanager.ThirdYear.QuestionPaperTE;
+
 
 import java.util.List;
 
@@ -49,27 +52,25 @@ public class AdapterQuestionPaperMain extends RecyclerView.Adapter<AdapterQuesti
             if(questionPaperItems.position==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=10En-tP7-Aq7UQ6iWnRHE9zDTg_83FO4Q");
+                intent.putExtra("url", "http://gestyy.com/wcZ6nY");
                 context.startActivity(intent);
 
             }
                 else if(questionPaperItems.position==2)
             {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "");
+                Intent intent=new Intent(context,QuestionPaperSE.class);
                 context.startActivity(intent);
 
             }
                     else if(questionPaperItems.position==3)
             {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "");
+                Intent intent=new Intent(context,QuestionPaperTE.class);
                 context.startActivity(intent);
 
             }
                         else if(questionPaperItems.position==4)
             {
-                Intent intent=new Intent(context,webview.class);
+                Intent intent=new Intent(context,QuestionPaperBE.class);
                 intent.putExtra("url", "");
                 context.startActivity(intent);
             }

@@ -3,7 +3,7 @@
     package="com.example.khand.engineeringmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -33,7 +33,10 @@
         </activity>
         <activity android:name=".firstYear.QuestionPaperFirstYear" />
         <activity android:name=".firstYear.QuestionPaperPicker" />
-        <activity android:name=".webview"></activity>
+        <activity android:name=".webview" />
+        <activity android:name=".SecondYear.QuestionPaperSE" />
+        <activity android:name=".ThirdYear.QuestionPaperTE" />
+        <activity android:name=".FourthYear.QuestionPaperBE"></activity>
     </application>
 
 </manifest>
