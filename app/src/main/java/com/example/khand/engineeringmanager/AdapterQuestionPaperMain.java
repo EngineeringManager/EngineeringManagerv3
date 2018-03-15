@@ -52,7 +52,7 @@ public class AdapterQuestionPaperMain extends RecyclerView.Adapter<AdapterQuesti
             if(questionPaperItems.position==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcZ6nY");
+                intent.putExtra("url", "https://goo.gl/bvRLG4");
                 context.startActivity(intent);
 
             }

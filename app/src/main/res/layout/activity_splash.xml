@@ -8,7 +8,7 @@
     android:layout_height="fill_parent"
     tools:context="com.example.khand.engineeringmanager.SplashActivity">
 
-    <ImageView
+    <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/splashscreen"
         android:layout_width="490px"
         android:layout_height="match_parent"
@@ -16,17 +16,21 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginBottom="130dp"
-        android:src="@drawable/splashgear" />
+        android:src="@drawable/splashgear"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/splashscreen"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="63dp"
-        android:layout_marginStart="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
         android:text="Engineering Manager"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="55sp" />
 
 </RelativeLayout>

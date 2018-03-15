@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,13 +18,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEAdapter;
+import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private RecyclerView recyclerView;
+    private HomeAdapter adapter;
+    List<HomeAdapterList> HomeAdapterList;
+
 
     //For Banner Ads
     private AdView mAdView;
@@ -64,6 +76,32 @@ public class Home extends AppCompatActivity
                 finish();
             }
         });
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        int numberOfColumns = 2;
+
+
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
+
+
+        HomeAdapterList = new ArrayList<>();
+
+        HomeAdapterList list = new HomeAdapterList("Question Paper",1);
+        HomeAdapterList.add(list);
+        HomeAdapterList list1 = new HomeAdapterList("Syllabus",2);
+        HomeAdapterList.add(list1);
+        HomeAdapterList list2 = new HomeAdapterList("Practicals",3);
+        HomeAdapterList.add(list2);
+        HomeAdapterList list3 = new HomeAdapterList("About Us",4);
+        HomeAdapterList.add(list3);
+
+
+
+
+        adapter = new HomeAdapter(HomeAdapterList,this);
+        recyclerView.setAdapter(adapter);
 
     }
         public  void showInterstitial(){

@@ -13,9 +13,6 @@ import com.example.khand.engineeringmanager.webview;
 
 import java.util.List;
 
-/**
- * Created by khand on 19-02-2018.
- */
 
 public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBEAdapter.ViewHolder> {
     List<QuestionPaperBEList> QuestionPaperBEList;
