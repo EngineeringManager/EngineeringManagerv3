@@ -49,7 +49,7 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrNS");
+                intent.putExtra("url", "https://goo.gl/DsfjYL");
                 context.startActivity(intent);
 
 
@@ -57,32 +57,32 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrNJ");
+                intent.putExtra("url", "https://goo.gl/3EynpQ");
                 context.startActivity(intent);
 
             }
             else if(se.getPosition()==3)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrNC");
+                intent.putExtra("url", "https://goo.gl/JsJS4d");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==4)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrN1");
+                intent.putExtra("url", "https://goo.gl/BPEv5t");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==5)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrMy");
+                intent.putExtra("url", "https://goo.gl/JXkaoQ");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==6)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcXrMa");
+                intent.putExtra("url", "https://goo.gl/CNzfBY");
                 context.startActivity(intent);
 
             }

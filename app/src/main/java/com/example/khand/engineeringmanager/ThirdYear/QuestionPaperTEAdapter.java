@@ -53,37 +53,37 @@ public class QuestionPaperTEAdapter extends RecyclerView.Adapter<QuestionPaperTE
             if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJx");
+                intent.putExtra("url", "https://goo.gl/nZY3gF");
                 context.startActivity(intent);
             }
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJm\n");
+                intent.putExtra("url", "https://goo.gl/6T3g1a");
                 context.startActivity(intent);
             }
             else if(se.getPosition()==3)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJT");
+                intent.putExtra("url", "https://goo.gl/q7bzP5");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==4)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJP");
+                intent.putExtra("url", "https://goo.gl/WEPCJ6");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==5)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJG");
+                intent.putExtra("url", "https://goo.gl/RkoYqS");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==6)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "http://gestyy.com/wcClJZ");
+                intent.putExtra("url", "https://goo.gl/J7Pcwz");
                 context.startActivity(intent);
 
             }

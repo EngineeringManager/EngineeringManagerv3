@@ -15,9 +15,7 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".QuestionPaper"
             android:label="@string/title_activity_question_paper"
@@ -40,6 +38,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Practicals"
+            android:label="@string/title_activity_practicals"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Syllabus"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

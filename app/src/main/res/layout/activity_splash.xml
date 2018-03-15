@@ -10,12 +10,12 @@
 
     <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/splashscreen"
-        android:layout_width="490px"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="100sp"
         android:src="@drawable/splashgear"
         android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"

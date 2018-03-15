@@ -52,12 +52,12 @@ import java.util.List;
                 }
                 else if(se.getPosition()==2)
                 {
-                    Intent intent=new Intent(context,Home.class);
+                    Intent intent=new Intent(context,Syllabus.class);
                     context.startActivity(intent);
                 }
                 else if(se.getPosition()==3)
                 {
-                    Intent intent=new Intent(context,Home.class);
+                    Intent intent=new Intent(context,Practicals.class);
                     context.startActivity(intent);
 
                 } else if(se.getPosition()==4)
@@ -66,6 +66,7 @@ import java.util.List;
                     context.startActivity(intent);
 
                 }
+
 
             }
 

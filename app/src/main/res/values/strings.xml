@@ -6,4 +6,6 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_question_paper">QuestionPaper</string>
+    <string name="title_activity_practicals">Practicals</string>
+    <string name="title_activity_syllabus">Syllabus</string>
 </resources>
