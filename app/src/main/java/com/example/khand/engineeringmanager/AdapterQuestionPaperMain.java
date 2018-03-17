@@ -53,6 +53,7 @@ public class AdapterQuestionPaperMain extends RecyclerView.Adapter<AdapterQuesti
             {
                 Intent intent=new Intent(context,webview.class);
                 intent.putExtra("url", "https://drive.google.com/open?id=1jILBClDuQXoZaz2AKdVbpSVDqfj1pj9M");
+
                 context.startActivity(intent);
 
             }
