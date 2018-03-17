@@ -27,7 +27,7 @@ public class Syllabus extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RecyclerView recyclerView;
-    private PracticalsAdapter adapter;
+    private SyllabusAdapter adapter;
     List<HomeAdapterList> HomeAdapterList;
 
     @Override
@@ -84,7 +84,7 @@ public class Syllabus extends AppCompatActivity
 
 
 
-        adapter = new PracticalsAdapter(HomeAdapterList,this);
+        adapter = new SyllabusAdapter(HomeAdapterList,this);
         recyclerView.setAdapter(adapter);
     }
 
