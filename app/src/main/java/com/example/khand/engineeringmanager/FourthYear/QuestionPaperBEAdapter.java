@@ -46,37 +46,37 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
             if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1EdBawcp3YKVkGVXUf6dyQyjyg8u4g5AB");
                 context.startActivity(intent);
             }
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/6T3g1a");
+                intent.putExtra("url", "https://drive.google.com/open?id=1HRzq3w0fC7fAhWbAByaVb_mMlwuWVHox");
                 context.startActivity(intent);
             }
             else if(se.getPosition()==3)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/14LjQz");
+                intent.putExtra("url", "https://drive.google.com/open?id=1eHphohQ1jdeetZWxYA8tmrx3OlOMa5Jk");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==4)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/aLnYP9");
+                intent.putExtra("url", "https://drive.google.com/open?id=1Jp-DNwCMzZyGErlAiGTkflK28InCeK8_");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==5)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/Ntd728");
+                intent.putExtra("url", "https://drive.google.com/open?id=12CNnOoVpu2t-w70DDH9y4QX1DmN_-WUf");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==6)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/29kn6r");
+                intent.putExtra("url", "https://drive.google.com/open?id=15CIjiYcequEYIbH41syLdRLfyCxF2Z8R");
                 context.startActivity(intent);
 
             }

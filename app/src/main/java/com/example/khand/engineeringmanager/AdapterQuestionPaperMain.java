@@ -52,50 +52,28 @@ public class AdapterQuestionPaperMain extends RecyclerView.Adapter<AdapterQuesti
             if(questionPaperItems.position==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1jILBClDuQXoZaz2AKdVbpSVDqfj1pj9M");
+                intent.putExtra("url", "https://drive.google.com/open?id=10En-tP7-Aq7UQ6iWnRHE9zDTg_83FO4Q");
 
                 context.startActivity(intent);
 
             }
                 else if(questionPaperItems.position==2)
             {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1zQleXqgMKHr3T7lAwxNK-7iZeDX0LDdY");
+                Intent intent=new Intent(context,QuestionPaperSE.class);
                 context.startActivity(intent);
 
             }
                     else if(questionPaperItems.position==3)
             {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1zL5JSyaeIFt2LXnTKQ1rJ1dO5iTpQjQK");
+                Intent intent=new Intent(context,QuestionPaperTE.class);
                 context.startActivity(intent);
 
             }
                         else if(questionPaperItems.position==4)
             {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=10En-tP7-Aq7UQ6iWnRHE9zDTg_83FO4Q");
+                Intent intent=new Intent(context,QuestionPaperBE.class);
                 context.startActivity(intent);
             }
-            else if(questionPaperItems.position==5)
-            {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1AV9zN95Xa4WNOfCtomDDvzrgsTbiEl6Y");
-                context.startActivity(intent);
-            }
-            else if(questionPaperItems.position==6)
-            {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1g3TsTAAzfCt9tQegY8Dn_n9mK_wUceql");
-                context.startActivity(intent);
-            }
-            else if(questionPaperItems.position==7)
-            {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://drive.google.com/open?id=1Uq9BBvsV6GZq-4jXfL7m2Z154KHffAm4");
-                context.startActivity(intent);
-            }
-
         }
 
         holder.year.setOnClickListener(new View.OnClickListener() {

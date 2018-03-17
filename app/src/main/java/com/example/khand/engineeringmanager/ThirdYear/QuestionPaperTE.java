@@ -6,8 +6,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.khand.engineeringmanager.R;
-import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEAdapter;
-import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -17,8 +15,8 @@ import java.util.List;
 public class QuestionPaperTE extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private QuestionPaperSEAdapter adapter;
-    List<com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList> QuestionPaperSEList;
+    private QuestionPaperTEAdapter adapter;
+    List<QuestionPaperTEList> QuestionPaperTEList;
 
     //For Banner Ads
     private AdView mAdView;
@@ -40,25 +38,24 @@ public class QuestionPaperTE extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
 
-        QuestionPaperSEList = new ArrayList<>();
-
-        QuestionPaperSEList list = new QuestionPaperSEList("Computer Engineering",1);
-        QuestionPaperSEList.add(list);
-        QuestionPaperSEList list1 = new QuestionPaperSEList("IT Engineering ",2);
-        QuestionPaperSEList.add(list1);
-        QuestionPaperSEList list2 = new QuestionPaperSEList("Mechanical Engineering ",3);
-        QuestionPaperSEList.add(list2);
-        QuestionPaperSEList list3 = new QuestionPaperSEList("Civil Engineering",4);
-        QuestionPaperSEList.add(list3);
-        QuestionPaperSEList list4 = new QuestionPaperSEList("Electrical Engineering",5);
-        QuestionPaperSEList.add(list4);
-        QuestionPaperSEList list5 = new QuestionPaperSEList("E&Tc Engineering",6);
-        QuestionPaperSEList.add(list5);
-
+        QuestionPaperTEList = new ArrayList<>();
+        QuestionPaperTEList list = new QuestionPaperTEList("Computer Engineering (TE)",1);
+        QuestionPaperTEList.add(list);
+        QuestionPaperTEList list1 = new QuestionPaperTEList("IT Engineering (TE ",2);
+        QuestionPaperTEList.add(list1);
+        QuestionPaperTEList list2 = new QuestionPaperTEList("Mechanical Engineering (TE ",3);
+        QuestionPaperTEList.add(list2);
+        QuestionPaperTEList list3 = new QuestionPaperTEList("Civil Engineering (TE",4);
+        QuestionPaperTEList.add(list3);
+        QuestionPaperTEList list4 = new QuestionPaperTEList("Electrical Engineering (TE",5);
+        QuestionPaperTEList.add(list4);
+        QuestionPaperTEList list5 = new QuestionPaperTEList("E&Tc Engineering (TE",6);
+        QuestionPaperTEList.add(list5);
 
 
 
-        adapter = new QuestionPaperSEAdapter(QuestionPaperSEList,this);
+
+        adapter = new QuestionPaperTEAdapter(QuestionPaperTEList,this);
         recyclerView.setAdapter(adapter);
     }
 }

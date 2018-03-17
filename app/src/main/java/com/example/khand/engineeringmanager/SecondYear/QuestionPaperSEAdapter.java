@@ -49,7 +49,7 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/DsfjYL");
+                intent.putExtra("url", "https://drive.google.com/open?id=1aiIRLPxGTU5uxM8slmSWdyslC0w7P9g-");
                 context.startActivity(intent);
 
 
@@ -57,32 +57,32 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/3EynpQ");
+                intent.putExtra("url", "https://drive.google.com/open?id=1PW6BuqfAhYIf97JW8vr-9oBjQUmmRtES");
                 context.startActivity(intent);
 
             }
             else if(se.getPosition()==3)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/JsJS4d");
+                intent.putExtra("url", "https://drive.google.com/open?id=1UjxVsWlDn6H7FHtz6kxC1pC-TCdvp5P5");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==4)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/BPEv5t");
+                intent.putExtra("url", "https://drive.google.com/open?id=1WLMIRgPBz3M1xBhAMv76ORDvGR14Dc-H");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==5)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/JXkaoQ");
+                intent.putExtra("url", "https://drive.google.com/open?id=1Bx3KDfuBqiuNs0n0ofGjvbpCe1eGwax4");
                 context.startActivity(intent);
 
             } else if(se.getPosition()==6)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/CNzfBY");
+                intent.putExtra("url", "https://drive.google.com/open?id=1ZZIQHXoo0h-OFPwpjguCIiW_3iwoEopX");
                 context.startActivity(intent);
 
             }

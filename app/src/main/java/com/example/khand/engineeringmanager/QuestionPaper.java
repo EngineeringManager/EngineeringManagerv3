@@ -65,20 +65,14 @@ public class QuestionPaper extends AppCompatActivity
 
         questionPaperItems = new ArrayList<>();
 
-        QuestionPaperItems list = new QuestionPaperItems("COMPUTER ",1);
+        QuestionPaperItems list = new QuestionPaperItems("First Year ",1);
         questionPaperItems.add(list);
-        QuestionPaperItems list1 = new QuestionPaperItems("IT ",2);
+        QuestionPaperItems list1 = new QuestionPaperItems("Second Year",2);
         questionPaperItems.add(list1);
-        QuestionPaperItems list2 = new QuestionPaperItems("E&TC ",3);
+        QuestionPaperItems list2 = new QuestionPaperItems("Third Year",3);
         questionPaperItems.add(list2);
-        QuestionPaperItems list3 = new QuestionPaperItems("FIRST YEAR ",4);
+        QuestionPaperItems list3 = new QuestionPaperItems("Fourth Year ",4);
         questionPaperItems.add(list3);
-        QuestionPaperItems list4 = new QuestionPaperItems("ELECTRICAL ",5);
-        questionPaperItems.add(list4);
-        QuestionPaperItems list5 = new QuestionPaperItems("MECHANICAL ",6);
-        questionPaperItems.add(list5);
-        QuestionPaperItems list6 = new QuestionPaperItems("CIVIL ",7);
-        questionPaperItems.add(list6);
 
 
 

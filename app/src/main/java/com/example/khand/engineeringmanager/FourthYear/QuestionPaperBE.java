@@ -6,8 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.khand.engineeringmanager.R;
-import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEAdapter;
-import com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -17,8 +16,8 @@ import java.util.List;
 public class QuestionPaperBE extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private QuestionPaperSEAdapter adapter;
-    List<com.example.khand.engineeringmanager.SecondYear.QuestionPaperSEList> QuestionPaperSEList;
+    private QuestionPaperBEAdapter adapter;
+    List<QuestionPaperBEList> QuestionPaperBEList;
     //For Banner Ads
     private AdView mAdView;
     @Override
@@ -37,25 +36,25 @@ public class QuestionPaperBE extends AppCompatActivity {
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-        QuestionPaperSEList = new ArrayList<>();
+        QuestionPaperBEList = new ArrayList<>();
 
-        QuestionPaperSEList list = new QuestionPaperSEList("Computer Engineering",1);
-        QuestionPaperSEList.add(list);
-        QuestionPaperSEList list1 = new QuestionPaperSEList("IT Engineering ",2);
-        QuestionPaperSEList.add(list1);
-        QuestionPaperSEList list2 = new QuestionPaperSEList("Mechanical Engineering ",3);
-        QuestionPaperSEList.add(list2);
-        QuestionPaperSEList list3 = new QuestionPaperSEList("Civil Engineering",4);
-        QuestionPaperSEList.add(list3);
-        QuestionPaperSEList list4 = new QuestionPaperSEList("Electrical Engineering",5);
-        QuestionPaperSEList.add(list4);
-        QuestionPaperSEList list5 = new QuestionPaperSEList("E&Tc Engineering",6);
-        QuestionPaperSEList.add(list5);
-
-
+        QuestionPaperBEList list = new QuestionPaperBEList("Computer Engineering (BE)",1);
+        QuestionPaperBEList.add(list);
+        QuestionPaperBEList list1 = new QuestionPaperBEList("IT Engineering (BE) ",2);
+        QuestionPaperBEList.add(list1);
+        QuestionPaperBEList list2 = new QuestionPaperBEList("Mechanical Engineering (BE) ",3);
+        QuestionPaperBEList.add(list2);
+        QuestionPaperBEList list3 = new QuestionPaperBEList("Civil Engineering (BE)",4);
+        QuestionPaperBEList.add(list3);
+        QuestionPaperBEList list4 = new QuestionPaperBEList("Electrical Engineering (BE)",5);
+        QuestionPaperBEList.add(list4);
+        QuestionPaperBEList list5 = new QuestionPaperBEList("E&Tc Engineering (BE)",6);
+        QuestionPaperBEList.add(list5);
 
 
-        adapter = new QuestionPaperSEAdapter(QuestionPaperSEList,this);
+
+
+        adapter = new QuestionPaperBEAdapter(QuestionPaperBEList,this);
         recyclerView.setAdapter(adapter);
     }
 }
