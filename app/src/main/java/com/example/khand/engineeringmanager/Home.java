@@ -165,8 +165,12 @@ public class Home extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.Practicals) {
+            Intent intent= new Intent(Home.this,Practicals.class);
+            startActivity(intent);
 
         } else if (id == R.id.Syllabus) {
+            Intent intent= new Intent(Home.this,Syllabus.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 

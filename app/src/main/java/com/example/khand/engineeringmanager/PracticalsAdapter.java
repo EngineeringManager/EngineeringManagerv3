@@ -62,7 +62,7 @@ public class PracticalsAdapter extends RecyclerView.Adapter<PracticalsAdapter.Vi
              if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1Tvu7aVkqQoaSYBGMDX4ns2Xzw5jRCczu");
 
                 context.startActivity(intent);
 
@@ -70,11 +70,35 @@ public class PracticalsAdapter extends RecyclerView.Adapter<PracticalsAdapter.Vi
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1N7gh5H2TW8cJSQIyhbEW6mkK4-hiwXZj");
 
                 context.startActivity(intent);
 
             }
+             else if(se.getPosition()==3)
+             {
+                 Intent intent=new Intent(context,webview.class);
+                 intent.putExtra("url", "https://drive.google.com/open?id=1xJXeabr19F1D8XKPfaVjYRXSGsTDGf6d");
+
+                 context.startActivity(intent);
+
+             }
+             else if(se.getPosition()==4)
+             {
+                 Intent intent=new Intent(context,webview.class);
+                 intent.putExtra("url", "https://drive.google.com/open?id=1VS963SCHfdHKsrzUVVwj30dzOg6t8yoF");
+
+                 context.startActivity(intent);
+
+             }
+             else if(se.getPosition()==5)
+             {
+                 Intent intent=new Intent(context,webview.class);
+                 intent.putExtra("url", "https://drive.google.com/open?id=1u0o8OKMk5eKHXCjL3oZ3DDTgdFHBRVMK");
+
+                 context.startActivity(intent);
+
+             }
 
         }
 

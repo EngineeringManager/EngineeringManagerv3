@@ -29,6 +29,7 @@ public class QuestionPaper extends AppCompatActivity
     private RecyclerView recyclerView;
     private AdapterQuestionPaperMain adapter;
     List<QuestionPaperItems> questionPaperItems;
+
     //For Banner Ads
     private AdView mAdView;
     @Override
@@ -37,6 +38,7 @@ public class QuestionPaper extends AppCompatActivity
         setContentView(R.layout.activity_question_paper);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // Banner Ads
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -63,14 +65,20 @@ public class QuestionPaper extends AppCompatActivity
 
         questionPaperItems = new ArrayList<>();
 
-        QuestionPaperItems list = new QuestionPaperItems("First Year ",1);
+        QuestionPaperItems list = new QuestionPaperItems("COMPUTER ",1);
         questionPaperItems.add(list);
-        QuestionPaperItems list1 = new QuestionPaperItems("Second Year ",2);
+        QuestionPaperItems list1 = new QuestionPaperItems("IT ",2);
         questionPaperItems.add(list1);
-        QuestionPaperItems list2 = new QuestionPaperItems("Third Year ",3);
+        QuestionPaperItems list2 = new QuestionPaperItems("E&TC ",3);
         questionPaperItems.add(list2);
-        QuestionPaperItems list3 = new QuestionPaperItems("Fourth Year ",4);
+        QuestionPaperItems list3 = new QuestionPaperItems("FIRST YEAR ",4);
         questionPaperItems.add(list3);
+        QuestionPaperItems list4 = new QuestionPaperItems("ELECTRICAL ",5);
+        questionPaperItems.add(list4);
+        QuestionPaperItems list5 = new QuestionPaperItems("MECHANICAL ",6);
+        questionPaperItems.add(list5);
+        QuestionPaperItems list6 = new QuestionPaperItems("CIVIL ",7);
+        questionPaperItems.add(list6);
 
 
 
@@ -119,10 +127,14 @@ public class QuestionPaper extends AppCompatActivity
         if (id == R.id.QuestionPapers) {
             // Handle the camera action
         } else if (id == R.id.Practicals) {
+            Intent intent= new Intent(QuestionPaper.this,Practicals.class);
+            startActivity(intent);
 
         } else if (id == R.id.Syllabus) {
+            Intent intent= new Intent(QuestionPaper.this,Syllabus.class);
+            startActivity(intent);
 
-        }  else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_share) {
             Intent intent = new Intent(android.content.Intent.ACTION_SEND);
             intent.setType("text/plain");
             String shareBodyText = "Download Engineering Manager app from playstore and get access to a variety of SPPU question papers!";

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EngineeringManager.iml" filepath="$PROJECT_DIR$/EngineeringManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/EngineeringManager.iml" filepath="$PROJECT_DIR$/.idea/EngineeringManager.iml" />
+      <module fileurl="file://C:\Users\Po\ANDROID WORKSPACE\EngineeringManagerv3\EngineeringManagerv3\EngineeringManager.iml" filepath="C:\Users\Po\ANDROID WORKSPACE\EngineeringManagerv3\EngineeringManagerv3\EngineeringManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EngineeringManagerv3.iml" filepath="$PROJECT_DIR$/EngineeringManagerv3.iml" />
+      <module fileurl="file://C:\Users\RIDD\AndroidStudioProjects\sids\EngineeringManagerv3\.idea\EngineeringManagerv3.iml" filepath="C:\Users\RIDD\AndroidStudioProjects\sids\EngineeringManagerv3\.idea\EngineeringManagerv3.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\RIDD\AndroidStudioProjects\sids\EngineeringManagerv3\app\app.iml" filepath="C:\Users\RIDD\AndroidStudioProjects\sids\EngineeringManagerv3\app\app.iml" />
     </modules>
   </component>
 </project>

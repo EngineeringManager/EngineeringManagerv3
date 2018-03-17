@@ -48,7 +48,7 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.ViewHo
             if(se.getPosition()==1)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1TMP7aULGxO247Zs1_PFSwjwThMwCF6Ru");
 
                 context.startActivity(intent);
 
@@ -56,7 +56,7 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.ViewHo
             else if(se.getPosition()==2)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1cxn4z2M6TYMgJU6tofIIaMXtO8Yqq-js");
 
                 context.startActivity(intent);
 
@@ -64,19 +64,12 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.ViewHo
             else if(se.getPosition()==3)
             {
                 Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
+                intent.putExtra("url", "https://drive.google.com/open?id=1ILGo52ekaR0Jc9a74tz3LfR2_kfBxWJd");
 
                 context.startActivity(intent);
 
             }
-            else if(se.getPosition()==4)
-            {
-                Intent intent=new Intent(context,webview.class);
-                intent.putExtra("url", "https://goo.gl/2coLkd");
 
-                context.startActivity(intent);
-
-            }
 
         }
 
