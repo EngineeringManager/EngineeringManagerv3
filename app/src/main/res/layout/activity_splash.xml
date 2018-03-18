@@ -7,6 +7,15 @@
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.khand.engineeringmanager.SplashActivity">
+    <!-- Banner Ads XML With our Banner unit id-->
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8465300425811174/1074141625"></com.google.android.gms.ads.AdView>
 
     <com.felipecsl.gifimageview.library.GifImageView
         android:id="@+id/splashscreen"
@@ -32,5 +41,6 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="55sp" />
+
 
 </RelativeLayout>

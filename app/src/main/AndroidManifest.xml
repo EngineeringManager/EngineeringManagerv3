@@ -45,7 +45,8 @@
         <activity
             android:name=".Syllabus"
             android:label="@string/title_activity_syllabus"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

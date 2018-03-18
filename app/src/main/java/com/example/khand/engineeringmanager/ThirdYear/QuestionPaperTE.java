@@ -20,6 +20,7 @@ public class QuestionPaperTE extends AppCompatActivity {
 
     //For Banner Ads
     private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

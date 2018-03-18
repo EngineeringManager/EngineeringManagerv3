@@ -62,7 +62,7 @@ import java.util.List;
 
                 } else if(se.getPosition()==4)
                 {
-                    Intent intent=new Intent(context,Home.class);
+                    Intent intent=new Intent(context,AboutUs.class);
                     context.startActivity(intent);
 
                 }

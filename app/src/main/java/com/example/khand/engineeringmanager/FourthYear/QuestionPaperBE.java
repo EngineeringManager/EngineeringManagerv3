@@ -18,6 +18,7 @@ public class QuestionPaperBE extends AppCompatActivity {
     private RecyclerView recyclerView;
     private QuestionPaperBEAdapter adapter;
     List<QuestionPaperBEList> QuestionPaperBEList;
+
     //For Banner Ads
     private AdView mAdView;
     @Override
