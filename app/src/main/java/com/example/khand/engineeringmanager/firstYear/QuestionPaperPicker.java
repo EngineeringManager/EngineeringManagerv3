@@ -1,3 +1,4 @@
+
 package com.example.khand.engineeringmanager.firstYear;
 
 import android.support.v7.app.AppCompatActivity;
@@ -30,10 +31,10 @@ public class QuestionPaperPicker extends AppCompatActivity {
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
 
 
-if(s.equals("physics")){
+        if(s.equals("physics")){
             recyclerView = (RecyclerView) findViewById(R.id.recyclerViewfe);
             recyclerView.setHasFixedSize(true);
-                int numberOfColumns = 1;
+            int numberOfColumns = 1;
 
             recyclerView.setLayoutManager(new GridLayoutManager(this,numberOfColumns));
 

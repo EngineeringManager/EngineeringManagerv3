@@ -1,3 +1,4 @@
+
 package com.example.khand.engineeringmanager;
 
 import android.content.Intent;
@@ -104,15 +105,15 @@ public class Home extends AppCompatActivity
         recyclerView.setAdapter(adapter);
 
     }
-        public  void showInterstitial(){
-            if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-            } else {
-                Log.d("TAG", "The interstitial wasn't loaded yet.");
-                finish();
-            }
-
+    public  void showInterstitial(){
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.");
+            finish();
         }
+
+    }
 
 
 
