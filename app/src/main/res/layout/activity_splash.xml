@@ -6,7 +6,7 @@
 
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="com.example.khand.engineeringmanager.SplashActivity">
+    tools:context="com.dexterlabs.khand.engineeringmanager.SplashActivity">
     <!-- Banner Ads XML With our Banner unit id-->
     <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"

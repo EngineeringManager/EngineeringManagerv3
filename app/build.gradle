@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.khand.engineeringmanager"
+        applicationId "com.dexterlabs.khand.engineeringmanager"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
@@ -18,7 +18,7 @@ android {
     }
     sourceSets {
         main {
-            java.srcDirs = ['src/main/java', 'src/main/java/com.example.khand.engineeringmanager/firstyear']
+            java.srcDirs = ['src/main/java', 'src/main/java/com.dexterlabs.khand.engineeringmanager/firstyear']
         }
     }
 }
