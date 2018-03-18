@@ -32,13 +32,13 @@ public class AdapterQuestionPapersFirstYear extends RecyclerView.Adapter<Adapter
     @Override
     public AdapterQuestionPapersFirstYear.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-            LayoutInflater inflater = LayoutInflater.from(context);
-            View v = inflater.inflate(R.layout.first_year_qp,null);
-            ViewHolder holder= new ViewHolder(v);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View v = inflater.inflate(R.layout.first_year_qp,null);
+        ViewHolder holder= new ViewHolder(v);
 
 
 
-            return holder;
+        return holder;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class AdapterQuestionPapersFirstYear extends RecyclerView.Adapter<Adapter
         {
             if(fe.getPosition()==1)
             {
-               Intent intent=new Intent(context,webview.class);
+                Intent intent=new Intent(context,webview.class);
                 intent.putExtra("url", "http://shrtfly.com/physicsp2012nov15");
                 context.startActivity(intent);
 
