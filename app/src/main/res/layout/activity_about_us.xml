@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
     tools:context="com.dexterlabs.khand.engineeringmanager.AboutUs">
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:textSize="20sp"
         android:textColor="#FFFFFF"
         android:fontFamily="@font/roboto_mono_thin"
-        android:layout_gravity="center"
         android:layout_marginTop="25sp"
         android:layout_marginLeft="10sp"
-        android:text="     We are a team of 4 young and enthusiastic engineers from Pune University. Our aim is to provide solutions to everyday problems that an individual encounters throughout his/her career as a student.\n\n     EM was developed with the idea of providing easy access to all needs of a student pursuing Engineering. EM aims to integrate question papers,practicals and syllabus into a single app and at providing regular/timely updates to the same.." />
+        android:layout_marginBottom="50sp"
+        android:layout_marginRight="10sp"
+        android:text="\n\nWe are a team of 4 young and enthusiastic engineers from Pune University. Our aim is to provide solutions to everyday problems that an individual encounters throughout his/her career as a student.\n\n     EM was developed with the idea of providing easy access to all needs of a student pursuing Engineering. EM aims to integrate question papers,practicals and syllabus into a single app and at providing regular/timely updates to the same.." />
 
 
 
+    </ScrollView>
 
     <!-- Banner Ads XML With our Banner unit id-->
 
@@ -38,6 +40,5 @@
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-8465300425811174/1074141625">
     </com.google.android.gms.ads.AdView>
-
 </RelativeLayout>
-</ScrollView>
+
