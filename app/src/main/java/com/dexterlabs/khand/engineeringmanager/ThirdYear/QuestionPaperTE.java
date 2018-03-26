@@ -40,17 +40,17 @@ public class QuestionPaperTE extends AppCompatActivity {
 
 
         QuestionPaperTEList = new ArrayList<>();
-        QuestionPaperTEList list = new QuestionPaperTEList("Computer Engineering (TE)",1);
+        QuestionPaperTEList list = new QuestionPaperTEList("Computer Engineering",1);
         QuestionPaperTEList.add(list);
-        QuestionPaperTEList list1 = new QuestionPaperTEList("IT Engineering (TE ",2);
+        QuestionPaperTEList list1 = new QuestionPaperTEList("IT Engineering",2);
         QuestionPaperTEList.add(list1);
-        QuestionPaperTEList list2 = new QuestionPaperTEList("Mechanical Engineering (TE ",3);
+        QuestionPaperTEList list2 = new QuestionPaperTEList("Mechanical Engineering",3);
         QuestionPaperTEList.add(list2);
-        QuestionPaperTEList list3 = new QuestionPaperTEList("Civil Engineering (TE",4);
+        QuestionPaperTEList list3 = new QuestionPaperTEList("Civil Engineering",4);
         QuestionPaperTEList.add(list3);
-        QuestionPaperTEList list4 = new QuestionPaperTEList("Electrical Engineering (TE",5);
+        QuestionPaperTEList list4 = new QuestionPaperTEList("Electrical Engineering",5);
         QuestionPaperTEList.add(list4);
-        QuestionPaperTEList list5 = new QuestionPaperTEList("E&Tc Engineering (TE",6);
+        QuestionPaperTEList list5 = new QuestionPaperTEList("E&Tc Engineering",6);
         QuestionPaperTEList.add(list5);
 
 

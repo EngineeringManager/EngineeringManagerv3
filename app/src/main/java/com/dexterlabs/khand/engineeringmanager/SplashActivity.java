@@ -14,7 +14,7 @@ public class SplashActivity extends Activity {
     private AdView mAdView;
 
     /** Duration of wait **/
-    private final int SPLASH_DISPLAY_LENGTH = 2500;
+    private final int SPLASH_DISPLAY_LENGTH = 1500;
 
     /** Called when the activity is first created. */
     @Override
@@ -22,10 +22,6 @@ public class SplashActivity extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_splash);
 
-        // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
 
         /* New Handler to start the Menu-Activity

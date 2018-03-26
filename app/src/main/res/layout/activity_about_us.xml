@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context="com.dexterlabs.khand.engineeringmanager.AboutUs">
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:paddingTop="37dp"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/cardview_dark_background"
-        android:text="          Thanks for using Engineering Manager!!!!!.\n\n
-         Please give your honest review if you like our application.\n\n
-         Soon Engineering Manager will provide you with additional features which will be helpful for your studies." />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
-        android:textSize="45dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/roboto_mono_thin"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="10sp"
+        android:text="     We are a team of 4 young and enthusiastic engineers from Pune University. Our aim is to provide solutions to everyday problems that an individual encounters throughout his/her career as a student.\n\n     EM was developed with the idea of providing easy access to all needs of a student pursuing Engineering. EM aims to integrate question papers,practicals and syllabus into a single app and at providing regular/timely updates to the same.." />
 
-        android:textColor="@color/cardview_dark_background"
-        android:text="THANK YOU" />
+
+
 
     <!-- Banner Ads XML With our Banner unit id-->
+
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
@@ -47,3 +40,4 @@
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
+</ScrollView>

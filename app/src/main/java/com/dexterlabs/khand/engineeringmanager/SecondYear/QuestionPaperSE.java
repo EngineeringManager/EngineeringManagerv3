@@ -40,17 +40,17 @@ public class QuestionPaperSE extends AppCompatActivity {
 
         QuestionPaperSEList = new ArrayList<>();
 
-        QuestionPaperSEList list = new QuestionPaperSEList("Computer Engineering (SE)",1);
+        QuestionPaperSEList list = new QuestionPaperSEList("Computer Engineering",1);
         QuestionPaperSEList.add(list);
-        QuestionPaperSEList list1 = new QuestionPaperSEList("IT Engineering (SE) ",2);
+        QuestionPaperSEList list1 = new QuestionPaperSEList("IT Engineering",2);
         QuestionPaperSEList.add(list1);
-        QuestionPaperSEList list2 = new QuestionPaperSEList("Mechanical Engineering (SE) ",3);
+        QuestionPaperSEList list2 = new QuestionPaperSEList("Mechanical Engineering",3);
         QuestionPaperSEList.add(list2);
-        QuestionPaperSEList list3 = new QuestionPaperSEList("Civil Engineering (SE)",4);
+        QuestionPaperSEList list3 = new QuestionPaperSEList("Civil Engineering",4);
         QuestionPaperSEList.add(list3);
-        QuestionPaperSEList list4 = new QuestionPaperSEList("Electrical Engineering (SE)",5);
+        QuestionPaperSEList list4 = new QuestionPaperSEList("Electrical Engineering",5);
         QuestionPaperSEList.add(list4);
-        QuestionPaperSEList list5 = new QuestionPaperSEList("E&Tc Engineering (SE)",6);
+        QuestionPaperSEList list5 = new QuestionPaperSEList("E&Tc Engineering",6);
         QuestionPaperSEList.add(list5);
 
 

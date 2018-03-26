@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dexterlabs.khand.engineeringmanager.Home">
+    tools:context="com.dexterlabs.khand.engineeringmanager.Home"
+    android:background="@color/grey">
 
     <TextView
         android:id="@+id/text"
@@ -13,21 +14,26 @@
         android:layout_alignParentEnd="true"
 
         android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp"
+        android:background="@color/pinkk"
 
 
+        android:fontFamily="@font/roboto_mono_thin"
+        android:paddingBottom="50sp"
+        android:paddingTop="50sp"
         android:text="Practicals"
         android:textAlignment="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:paddingTop="60sp"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="45sp"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/text">
+        android:layout_below="@+id/text"
+        android:layout_marginBottom="15sp">
 
     </android.support.v7.widget.RecyclerView>
     <!-- Banner Ads XML With our Banner unit id-->

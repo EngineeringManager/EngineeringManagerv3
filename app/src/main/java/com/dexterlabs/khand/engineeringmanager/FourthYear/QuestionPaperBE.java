@@ -39,17 +39,17 @@ public class QuestionPaperBE extends AppCompatActivity {
         mAdView.loadAd(adRequest);
         QuestionPaperBEList = new ArrayList<>();
 
-        QuestionPaperBEList list = new QuestionPaperBEList("Computer Engineering (BE)",1);
+        QuestionPaperBEList list = new QuestionPaperBEList("Computer Engineering",1);
         QuestionPaperBEList.add(list);
-        QuestionPaperBEList list1 = new QuestionPaperBEList("IT Engineering (BE) ",2);
+        QuestionPaperBEList list1 = new QuestionPaperBEList("IT Engineering",2);
         QuestionPaperBEList.add(list1);
-        QuestionPaperBEList list2 = new QuestionPaperBEList("Mechanical Engineering (BE) ",3);
+        QuestionPaperBEList list2 = new QuestionPaperBEList("Mechanical Engineering",3);
         QuestionPaperBEList.add(list2);
-        QuestionPaperBEList list3 = new QuestionPaperBEList("Civil Engineering (BE)",4);
+        QuestionPaperBEList list3 = new QuestionPaperBEList("Civil Engineering",4);
         QuestionPaperBEList.add(list3);
-        QuestionPaperBEList list4 = new QuestionPaperBEList("Electrical Engineering (BE)",5);
+        QuestionPaperBEList list4 = new QuestionPaperBEList("Electrical Engineering",5);
         QuestionPaperBEList.add(list4);
-        QuestionPaperBEList list5 = new QuestionPaperBEList("E&Tc Engineering (BE)",6);
+        QuestionPaperBEList list5 = new QuestionPaperBEList("E&Tc Engineering",6);
         QuestionPaperBEList.add(list5);
 
 

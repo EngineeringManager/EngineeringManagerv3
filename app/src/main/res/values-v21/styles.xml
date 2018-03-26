@@ -1,8 +1,58 @@
 <resources>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.greenActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/greenn</item>
+
+
+    </style>
+
+    <style name="AppTheme.pinkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/pinkk</item>
+
+
+    </style>
+    <style name="AppTheme.redActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/red</item>
+
+
+    </style>
+    <style name="AppTheme.lblueActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/lblue</item>
+
+
+    </style>
+    <style name="AppTheme.orangeActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/orange</item>
+    </style>
+    <style name="AppTheme.greyActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/grey</item>
+
+
+    </style>
+    <style name="AppTheme.greyblueActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/blgrey</item>
+
+
+    </style>
+    <style name="AppTheme.whiteActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+
+
     </style>
 </resources>

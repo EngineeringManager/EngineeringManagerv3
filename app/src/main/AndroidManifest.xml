@@ -15,12 +15,12 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.orangeActionBar" />
         <activity
             android:name=".QuestionPaper"
             android:label="@string/title_activity_question_paper"
             android:parentActivityName=".Home"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.lblueActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dexterlabs.khand.engineeringmanager.Home" />
@@ -28,10 +28,20 @@
         <activity android:name=".firstYear.QuestionPaperFirstYear" />
         <activity android:name=".firstYear.QuestionPaperPicker" />
         <activity android:name=".webview" />
-        <activity android:name=".SecondYear.QuestionPaperSE" />
-        <activity android:name=".ThirdYear.QuestionPaperTE" />
-        <activity android:name=".FourthYear.QuestionPaperBE" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SecondYear.QuestionPaperSE"
+            android:theme="@style/AppTheme.greyblueActionBar"/>
+        <activity
+            android:name=".ThirdYear.QuestionPaperTE"
+            android:theme="@style/AppTheme.greyblueActionBar"/>
+        <activity
+            android:name=".FourthYear.QuestionPaperBE"
+            android:theme="@style/AppTheme.greyblueActionBar"/>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,12 +51,20 @@
         <activity
             android:name=".Practicals"
             android:label="@string/title_activity_practicals"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.pinkActionBar" />
         <activity
             android:name=".Syllabus"
             android:label="@string/title_activity_syllabus"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AboutUs"></activity>
+            android:theme="@style/AppTheme.greenActionBar" />
+        <activity android:name=".AboutUs"
+            android:theme="@style/AppTheme.greyActionBar"
+            />
+
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

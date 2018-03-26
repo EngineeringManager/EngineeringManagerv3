@@ -4,24 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dexterlabs.khand.engineeringmanager.QuestionPaper">
+    tools:context="com.dexterlabs.khand.engineeringmanager.QuestionPaper"
+    android:background="@color/grey">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="142dp"
-        android:layout_margin="@dimen/cardview_compat_inset_shadow"
-        android:paddingTop="71dp"
-        android:text="Question Papers"
-
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blgrey"
+        android:fontFamily="@font/roboto_mono_thin"
+        android:paddingBottom="50sp"
+        android:paddingTop="50sp"
+        android:text="Question Papers BE"
         android:textAlignment="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-
-
-        android:textSize="50sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="45sp"
+        android:layout_marginBottom="35sp"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

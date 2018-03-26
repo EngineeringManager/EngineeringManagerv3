@@ -34,8 +34,8 @@ public class Syllabus extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_syllabus);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -52,10 +52,10 @@ public class Syllabus extends AppCompatActivity
         mAdView.loadAd(adRequest);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+       // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+         //       this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        //drawer.addDrawerListener(toggle);
+        //toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -143,7 +143,7 @@ public class Syllabus extends AppCompatActivity
 
             Intent intent = new Intent(android.content.Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String shareBodyText = "Download Engineering Manager app from playstore and get access to a variety of SPPU question papers!";
+            String shareBodyText = "https://play.google.com/store/apps/details?id=com.dexterlabs.khand.engineeringmanager  \n Download Engineering Manager app from playstore and get access to a variety of SPPU question papers, Practicals and lot more!";
             intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject/Title");
             intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
             startActivity(Intent.createChooser(intent, "Choose sharing method"));

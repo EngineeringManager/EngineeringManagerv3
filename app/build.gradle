@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.dexterlabs.khand.engineeringmanager"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -21,11 +23,13 @@ android {
             java.srcDirs = ['src/main/java', 'src/main/java/com.dexterlabs.khand.engineeringmanager/firstyear']
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
     implementation 'com.google.android.gms:play-services-ads:11.8.0'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:26.1.x'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
@@ -41,6 +45,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support:cardview-v7:26.1.0'
-
-
 }
