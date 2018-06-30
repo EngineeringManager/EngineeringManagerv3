@@ -35,7 +35,7 @@
             android:name=".ThirdYear.QuestionPaperTE"
             android:theme="@style/AppTheme.greyblueActionBar"/>
         <activity
-            android:name=".FourthYear.QuestionPaperBEvid"
+            android:name=".FourthYear.QuestionPaperBE"
             android:theme="@style/AppTheme.greyblueActionBar"/>
         <activity
             android:name=".SplashActivity"
