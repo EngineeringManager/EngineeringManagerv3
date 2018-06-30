@@ -29,13 +29,13 @@ android {
 
 dependencies {
     implementation 'com.google.android.gms:play-services-ads:11.8.0'
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:26.1.x'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
-    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
-    compile 'com.felipecsl:gifimageview:2.1.0'
-    compile 'commons-io:commons-io:2.4'
+    implementation 'com.android.support:appcompat-v7:26.1.x'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    implementation 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    implementation 'com.felipecsl:gifimageview:2.1.0'
+    implementation 'commons-io:commons-io:2.4'
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:26.1.x'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'

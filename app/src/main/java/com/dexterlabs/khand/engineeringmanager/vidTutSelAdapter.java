@@ -8,29 +8,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import java.util.List;
 
 /**
- * Created by khand on 15-03-2018.
+ * Created by khand on 16-03-2018.
  */
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
+public class vidTutSelAdapter extends RecyclerView.Adapter<vidTutSelAdapter.ViewHolder> {
     List<HomeAdapterList> HomeAdapterList;
     Context context;
     int currentPosition=-1;
 
-    public HomeAdapter(List<HomeAdapterList> HomeAdapterList, Context context) {
+    public vidTutSelAdapter(List<HomeAdapterList> HomeAdapterList, Context context) {
         this.HomeAdapterList = HomeAdapterList;
         this.context = context;
     }
 
     @Override
-    public HomeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public vidTutSelAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         LayoutInflater inflater = LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.gridview,null);
-        HomeAdapter.ViewHolder holder= new HomeAdapter.ViewHolder(v);
+        vidTutSelAdapter.ViewHolder holder= new vidTutSelAdapter.ViewHolder(v);
 
 
 
@@ -39,39 +38,68 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
 
     @Override
-    public void onBindViewHolder(HomeAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(vidTutSelAdapter.ViewHolder holder, final int position) {
         HomeAdapterList se= HomeAdapterList.get(position);
         holder.subject.setText(se.getSubject());
 
         if(currentPosition==position)
         {
+
             if(se.getPosition()==1)
             {
-                Intent intent=new Intent(context,QuestionPaper.class);
+                Intent intent=new Intent(context,videoTuts.class);
+
                 context.startActivity(intent);
+
             }
             else if(se.getPosition()==2)
             {
-                Intent intent=new Intent(context,Syllabus.class);
+                Intent intent=new Intent(context,videoTuts.class);
+
                 context.startActivity(intent);
+
             }
             else if(se.getPosition()==3)
             {
-                Intent intent=new Intent(context,Practicals.class);
+                Intent intent=new Intent(context,videoTuts.class);
+
                 context.startActivity(intent);
 
-            } else if(se.getPosition()==4)
+
+            }
+            else if(se.getPosition()==4)
             {
-                Intent intent=new Intent(context,vidTutSel.class);
+                Intent intent=new Intent(context,videoTuts.class);
+
                 context.startActivity(intent);
+
 
             }
             else if(se.getPosition()==5)
             {
-                Intent intent=new Intent(context,AboutUs.class);
+                Intent intent=new Intent(context,videoTuts.class);
+
                 context.startActivity(intent);
 
+
             }
+            else if(se.getPosition()==6)
+            {
+                Intent intent=new Intent(context,videoTuts.class);
+
+                context.startActivity(intent);
+
+
+            }
+            else if(se.getPosition()==7)
+            {
+                Intent intent=new Intent(context,videoTuts.class);
+
+                context.startActivity(intent);
+
+
+            }
+
 
 
         }
@@ -103,16 +131,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

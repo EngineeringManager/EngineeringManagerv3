@@ -35,7 +35,7 @@
             android:name=".ThirdYear.QuestionPaperTE"
             android:theme="@style/AppTheme.greyblueActionBar"/>
         <activity
-            android:name=".FourthYear.QuestionPaperBE"
+            android:name=".FourthYear.QuestionPaperBEvid"
             android:theme="@style/AppTheme.greyblueActionBar"/>
         <activity
             android:name=".SplashActivity"
@@ -60,6 +60,13 @@
             android:theme="@style/AppTheme.greyActionBar"
             />
 
+        <activity android:name=".videoTuts"
+            android:theme="@style/AppTheme.greyActionBar"
+            />
+
+        <activity android:name=".vidTutSel"
+            android:theme="@style/AppTheme.greyActionBar"
+            />
 
 
         <meta-data
