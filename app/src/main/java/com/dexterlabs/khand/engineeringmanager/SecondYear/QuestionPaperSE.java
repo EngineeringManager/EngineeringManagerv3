@@ -19,7 +19,7 @@ public class QuestionPaperSE extends AppCompatActivity {
     List<QuestionPaperSEList> QuestionPaperSEList;
 
     //For Banner Ads
-    private AdView mAdView;
+   // private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +33,10 @@ public class QuestionPaperSE extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
-        // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        // Banner Ads
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         QuestionPaperSEList = new ArrayList<>();
 

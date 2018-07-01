@@ -31,10 +31,10 @@ public class QuestionPaperTE extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         int numberOfColumns = 2;
 
-        // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        // Banner Ads
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 

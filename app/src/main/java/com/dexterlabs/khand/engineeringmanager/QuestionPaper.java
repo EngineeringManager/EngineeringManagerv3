@@ -39,10 +39,10 @@ public class QuestionPaper extends AppCompatActivity
         //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //  setSupportActionBar(toolbar);
 
-        // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        // Banner Ads
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
 
         //  DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

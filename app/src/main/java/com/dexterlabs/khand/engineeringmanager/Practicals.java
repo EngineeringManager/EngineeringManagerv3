@@ -45,10 +45,10 @@ public class Practicals extends AppCompatActivity
         //   //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //  setSupportActionBar(toolbar);
 //
-        // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        // Banner Ads
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {

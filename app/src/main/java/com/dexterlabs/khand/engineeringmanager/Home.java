@@ -60,22 +60,22 @@ public class Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // Banner Ads
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         //Interstitial Ads
         //Replace Ad Unit ID with our ID
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-8465300425811174/9000323987");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                super.onAdClosed();
-                finish();
-            }
-        });
+//        mInterstitialAd = new InterstitialAd(this);
+//        mInterstitialAd.setAdUnitId("ca-app-pub-8465300425811174/9000323987");
+//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//        mInterstitialAd.setAdListener(new AdListener() {
+//            @Override
+//            public void onAdClosed() {
+//                super.onAdClosed();
+//                finish();
+//            }
+//        });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
