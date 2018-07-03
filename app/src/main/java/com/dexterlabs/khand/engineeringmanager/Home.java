@@ -106,15 +106,15 @@ public class Home extends AppCompatActivity
         recyclerView.setAdapter(adapter);
 
     }
-    public  void showInterstitial(){
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-            finish();
-        }
-
-    }
+//    public  void showInterstitial(){
+//        if (mInterstitialAd.isLoaded()) {
+//            mInterstitialAd.show();
+//        } else {
+//            Log.d("TAG", "The interstitial wasn't loaded yet.");
+//            finish();
+//        }
+//
+//    }
 
 
 
@@ -122,7 +122,7 @@ public class Home extends AppCompatActivity
     @Override
     public void onBackPressed() {
 
-        showInterstitial();
+     //   showInterstitial();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
