@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context=".videoTuts">
+    tools:context=".videoTuts"
+    android:background="@color/grey"
+    >
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#4CAF50"
+        android:fontFamily="@font/roboto_mono_thin"
+        android:paddingBottom="15sp"
+        android:paddingTop="50sp"
+        android:text="Video Selector"
 
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        />
     <ExpandableListView
+        android:layout_below="@+id/text"
         android:groupIndicator="@null"
         android:id="@+id/expandible_listview"
         android:layout_width="match_parent"
+android:layout_marginTop="40sp"
+
         android:layout_height="match_parent">
 
     </ExpandableListView>
 
-</LinearLayout>
+</RelativeLayout>

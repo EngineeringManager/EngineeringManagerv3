@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:background="@color/lblue"
         android:fontFamily="@font/roboto_mono_thin"
-        android:paddingBottom="50sp"
+        android:paddingBottom="15sp"
         android:paddingTop="50sp"
         android:text="Question Papers"
         android:textAlignment="center"

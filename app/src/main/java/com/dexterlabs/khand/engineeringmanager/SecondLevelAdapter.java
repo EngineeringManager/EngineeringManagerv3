@@ -1,6 +1,7 @@
 package com.dexterlabs.khand.engineeringmanager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -86,9 +87,21 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
         String[] childArray = data.get(groupPosition);
 
-        String text = childArray[childPosition];
+        final String text = childArray[childPosition];
 
         textView.setText(text);
+
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(text.equals("in civil unit 1 link 1")) {
+                    Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(context,YoutubePlayer.class);
+                    context.startActivity(intent);
+                }
+            }
+        });
 
 
 

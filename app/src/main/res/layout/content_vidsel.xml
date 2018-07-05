@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dexterlabs.khand.engineeringmanager.Home"
+    tools:context="com.dexterlabs.khand.engineeringmanager.vidTutSel"
     android:background="@color/grey">
 
     <TextView
@@ -12,39 +12,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-
         android:layout_alignParentTop="true"
-        android:background="@color/pinkk"
-
-
+        android:background="#4CAF50"
         android:fontFamily="@font/roboto_mono_thin"
         android:paddingBottom="15sp"
         android:paddingTop="50sp"
-        android:text="Practicals"
+        android:text="Video Selector"
         android:textAlignment="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:textSize="50sp"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"/>
+        />
 
     <android.support.v7.widget.RecyclerView
-        android:layout_marginTop="45sp"
         android:id="@+id/recyclerView"
+        android:layout_marginTop="45sp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="15sp"
+        android:background="@color/grey"
         android:layout_below="@+id/text"
-        android:layout_marginBottom="15sp">
+        android:layout_alignParentStart="true">
 
     </android.support.v7.widget.RecyclerView>
     <!-- Banner Ads XML With our Banner unit id-->
     <!--<com.google.android.gms.ads.AdView-->
-        <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
-        <!--android:id="@+id/adView"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--ads:adSize="BANNER"-->
-        <!--ads:adUnitId="ca-app-pub-8465300425811174/1074141625">-->
+    <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/adView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--ads:adSize="BANNER"-->
+    <!--ads:adUnitId="ca-app-pub-8465300425811174/1074141625">-->
     <!--</com.google.android.gms.ads.AdView>-->
 </RelativeLayout>

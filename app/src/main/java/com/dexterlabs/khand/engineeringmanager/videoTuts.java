@@ -22,13 +22,13 @@ public class videoTuts  extends AppCompatActivity {
 
 //    Start adding subject names comma seperated
 
-    String[] parent = new String[]{"this is only for FE Subject name daalo 1", "this is only for FE Subject name daalo 2", "this is only for FE Subject name daalo 3"};
+    String[] parent = new String[]{"Basic Civil Engineering","Basic Electrical Engineering","Basic Electronics Engineering","Basic Mechanical Engineering","Engineering Chemistry","Engineering Graphics","Engineering Mathematics","Engineering Mathematics-II","Engineering Mechanics","Engineering Physics"};
 
-    String[] q1 = new String[]{"u 1this is only for FE ", "u 2this is only for FE ", "u 3this is only for FE ", "u 4this is only for FE "};
+    String[] q1 = new String[]{"Civil unit 1"};
 
     String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
     String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-    String[] des1 = new String[]{"this is only for FE "};
+    String[] des1 = new String[]{"in civil unit 1 link 1","in civil unit 1 link 2","in civil unit 1 link 3"};
     String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah","asdfasdfasdfasdfasdf asfdsadfasfadsf"};
     String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
     String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
@@ -59,9 +59,7 @@ public class videoTuts  extends AppCompatActivity {
         secondLevel.add(q2);
         secondLevel.add(q3);
         thirdLevelq1.put(q1[0], des1);
-        thirdLevelq1.put(q1[1], des2);
-        thirdLevelq1.put(q1[2], des2);
-        thirdLevelq1.put(q1[3], des1);
+
 
 
         thirdLevelq2.put(q2[0], des3);

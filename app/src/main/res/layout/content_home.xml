@@ -18,7 +18,7 @@
         android:background="@color/orange"
         android:fontFamily="@font/roboto_mono_thin"
 
-        android:paddingBottom="50dp"
+        android:paddingBottom="15sp"
         android:paddingTop="50sp"
         android:text="Welcome"
         android:textAlignment="center"
