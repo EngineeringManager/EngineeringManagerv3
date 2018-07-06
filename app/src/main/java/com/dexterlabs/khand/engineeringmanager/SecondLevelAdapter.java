@@ -24,7 +24,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
     String[] headers;
 
     ImageView ivGroupIndicator;
-
+    String[]videoLinks={"oXowkdgJPO4","yWkga94iBzU","EeJwn42EEqc","mQrlhwvlIQw","rEhWTt8Mibk","SmP75gIHSow","IjsK8ItrffA","eW5VGGJuWtQ"};
 
     public SecondLevelAdapter(Context context, String[] headers, List<String[]> data) {
         this.context = context;
@@ -95,10 +95,16 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                int i=0;
+//                for (int i=0,i<100;i++)
+//                {
+//
+//                }
+
                 if(text.equals("in civil unit 1 link 1")) {
                     Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(context,YoutubePlayer.class);
-                    intent.putExtra("videoLink","EeJwn42EEqc");
+                    intent.putExtra("videoLink",videoLinks[i]);
                     context.startActivity(intent);
                 }
             }
