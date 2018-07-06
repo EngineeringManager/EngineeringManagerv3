@@ -53,7 +53,7 @@
             android:label="@string/title_activity_practicals"
             android:theme="@style/AppTheme.pinkActionBar" />
         <activity android:name=".YoutubePlayer"
-
+         android:screenOrientation="landscape" android:configChanges="orientation|keyboardHidden"
             />
         <activity
             android:name=".Syllabus"

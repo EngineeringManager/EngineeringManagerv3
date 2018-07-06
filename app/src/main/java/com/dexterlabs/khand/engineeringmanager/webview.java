@@ -17,22 +17,47 @@ import com.dexterlabs.khand.engineeringmanager.ThirdYear.QuestionPaperTE;
 
 public class webview extends AppCompatActivity {
 
+    WebView webview1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
         if (getIntent() != null) {
-            final WebView webview1;
+
 
             String info = getIntent().getStringExtra("url");
             webview1 = (WebView) findViewById(R.id.webview);
-            webview1.setWebViewClient(new WebViewClient());
-            webview1.loadUrl(info);
+//            webview1.setWebViewClient(new WebViewClient());
+//            webview1.loadUrl(info);
+//            WebSettings webSettings = webview1.getSettings();
+//            webSettings.setJavaScriptEnabled(true);
+
+            /////////////////////////
+
+//            webview1.setWebViewClient(new WebViewClient());
+//            webview1.getSettings().setBuiltInZoomControls(true);
+//            webview1.getSettings().setJavaScriptEnabled(true);
+//            webview1.getSettings().setDomStorageEnabled(true);
+//            webview1.getSettings().setDatabaseEnabled(true);
+//            webview1.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+//            webview1.getSettings().setAppCacheEnabled(true);
+
+
+//            webview1 = (WebView) findViewById(R.id.webview);
+//            webview1.getSettings().setJavaScriptEnabled(true);
+
+//
+//            webview1 = (WebView) findViewById(R.id.webview);
+//            webView.getSettings().setJavaScriptEnabled(true);
+
+            webview1 = findViewById(R.id.webview);
             WebSettings webSettings = webview1.getSettings();
             webSettings.setJavaScriptEnabled(true);
+//            wView.loadUrl("https://en.wikipedia.org");
+            webview1.loadUrl(info);
+            webview1.setWebViewClient(new WebViewClient());
 
-            //
 
 
 

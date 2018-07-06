@@ -98,6 +98,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
                 if(text.equals("in civil unit 1 link 1")) {
                     Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(context,YoutubePlayer.class);
+                    intent.putExtra("videoLink","EeJwn42EEqc");
                     context.startActivity(intent);
                 }
             }

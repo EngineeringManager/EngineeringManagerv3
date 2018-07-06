@@ -92,14 +92,5 @@ public class videoTuts  extends AppCompatActivity {
 
         });
 
-
-
-
-
-
     }
-
-
-
-
 }

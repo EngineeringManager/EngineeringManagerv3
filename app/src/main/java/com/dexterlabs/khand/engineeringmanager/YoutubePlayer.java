@@ -1,6 +1,7 @@
 package com.dexterlabs.khand.engineeringmanager;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -14,11 +15,13 @@ public class YoutubePlayer extends YouTubeBaseActivity implements YouTubePlayer.
 
     private static final int RECOVERY_REQUEST = 1;
     private YouTubePlayerView youTubeView;
-
+    String link;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_youtube);
+
+        link = getIntent().getStringExtra("videoLink");
 
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
@@ -27,9 +30,18 @@ public class YoutubePlayer extends YouTubeBaseActivity implements YouTubePlayer.
     @Override
     public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean wasRestored) {
         if (!wasRestored) {
-            player.cueVideo("-vll1wMqsa4"); // Plays https://www.youtube.com/watch?v=fhWaJi1Hsfo
+            player.cueVideo(link); // Plays https://www.youtube.com/watch?v=-vll1wMqsa4
         }
     }
+
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        // ignore orientation/keyboard change
+        super.onConfigurationChanged(newConfig);
+    }
+
+
 
     @Override
     public void onInitializationFailure(Provider provider, YouTubeInitializationResult errorReason) {
