@@ -32,7 +32,7 @@ public class ThreeLevelListAdapter extends BaseExpandableListAdapter {
 
         this.secondLevel = secondLevel;
 
-        this.data = data;
+        this.data = (List<LinkedHashMap<String, String[]>>) data;
     }
 
     @Override

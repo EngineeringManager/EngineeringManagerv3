@@ -95,18 +95,32 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int i=0;
+                //int i=0;
 //                for (int i=0,i<100;i++)
 //                {
 //
 //                }
+                String[] civilu1topics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
+                        "Construction Engineering","Transport Engineering","Irrigation Engineering","Geotechnical Engineering","Foundation","Responsibilities and Interdisciplinary Approach"};
 
-                if(text.equals("in civil unit 1 link 1")) {
-                    Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(context,YoutubePlayer.class);
-                    intent.putExtra("videoLink",videoLinks[i]);
-                    context.startActivity(intent);
+                String[] civilu1vl = new String[] {"oL4cmwgXEok","ZGiaOceb6Fc","oqpp8L4J4ek",
+                        "u8lEDf5oOGY","GkZlxsQZ398","mmt-tLsqwow","wg_N4sNvZeY","7sl4KuM4UIE","vsLPqsumh4Q"};
+
+                for (int i=0;i<civilu1topics.length;i++) {
+                    if (text.equals(civilu1topics[i])) {
+                        Toast.makeText(context, "Video ", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",civilu1vl[i]);
+                        context.startActivity(intent);
+                    }
                 }
+
+//                if(text.equals("1")) {
+//                    Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
+//                    Intent intent=new Intent(context,YoutubePlayer.class);
+//                    intent.putExtra("videoLink","");
+//                    context.startActivity(intent);
+//                }
             }
         });
 
