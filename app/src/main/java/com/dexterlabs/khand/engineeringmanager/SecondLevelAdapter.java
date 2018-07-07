@@ -100,17 +100,29 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 //                {
 //
 //                }
-                String[] civilu1topics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
-                        "Construction Engineering","Transport Engineering","Irrigation Engineering","Geotechnical Engineering","Foundation","Responsibilities and Interdisciplinary Approach"};
+                String[] civiltopics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
+                        "Construction Engineering","Transport Engineering","Irrigation Engineering","Geotechnical Engineering","Foundation","Responsibilities and Interdisciplinary Approach","Brick","Cement",
+                        "Concrete","PCC RCC","Sand","Artificial Sand","Reinforcement Steel","Substructure to Automation","Introduction to Automation","Types of Maps","Principles of Surveying",
+                        "EDM","Theodolite","GPS Total Station","Planimeter","Simple Levelling","Differential levelling","GIS","Contour Line Preparation","EIA",
+                        "Engineers Role in Sustainable Development",
+                        "Need For Conserving Natural Resources And Preserving Enviornment","Impacts of Human","Impact of Technology","Solid Waste Management","Electronic waste","Principles of Planning","Built and Natural Environment","Eco Friendly Building Material","Green Building","FSI","Carpet Built-up Plinth areas","Types of energy",
+                        "Methods of Harnessing Energy","Air Pollution","Soil Pollution","Noise Pollution","Noise Pollution Control","Water Pollution"};
 
-                String[] civilu1vl = new String[] {"oL4cmwgXEok","ZGiaOceb6Fc","oqpp8L4J4ek",
-                        "u8lEDf5oOGY","GkZlxsQZ398","mmt-tLsqwow","wg_N4sNvZeY","7sl4KuM4UIE","vsLPqsumh4Q"};
+                String[] civilvl = new String[] {"oL4cmwgXEok","ZGiaOceb6Fc","oqpp8L4J4ek",
+                        "u8lEDf5oOGY","GkZlxsQZ398","mmt-tLsqwow","wg_N4sNvZeY","7sl4KuM4UIE","vsLPqsumh4Q",
+                        "Uq_FDgJ6HAc","uMzRJD635gE","RVEHQ7eBgXY","J9xtuEreB28","f66YCdyKm2w","MA21g1yHSEY","bVBPcWM0A6s",
+                        "yb0cDuy_Ui0","hEhXRcMpmF0","ugtR59IfOxs","urmUILx1qtc","oX6fbZbzMGY","DSWJFT-XgeA","aatV8_60rX8",
+                        "zh9Gu_mFn9w","v0oFRqnI0GY","Fj2PGT9sVo4",
+                        "-ZFmAAHBfOU","qtwgHYPtPmI",
+                        "H07CjSGsl94","3WBKA8xG9IU","42lxgPflEKM","5eTCZ9L834s","1B6D7j3E6oI","nL354fxAfBk",
+                        "2REsMF3PfvA","HkSVkfSFEYM","pkL4PnSMaxQ","VsahyCrZ9sk","MyIOtsx3wDs","ZNoT7J48A88","2rNLYnfGVA8","EmTMSOqvinw",
+                        "WsFP5HDO9Fw","t7Q7y_xjR5E","UaVuLlwYEvA","DdImG-jphkM","0zGy7KxHT4Q","KqZihghcMJA"};
 
-                for (int i=0;i<civilu1topics.length;i++) {
-                    if (text.equals(civilu1topics[i])) {
+                for (int i=0;i<civiltopics.length;i++) {
+                    if (text.equals(civiltopics[i])) {
                         Toast.makeText(context, "Video ", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
-                        intent.putExtra("videoLink",civilu1vl[i]);
+                        intent.putExtra("videoLink",civilvl[i]);
                         context.startActivity(intent);
                     }
                 }
