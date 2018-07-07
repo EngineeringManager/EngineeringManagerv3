@@ -163,12 +163,42 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
 
 
+                String[] chemTopics = new String[]{"Impurities in water","Determination of hardness of water by EDTA method",
+                        "Alkalinity of water problem solving","Alkalinity of water","Boiler feed water","Internal treatment","External treatment",
+                        "Zeolite process","Zeolite problems","Ion exchange","Reverse osmosis","Electrodialysis",
+                        "Green Chemistry","Synthesis of Indigo Dye","Synthesis of Adipic Acid",
+                        "Conductometry-Introduction","Conductometry-Titration curves","Kohlrauch's Law","Kohlrauch's Law Problems"
+                        ,"Types of electrodes 1","Types of electrodes 2","Electrode Potentials","Standard Hydrogen Electrode (Potentiometry)"
+                        ,"Saturated Calomel Reference Electrode (Potentiometry)","Glass Membrane Electrode - Indicator Electrodes -Potentiometry","Potentiometry - Instrumentation"
+                        ,"Types of Potentiometric Titrations","Cell Notation Practice Problems, Voltaic Cells - Electrochemistry","UV Spectroscopy","Applications of UV Spectroscopy",
+                        "LDPE and HDPE","Polymer Chemistry","Thermoplastics and Thermosetting polymers","Elastomers",
+                        "Tg","Avg molecular weight","Free radical mechanism","Cationic","Anionic","Emulsion Polymerization","Bulk Polymerization",
+                        "Solution Polymerization","Suspension Polymerization","Speciality Polymers",
+                        "Fuel cells","Fuels","Calorific value","Bomb calorimeter","Octane no","Cetane no","Power alcohol",
+                        "Combustion 1","Combustion 2",
+                        "Steam reforming","Lab preparation","Electrolysis of water","Water splitting",
+                        "Hydrogen storage","Molecular hydrides","Saline hydrides","Hydrogen","Carbon","Allotropes",
+                        "Corrosion and its types","Factors","Pourbiax Diagram","Cathodic Protection",
+                        "Anodic Protection","Metallic Coating"
 
-                for (int i=0;i<electricalTopics.length;i++) {
-                    if (text.equals(electricalTopics[i])) {
+
+                };
+
+                String[] chemvl = new String[]{"NEuBunNhTgY","qXM4eK6cTSM","hz8gHxBU0CQ","OyGBEBayqW0",
+                        "is5wdVgPOkI","ujSOhXQt2vk","64FhpimVJAo","EnKDEECa7Z4","Y-3woxxoba8","7he0Z1snrHg","4RDA_B_dRQ0","wvS7jsIhGBQ","d0daTBJmPus",
+                        "4KqKFwIG1VI","OK1WxtqgPEQ","E0oYzyJrKGg","5Q9rJvPyMjg","vewIM-xBc0Q","zjtoLt0D9ck","LQ6T9PVg4qQ","ZWw6DB3boDg","dmdMLSkKm4c","O0mQzBA5pOI",
+                        "umN4EOfqWw0","Q30qDhicF44","O6zI3aDAgqc","oPsPMDWK94g","iWqUWwyPkSs","BST5GRsAnPk","ftZY8sVPoMk","WidWYhoOmcg","MXSnKYxXC2o","-TIkJYVwssA","d1nQJ8PhCi0","G5c6hrbpilw","YywmrDheOno","Z8vpTLl1Jkg","d25e9y2z8X4"
+                        ,"mGcTMIPsQZ0","e_TgUSioQFE","KuygD0ZY_KI",
+                        "nlPgiRhuYGg","X4rDrNLd18M","gsFOw54csdk","xDBNJpcoGrk","zGVNy69Fz8c","OgaO_4aE_fM","c1wCObJwzmg",
+                        "HoboFGutz4Y","ajvi5Zz2Rfs","Uh0DtA5jqLo","uvR7zNJ1KoI","LSlNb0WIyVM","Mi0iTEh8e6k","fq7gFxw_5ZQ","IxANIkNjUv0","38ULHoKWZag","9NxGwxGumGE",
+                        "ToAusg1LjvQ","uSKchk8AId8","U-MNKK20Z_g","vHJeH7rcK9Y","w_3fvq4EYpE",
+                        "A_rI9rNVgR8","ZWr6iVwNAv8","0P61i7jBitE","RAlC75xG4qU","uxdzxoyY6VM","M2OYAMqXkQk"};
+
+                for (int i=0;i<chemTopics.length;i++) {
+                    if (text.equals(chemTopics[i])) {
                         Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
-                        intent.putExtra("videoLink",electricalvl[i]);
+                        intent.putExtra("videoLink",chemvl[i]);
                         context.startActivity(intent);
                     }
                 }

@@ -1,5 +1,6 @@
 package com.dexterlabs.khand.engineeringmanager;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -21,6 +22,9 @@ public class StartingActvity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_actvity);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
 

@@ -4,37 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/registrationbackground"
     tools:context=".StartingActvity">
 
-    <EditText
-        android:id="@+id/phone_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Enter Phone number" />
 
-    <EditText
-        android:id="@+id/email_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/phone_number"
-        android:layout_marginTop="162dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Enter Email address" />
 
-    <Button
-        android:id="@+id/sendToDatabase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="194dp"
-        android:text="Button" />
+
+
+
+    <RelativeLayout
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:background="#F26092"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:ems="10"
+            android:hint="Enter Phone number"
+            android:inputType="number" />
+
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/edittext"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:hint="Enter Email address"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/sendToDatabase"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/buttonshape"
+            android:text="Register" />
+
+    </RelativeLayout>
 </RelativeLayout>
