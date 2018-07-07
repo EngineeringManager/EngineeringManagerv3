@@ -77,7 +77,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(final int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -100,7 +100,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 //                {
 //
 //                }
-                String[] civiltopics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
+                String[] civilTopics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
                         "Construction Engineering","Transport Engineering","Irrigation Engineering","Geotechnical Engineering","Foundation","Responsibilities and Interdisciplinary Approach","Brick","Cement",
                         "Concrete","PCC RCC","Sand","Artificial Sand","Reinforcement Steel","Substructure to Automation","Introduction to Automation","Types of Maps","Principles of Surveying",
                         "EDM","Theodolite","GPS Total Station","Planimeter","Simple Levelling","Differential levelling","GIS","Contour Line Preparation","EIA",
@@ -118,21 +118,62 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
                         "2REsMF3PfvA","HkSVkfSFEYM","pkL4PnSMaxQ","VsahyCrZ9sk","MyIOtsx3wDs","ZNoT7J48A88","2rNLYnfGVA8","EmTMSOqvinw",
                         "WsFP5HDO9Fw","t7Q7y_xjR5E","UaVuLlwYEvA","DdImG-jphkM","0zGy7KxHT4Q","KqZihghcMJA"};
 
-                for (int i=0;i<civiltopics.length;i++) {
-                    if (text.equals(civiltopics[i])) {
-                        Toast.makeText(context, "Video ", Toast.LENGTH_SHORT).show();
+                for (int i=0;i<civilTopics.length;i++) {
+                    if (text.equals(civilTopics[i])) {
+                        Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",civilvl[i]);
                         context.startActivity(intent);
                     }
                 }
 
-//                if(text.equals("1")) {
-//                    Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
-//                    Intent intent=new Intent(context,YoutubePlayer.class);
-//                    intent.putExtra("videoLink","");
-//                    context.startActivity(intent);
-//                }
+
+                String[] electricalTopics = new String[] {"Elemntary Concepts","Conversion of Energy","Effect of temp on Resistance",
+                        "Right hand thumb rule and cork screw rule with dot and Cross Conventions","Magnetic Field due to Straight Current Carrying Conductor","Toroid",
+                        "Solenoid","Basic definitions","Difference betwwen Electrical and Magnetic Circuits","Series Circuit","Parallel Circuit","Faradays laws",
+                        "Flemings right hand rule","Static and Dynamic Induced EMF","Self Inductance and Mutual Inductance","Energy stored in Magnetic Field",
+                        "Autotransformers","Single phase transformer 2","Single phase transformer 1","Permittivity","Dielectrics","Energy of Capacitor","Capacitors in Parallel",
+                        "Capacitors in Series","Charging and Discharging","AC fundamentals",
+                        "RMS and avg value, form and peak factor","Lead lag","Phasor Diagram",
+                        "AC through pure resistance","AC through pure inductance","AC through pure capacitance","Series RL, RC, RLC","Impedance and Admittance",
+                        "Active, Reactive and Apparent Power","Power Factor","Resonance in Series RLC","Polyphase and Star Delta","Classification of Electrical Network","Kirchoffs rules",
+                        "Star delta conversions","Ideal vs Practical Voltage",
+                        "Ideal vs Practical Current","Superposition Theorem","Thevenins Theorem"
+                };
+
+
+                String[] electricalvl = new String[]{"bT1Ko-1_1nY","jkqcfswRXy8","SaXggeH-dEo",
+                        "nNv2iDlboXw","zv4t_4fHvn4","roJO_T0eKDM",
+                        "ISg_9Wmi5J8","NS42a9UbKwA","n7JpT_f3SSg","6-locnbFY-M","ItyhLr19pGg","3HyORmBip-w","3vc2YEyHvJc","dbtp6bOn4WQ","hoTInTKij0o","5Du2n2nlaFI",
+                        "czCUJZv0Sew","eBE71L07uMA","ai3eriqcSYc","RTKr0qGYask","rkntp3_cZl4",
+                        "SIU_9SMd5q0","P-1mWGeJjmg","-MaD9Ycy3a4","Ag2RujOHqJ8","DFHLUzfbcdY","Syo9a3xdVck","G0h9Sa_s18A",
+                        "Hd1NDqmKWgU","hrM21Pi3ByY","_UTegajMHpw","GOK4IJXzJqE",
+                        "HaFrY0qQ-NU","gtx-_DDKkwU","xndhKc6-9PE","WfzPvVdmUho","tGMH4fCpplA","FPt-1R7NmP8","4LgSLToLSCU","0gRtVz4XrZM","9Mhqtd_Oumg","TRzpqHwb-5Y","dTf1h_xhHng","H-8G5bqcRtk","E-SUpObhohE"
+                };
+
+
+                for (int i=0;i<electricalTopics.length;i++) {
+                    if (text.equals(electricalTopics[i])) {
+                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",electricalvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
+
+
+
+
+                for (int i=0;i<electricalTopics.length;i++) {
+                    if (text.equals(electricalTopics[i])) {
+                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",electricalvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
+
+
             }
         });
 
