@@ -1,3 +1,6 @@
+
+
+
 package com.dexterlabs.khand.engineeringmanager;
 
 import android.content.Intent;
@@ -71,21 +74,14 @@ public class vidTutSel extends AppCompatActivity
 
         HomeAdapterList = new ArrayList<>();
 
-        HomeAdapterList list = new HomeAdapterList("FIRST YEAR",1);
+        HomeAdapterList list = new HomeAdapterList("First Year",1);
         HomeAdapterList.add(list);
-        HomeAdapterList list1 = new HomeAdapterList("Computer Engineering",2);
+        HomeAdapterList list1 = new HomeAdapterList("Second Year",2);
         HomeAdapterList.add(list1);
-        HomeAdapterList list2 = new HomeAdapterList("IT Engineering",3);
+        HomeAdapterList list2 = new HomeAdapterList("Third Year",3);
         HomeAdapterList.add(list2);
-        HomeAdapterList list3 = new HomeAdapterList("Mechanical Engineering",4);
+        HomeAdapterList list3 = new HomeAdapterList("Fourth Year",4);
         HomeAdapterList.add(list3);
-        HomeAdapterList list4 = new HomeAdapterList("Civil Engineering",5);
-        HomeAdapterList.add(list4);
-        HomeAdapterList list5 = new HomeAdapterList("Electrical Engineering",6);
-        HomeAdapterList.add(list5);
-        HomeAdapterList list6 = new HomeAdapterList("E&Tc Engineering",7);
-        HomeAdapterList.add(list6);
-
 
 
 

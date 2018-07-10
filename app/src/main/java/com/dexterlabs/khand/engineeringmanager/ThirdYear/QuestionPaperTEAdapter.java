@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 
 import com.dexterlabs.khand.engineeringmanager.R;
+import com.dexterlabs.khand.engineeringmanager.SecondYear.SeVidMain;
 import com.dexterlabs.khand.engineeringmanager.webview;
 
 import java.util.List;
@@ -84,6 +85,48 @@ public class QuestionPaperTEAdapter extends RecyclerView.Adapter<QuestionPaperTE
             {
                 Intent intent=new Intent(context,webview.class);
                 intent.putExtra("url", "https://drive.google.com/open?id=12mlsZIMuUcT1BEKzbcOUkFwhnJ_AH8_V");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==11)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "comp");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==22)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "it");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==33)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "mech");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==44)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "civil");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==55)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "ele");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==66)
+            {
+                Intent intent=new Intent(context,TeVidMain.class);
+                intent.putExtra("dept", "entc");
                 context.startActivity(intent);
 
             }

@@ -60,18 +60,24 @@ public class AdapterQuestionPaperMain extends RecyclerView.Adapter<AdapterQuesti
             else if(questionPaperItems.position==2)
             {
                 Intent intent=new Intent(context,QuestionPaperSE.class);
+                intent.putExtra("type", "qp");
+
                 context.startActivity(intent);
 
             }
             else if(questionPaperItems.position==3)
             {
                 Intent intent=new Intent(context,QuestionPaperTE.class);
+                intent.putExtra("type", "qp");
+
                 context.startActivity(intent);
 
             }
             else if(questionPaperItems.position==4)
             {
                 Intent intent=new Intent(context,QuestionPaperBE.class);
+                intent.putExtra("type", "qp");
+
                 context.startActivity(intent);
             }
         }

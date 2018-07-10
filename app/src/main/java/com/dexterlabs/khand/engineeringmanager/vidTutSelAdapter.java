@@ -1,3 +1,6 @@
+
+
+
 package com.dexterlabs.khand.engineeringmanager;
 
 import android.content.Context;
@@ -7,6 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.dexterlabs.khand.engineeringmanager.FourthYear.BeVidMain;
+import com.dexterlabs.khand.engineeringmanager.FourthYear.QuestionPaperBE;
+import com.dexterlabs.khand.engineeringmanager.SecondYear.QuestionPaperSE;
+import com.dexterlabs.khand.engineeringmanager.SecondYear.SeVidMain;
+import com.dexterlabs.khand.engineeringmanager.ThirdYear.QuestionPaperTE;
+import com.dexterlabs.khand.engineeringmanager.ThirdYear.TeVidMain;
 
 import java.util.List;
 
@@ -54,14 +64,16 @@ public class vidTutSelAdapter extends RecyclerView.Adapter<vidTutSelAdapter.View
             }
             else if(se.getPosition()==2)
             {
-                Intent intent=new Intent(context,videoTuts.class);
-
+                Intent intent=new Intent(context,QuestionPaperSE.class);
+                intent.putExtra("type", "vid");
                 context.startActivity(intent);
+
 
             }
             else if(se.getPosition()==3)
             {
-                Intent intent=new Intent(context,videoTuts.class);
+                Intent intent=new Intent(context,QuestionPaperTE.class);
+                intent.putExtra("type", "vid");
 
                 context.startActivity(intent);
 
@@ -69,31 +81,8 @@ public class vidTutSelAdapter extends RecyclerView.Adapter<vidTutSelAdapter.View
             }
             else if(se.getPosition()==4)
             {
-                Intent intent=new Intent(context,videoTuts.class);
-
-                context.startActivity(intent);
-
-
-            }
-            else if(se.getPosition()==5)
-            {
-                Intent intent=new Intent(context,videoTuts.class);
-
-                context.startActivity(intent);
-
-
-            }
-            else if(se.getPosition()==6)
-            {
-                Intent intent=new Intent(context,videoTuts.class);
-
-                context.startActivity(intent);
-
-
-            }
-            else if(se.getPosition()==7)
-            {
-                Intent intent=new Intent(context,videoTuts.class);
+                Intent intent=new Intent(context,QuestionPaperBE.class);
+                intent.putExtra("type", "vid");
 
                 context.startActivity(intent);
 

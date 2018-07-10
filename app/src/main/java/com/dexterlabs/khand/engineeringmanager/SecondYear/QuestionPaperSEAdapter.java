@@ -86,6 +86,48 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
                 context.startActivity(intent);
 
             }
+            else if(se.getPosition()==11)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "comp");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==22)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "it");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==33)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "mech");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==44)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "civil");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==55)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "ele");
+                context.startActivity(intent);
+
+            }
+            else if(se.getPosition()==66)
+            {
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "entc");
+                context.startActivity(intent);
+
+            }
 
         }
 

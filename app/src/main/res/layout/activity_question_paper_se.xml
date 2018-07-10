@@ -17,7 +17,7 @@
         android:fontFamily="@font/roboto_mono_thin"
         android:paddingBottom="50sp"
         android:paddingTop="50sp"
-        android:text="Question Papers SE"
+        android:text="Second Year"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="60sp"

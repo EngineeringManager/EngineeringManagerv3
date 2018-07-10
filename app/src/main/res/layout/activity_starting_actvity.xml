@@ -16,6 +16,7 @@
         android:layout_width="300sp"
         android:layout_height="300sp"
         android:background="#F26092"
+
         android:layout_centerInParent="true">
 
         <EditText
@@ -28,6 +29,7 @@
             android:background="@drawable/edittext"
             android:drawableLeft="@drawable/ic_action_phone"
             android:ems="10"
+
             android:hint="Enter Phone number"
             android:inputType="number" />
 

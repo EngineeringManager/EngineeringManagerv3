@@ -1,3 +1,6 @@
+
+
+
 package com.dexterlabs.khand.engineeringmanager;
 
 import android.content.Context;
@@ -136,7 +139,7 @@ public class videoTuts  extends AppCompatActivity {
     }
 
     private void setUpAdapter() {
-       //Add units in each subject
+        //Add units in each subject
 
 
         secondLevel.add(q1);
@@ -151,9 +154,9 @@ public class videoTuts  extends AppCompatActivity {
         secondLevel.add(q10);
 
 
-     //Add topics to each units
+        //Add topics to each units
 
-       thirdLevelq1.put(q1[0], civilu1topics);
+        thirdLevelq1.put(q1[0], civilu1topics);
         thirdLevelq1.put(q1[1], civilu2topics);
         thirdLevelq1.put(q1[2], civilu3topics);
         thirdLevelq1.put(q1[3], civilu4topics);
