@@ -58,7 +58,7 @@ public class StartingActvity extends AppCompatActivity {
         String emailAdd = email.getText().toString();
 
         if (!(phone.length()==10)) {
-            phoneNumber.setError("Please enter a valid 10 digit phone number");
+            phoneNumber.setError("Please enter a valid  phone number");
             phoneNumber.requestFocus();
             return;
         }

@@ -71,7 +71,7 @@ public class videoTuts  extends AppCompatActivity {
             "Combustion 1","Combustion 2"};
 
 
-    String[] chemu5topics = new String [] {"Steam reforming","Lab preparation","Electrolysis of water","Water splitting",
+    String[] chemu5topics = new String [] {"Steam reforming","Lab preparation of Hydrogen","Electrolysis of water","Water splitting",
             "Hydrogen storage","Molecular hydrides","Saline hydrides","Hydrogen","Carbon","Allotropes"};
 
 
@@ -100,7 +100,148 @@ public class videoTuts  extends AppCompatActivity {
             "Star delta conversions","Ideal vs Practical Voltage","Ideal vs Practical Current","Superposition Theorem","Thevenins Theorem"};
 
 
-    //
+    //Electronics
+
+    String[] bxeu1topics = new String[] {"Half Wave Rectifier","Full Wave Bridge Rectifier","Capacitor Filter","Introduction to Clippers","Voltage Multiplier Circuits",
+            "Voltage Multiplier Circuits Part-2","Voltage Multiplier Circuits Part-3","Zener Diodes","LED - PhotoDiode"};
+
+
+
+
+    String[] bxeu2topics = new String[] {"Working of Transistors","DC Biasing, Load Line & Operating Point of Transistors","TRANSISTOR CHARATERISTICS",
+            "TRANSISTOR CHARATERISTICS Part-2","Transistor as an amplifier","Transistor as a switch","Enhancement-Type MOSFET"};
+
+
+
+
+    String[] bxeu3topics = new String[] {"Operational Amplifier","OPAMP INPUT MODES AND PARAMETERS","Negative Feedback in OP-AMP",
+            "Comparator","Summing Amplifier","DIFFERENTIATOR & INTEGRATOR","555 TIMER as Oscillator","Voltage Regulator IC"};
+
+
+
+
+
+    String[] bxeu4topics = new String[] {"Introduction to Digital Electronics","Digital Signal","Introduction to Boolean Algebra","Introduction to Boolean Algebra Part-2",
+            "Logic Gates and Circuit Simplification","Half Adder","Full Adder","Multiplexers","Demultiplexers","FLIP FLOP","D flip flop",
+            "Shift Register (SISO Mode)","Shift Register (PISO Mode)","Bidirectional Shift Register","Universal Shift Register","COUNTERS","Block Diagram & Architecture Of 8085 Microprocessor"};
+
+
+
+
+
+    String[] bxeu5topics = new String[] {"SCR characteristics and its working","DIAC working","TRIAC working","Introduction to Transducers",
+            "Thermal - Resistive & Inductive Transducer - PhotoTransistor","LVDT (LINEAR VARIABLE DIFFERENTIAL TRANSDUCER)"};
+
+
+
+
+    String[] bxeu6topics = new String[] {"INTRODUCTION TO COMMUNICATION SYSTEM","Elements of a Common Communication System","Bandwidth of Signals",
+            "Ieee frequency spectrum","Transmission Media","NEED OF MODULATION","Modulation Techniques","Cellular Mobile Communications",
+            "GSM architecture"};
+
+
+    //BME
+
+    String[] bmeu1topics = new String[] {"SHAFTS-AXLE , SPINDLE , COUNTER & INLINE SHAFTS-KEYS & COUPLING",
+            "Single Plate Clutch","Disc Brakes","Disc brakes working Part-2","Belts and Belt-Drives","Chain Drive","TYPES OF GEAR"};
+
+
+    String[] bmeu2topics = new String[] {"Mechanical properties of material","Mechanical properties of material Part-2","Mechanical properties of material Part-3",
+            "Four bar linkage Mechanism","Slider Crank Mechanism"};
+
+    String[] bmeu3topics = new String[] {"Casting and its special types","Casting and its special types","Forging process",
+            "SHEET METAL OPERATIONS","SHEET METAL OPERATIONS part-2","Metal Joining Processes","Sand Casting","ELECTRIC ARC WELDING"};
+
+
+    String[] bmeu4topics = new String[] {"MACHINE TOOL","CONSTRUCTION DETAILS OF LATHE MACHINE","DRILLING MACHINE","GRINDING MACHINE"};
+
+
+    String[] bmeu5topics = new String[] {"Thermodynamic Systems","Properties of Thermodynamics","Law of thermodynamics","Heatsink","HEAT ENGINE,HEAT PUMP AND REFRIGERATOR",
+            "How to Measure Temperature with a Thermocouple","Barometer","PRESSURE GAUGE (BOURDON GAUGE)","U-tube Manometer"};
+
+
+    String[] bmeu6topics = new String[] {"Energy Resources - Conventional and Non-Conventional","HYDRO-ELECTRIC POWER PLANT",
+            "STEAM POWER PLANT","Nuclear Power Plants","Wind Power Plant","Solar Photovoltaic Power","COCHRAN BOILER","2 Stroke Engine",
+            "FOUR STROKE PETROL ENGINE","Reciprocating pump","Centrifugal pump","Compressor","Refrigerator","Air Conditioner"};
+
+
+    //Physics
+    String[] phyu1topics = new String[] {"INTRODUCTION","CONCEPT OF THIN FILM, INTERFERENCE DUE TO THIN FRAME OF UNIFORM THICKNESS",
+            "CONCEPT OF THIN FILM, INTERFERENCE DUE TO THIN FRAME OF UNIFORM THICKNESS Part-2","INTERFERENCE DUE TO WEDGE SHAPED THIN FRAME",
+            "Formation of colours in thin films","NEWTON'S RING, ITS APPLICATION","OPTICAL FLATNESS OF FRAME","ANTI REFLECTION COATING",
+            "DIFFRACTION OF WAVES","CLASSES OF DIFFRACTION","Fraunhofer diffraction due to single slits","Conditions of Maxima and Minima",
+            "DIFFRACTION AT CIRCULAR APERTURE Part-1","DIFFRACTION AT CIRCULAR APERTURE Part-2","PLANE DIFFRACTION GRATING"};
+
+    String[] phyu2topics = new String[]{"Velocity,frequency,wavelength,Intensity and loudness,timbre of sound,reveration, reveration time, sabine's formaula",
+            "Velocity,frequency,wavelength,Intensity and loudness,timbre of sound,reveration, reveration time, sabine's formaula Part-2",
+            "Absorbtion of sound","Absorbent materials","Conditons for acoustics","Ultro sonics","Piezoelectric effect","Magnetostriction effect",
+            "Detection of Ultrasonic","Applications of ultrasonics"};
+
+    String[] phyu3topics = new String[] {"Polarization","Laser -1 Introduction,Properties,Absorption,Spontaneous Emission,Stimulated Emission",
+            "CHARACTERSTICS OF LASER LIGHT","LASERS (3 LEVEL AND 4 LEVEL)","APPLICATIONS OF LASER"};
+
+    String[] phyu4topics = new String[]{"Electron Band Theory of Solids","Free Electron Theory","Conductivity of a Semiconductor",
+            "Fermi level of intrinsic and extrinsic semiconductors","Fermi level variations in semiconductors","The Energy Band Diagram of the pn-junction",
+            "Working of Transistors","Hall Effect","Solar photovoltaics"};
+
+    String[] phyu5topics = new String[] {"Dual nature of radiation & Matter","De Broglie wavelength and Heisenberg's Uncertainty Principle",
+            "ELECTRON DIFFRATION BY SINGLE SLIT","Schrodinger Equation"};
+
+    String[] phyu6topics = new String[]{"Super conductivity, PROPERTIES,ISOTOPE EFFECT,BCS THEORY, TYPE 1 TYPE 2 SUPERCONDUCTORS",
+            "Super conductivity, PROPERTIES,ISOTOPE EFFECT,BCS THEORY, TYPE 1 TYPE 2 SUPERCONDUCTORS Part-2","Super conductivity, PROPERTIES,ISOTOPE EFFECT,BCS THEORY, TYPE 1 TYPE 2 SUPERCONDUCTORS Part-3",
+            "INTRODUCTION AND PROPERTIES OF NANOPARTICLES","Biological Nanoparticles: Synthesis & Applications",
+            "Synthesis of Silver Nanoparticles by Leaf Extract","Synthesis of Colloidal Nanoparticles",
+            "Application of Nano materials and its Technology"};
+
+
+    //Engineering Mechanics
+    String[] emu1topics = new String[] {"PRINCIPLES OF STATIC FORCES","Parallel Force System",
+            "Concurrent Force System","Resolution of Forces","Composition of Forces","Resultant of Concurrent Forces","Moment & Varignon's Theorem",
+            "Resultant of parallel force system","Couples","Equivalent force couple systems","Resultant of General system of Forces","Distributed Forces",
+            "Centroid of Some Plane Figure"};
+
+    String[] emu2topics = new String[] {"Kinematics","Equations of motion","Motion with Variable Acceleration",
+            "Curves and Motion Maps","Relative Motion, Dependent Motion","Newton's second law of motion"};
+
+    String[] emu3topics = new String[] {"Kinematics","Equations of motion","Polar Coordinates","Projectile Motion","Newton's Second Law and Circular Motion"};
+
+    String[] emu4topics = new String[] {"Work Energy Principle","Conservative & Nonconservative Forces","Law of conservation of energy",
+            "Impulse and Momentum","Direct Central Impact - Coefficient of Restitution","Conservation of Momentum","Impulse Momentum Principle"};
+
+    String[] emu5topics = new String[] {"FREE BODY DIAGRAM","Equilibrium of Coplanar Forces","Equilibrium parallel forces",
+            "Three forces in equilibrium","Types of Beams","Equilibrium of space force system"};
+
+    String[] emu6topics = new String[] {"Method of Joints in Truss","Method of Sections","Forces on Cables",
+            "Multi Force members","Friction","Laws of friction","Friction on Inclined Plane","The Wedge","Ladder Friction","Belt Drive"};
+
+    //Engineering M1
+
+    String[] m1u1topics= new String[]{"RANK OF MATRIX","EIGEN VALUES,EIGEN VECTORS","Normal form of a matrix","System of Linear Equations"
+            ,"System of Linear Equations Part-2","Linear Independence and Linear Dependence","Linear transformations","Orthogonal Transformation","Cayley Hamilton Theorem","Rotation and Transformation Matrices"};
+    String[] m1u2topics=  new String[]{"The Argand Diagram","DeMoivre's Theorem","Hyperbolic functions","Inverse hyperbolic functions","Logarithm of Complex Number","Find Real and Imaginary parts"};
+
+    String[] m1u3topics= new String[]{"Infinite Series","Infinite Sequence","Alternating Series","Absolute Convergence, Conditional Convergence"
+            ,"Successive Differentiation and Leibnitz Theorem"};
+
+    String[] m1u4topics= new String[]{"Taylor and Maclaurin Series","Taylor and Maclaurin Series - Example 2","L'Hospital's Rule and Indeterminate Quotients"};
+
+    String[] m1u5topics= new String[]{"Partial derivatives","Euler's Theorem on Homogeneous Function","Implicit Function","Total Derivative","Change of Independent Variable"};
+
+    String[] m1u6topics= new String[]{"The Jacobian","Errors and Approximations","MAXIMA AND MINIMA","Lagrange's theorem"};
+
+
+
+    // ENG M2
+
+
+
+
+
+
+    //Eng Drawing
+    String[]eg=new String[]{"Engineering Drawing  - Ekeeda Please follow all the videos from this channel."};
+
+
 
 
     LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
@@ -111,16 +252,12 @@ public class videoTuts  extends AppCompatActivity {
     LinkedHashMap<String, String[]> thirdLevelq5 = new LinkedHashMap<>();
     LinkedHashMap<String, String[]> thirdLevelq6 = new LinkedHashMap<>();
 
-
     LinkedHashMap<String, String[]> thirdLevelq7 = new LinkedHashMap<>();
     LinkedHashMap<String, String[]> thirdLevelq8 = new LinkedHashMap<>();
     LinkedHashMap<String, String[]> thirdLevelq9 = new LinkedHashMap<>();
 
-
     LinkedHashMap<String, String[]> thirdLevelq10 = new LinkedHashMap<>();
 
-//    LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//    LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
     /**
      * Second level array list
      */
@@ -171,6 +308,21 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq2.put(q2[5],electricalu6topics);
 
 
+        thirdLevelq3.put(q3[0],bxeu1topics);
+        thirdLevelq3.put(q3[1],bxeu2topics);
+        thirdLevelq3.put(q3[2],bxeu3topics);
+        thirdLevelq3.put(q3[3],bxeu4topics);
+        thirdLevelq3.put(q3[4],bxeu5topics);
+        thirdLevelq3.put(q3[5],bxeu6topics);
+
+
+        thirdLevelq4.put(q4[0],bmeu1topics);
+        thirdLevelq4.put(q4[1],bmeu2topics);
+        thirdLevelq4.put(q4[2],bmeu3topics);
+        thirdLevelq4.put(q4[3],bmeu4topics);
+        thirdLevelq4.put(q4[4],bmeu5topics);
+        thirdLevelq4.put(q4[5],bmeu6topics);
+
 
 
         thirdLevelq5.put(q5[0],chemu1topics);
@@ -179,41 +331,34 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq5.put(q5[3],chemu4topics);
         thirdLevelq5.put(q5[4],chemu5topics);
         thirdLevelq5.put(q5[5],chemu6topics);
-//        thirdLevelq1.put(q1[0], civilu1t2);
-        //thirdLevelq1.put(q1[0], civilu1t3);
-//        thirdLevelq1.put(q1[0], des1[1]);
-//        thirdLevelq1.put(q1[0], des1[2]);
-        /*
-        for
-        Strng temp[]=des1.split(",")        */
 
-//        thirdLevelq1.put(q1[0], des1[3]);
-//        thirdLevelq1.put(q1[0], des1[4]);
-//        thirdLevelq1.put(q1[0], des1[5]);
-//        thirdLevelq1.put(q1[0], des1[6]);
-//        thirdLevelq1.put(q1[0], des1[7]);
-//        thirdLevelq1.put(q1[0], des1[8]);
 
-//        thirdLevelq2.put(q2[0], des3);
-//        thirdLevelq2.put(q2[1], des4);
-//        thirdLevelq2.put(q2[2], des2);
-//        thirdLevelq2.put(q2[3], des1);
-//
-//        thirdLevelq3.put(q3[0], des5);
-//        thirdLevelq3.put(q3[1], des4);
-//        thirdLevelq3.put(q3[2], des2);
-//        thirdLevelq3.put(q3[3], des1);
-//
-//        thirdLevelq4.put(q4[0],des1);
-//        thirdLevelq4.put(q4[1],des2);
-//        thirdLevelq4.put(q4[2],des3);
-//        thirdLevelq4.put(q4[3],des4);
-//
-//        thirdLevelq5.put(q5[0], des5);
-//        thirdLevelq5.put(q5[1], des4);
-//        thirdLevelq5.put(q5[2], des2);
-//        thirdLevelq5.put(q5[3], des1);
-//
+        thirdLevelq6.put(q6[0],eg);
+        thirdLevelq6.put(q6[1],eg);
+        thirdLevelq6.put(q6[2],eg);
+        thirdLevelq6.put(q6[3],eg);
+        thirdLevelq6.put(q6[4],eg);
+        thirdLevelq6.put(q6[5],eg);
+
+
+
+
+        thirdLevelq9.put(q9[0],emu1topics);
+        thirdLevelq9.put(q9[1],emu2topics);
+        thirdLevelq9.put(q9[2],emu3topics);
+        thirdLevelq9.put(q9[3],emu4topics);
+        thirdLevelq9.put(q9[4],emu5topics);
+        thirdLevelq9.put(q9[5],emu6topics);
+
+
+
+
+        thirdLevelq10.put(q10[0],phyu1topics);
+        thirdLevelq10.put(q10[1],phyu2topics);
+        thirdLevelq10.put(q10[2],phyu3topics);
+        thirdLevelq10.put(q10[3],phyu4topics);
+        thirdLevelq10.put(q10[4],phyu5topics);
+        thirdLevelq10.put(q10[5],phyu6topics);
 
         data.add(thirdLevelq1);
         data.add(thirdLevelq2);
