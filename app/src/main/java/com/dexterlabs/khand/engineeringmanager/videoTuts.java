@@ -25,7 +25,11 @@ public class videoTuts  extends AppCompatActivity {
 
 //    Start adding subject names comma seperated
 
-    String[] parent = new String[]{"Basic Civil Engineering","Basic Electrical Engineering","Basic Electronics Engineering","Basic Mechanical Engineering","Engineering Chemistry","Engineering Graphics","Engineering Mathematics","Engineering Mathematics-II","Engineering Mechanics","Engineering Physics"};
+    String[] parent = new String[]{"Basic Civil Engineering","Basic Electrical Engineering",
+            "Basic Electronics Engineering","Basic Mechanical Engineering",
+            "Engineering Chemistry","Engineering Graphics",
+            "Engineering Mathematics-I","Engineering Mathematics-II",
+            "Engineering Mechanics","Engineering Physics"};
 
     String[] q1 = new String[]{"Unit 1","Unit 2","Unit 3","Unit 4","Unit 5","Unit 6"};
     String[] q2 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
@@ -225,9 +229,11 @@ public class videoTuts  extends AppCompatActivity {
 
     String[] m1u4topics= new String[]{"Taylor and Maclaurin Series","Taylor and Maclaurin Series - Example 2","L'Hospital's Rule and Indeterminate Quotients"};
 
-    String[] m1u5topics= new String[]{"Partial derivatives","Euler's Theorem on Homogeneous Function","Implicit Function","Total Derivative","Change of Independent Variable"};
+    String[] m1u5topics= new String[]{"Partial derivatives","Euler's Theorem on Homogeneous Function"
+            ,"Implicit Function","Total Derivative","Change of Independent Variable"};
 
-    String[] m1u6topics= new String[]{"The Jacobian","Errors and Approximations","MAXIMA AND MINIMA","Lagrange's theorem"};
+    String[] m1u6topics= new String[]{"The Jacobian","Errors and Approximations",
+            "MAXIMA AND MINIMA","Lagrange's theorem"};
 
 
 
@@ -340,7 +346,12 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq6.put(q6[4],eg);
         thirdLevelq6.put(q6[5],eg);
 
-
+        thirdLevelq7.put(q7[0],m1u1topics);
+        thirdLevelq7.put(q7[1],m1u2topics);
+        thirdLevelq7.put(q7[2],m1u3topics);
+        thirdLevelq7.put(q7[3],m1u4topics);
+        thirdLevelq7.put(q7[4],m1u5topics);
+        thirdLevelq7.put(q7[5],m1u6topics);
 
 
         thirdLevelq9.put(q9[0],emu1topics);

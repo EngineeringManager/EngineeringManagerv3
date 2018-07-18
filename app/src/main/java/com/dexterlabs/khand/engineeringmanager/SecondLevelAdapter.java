@@ -397,6 +397,38 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
 
 
+                    //Eng M1
+
+                String[] m1Topics= new String[]{"RANK OF MATRIX","EIGEN VALUES,EIGEN VECTORS","Normal form of a matrix","System of Linear Equations"
+                        ,"System of Linear Equations Part-2","Linear Independence and Linear Dependence","Linear transformations","Orthogonal Transformation","Cayley Hamilton Theorem","Rotation and Transformation Matrices"
+                        ,"The Argand Diagram","DeMoivre's Theorem","Hyperbolic functions","Inverse hyperbolic functions","Logarithm of Complex Number","Find Real and Imaginary parts",
+                        "Infinite Series","Infinite Sequence","Alternating Series","Absolute Convergence, Conditional Convergence"
+                        ,"Successive Differentiation and Leibnitz Theorem",
+                        "Taylor and Maclaurin Series","Taylor and Maclaurin Series - Example 2","L'Hospital's Rule and Indeterminate Quotients",
+                        "Partial derivatives","Euler's Theorem on Homogeneous Function","Implicit Function","Total Derivative","Change of Independent Variable",
+                        "The Jacobian","Errors and Approximations","MAXIMA AND MINIMA","Lagrange's theorem"};
+
+
+                String[] m1vl= new String[]{"Yzvjelfwm3A","WTQ_Dwwmqlo","liAqh2WbC1g","NNmiOoWt86M","a2z7sZ4MSqo","yLi8RxqfowA","4PCktDZJH8E","dHOuzlI7Jxk","kb0598ItKdg","NsiJNvsuO3s",
+                        "Pdmg4V3eXZU","MO6qU3SCLbM","Wfpb-fniSSk","QEL-UbvA93k","ve7CmEIEv_U","nBZsQeXJUPY",
+                        "XC-M-oTVR_0","-0eCaT4cIhM","-K9Qt6YUIrI","6hOeqjoQvNw","01LzAU__J-0","2VpyJXiMkRw",
+                        "cjPoEZ0I5wQ","Os8OtXFBLkY","Sp0G-VggAoU",
+                        "AXqhWeUEtQU","palSdK9P-ns","78NIJFMAX30","M-OZWTc5fN4","yl2NLqflIRQ",
+                        "Bw5yEqwMjQU","KmHiVDrvhD8","gLWUrF_cOwQ","L7P2JZRE9bE"};
+
+
+
+                for (int i=0;i<m1Topics.length;i++) {
+                    if (text.equals(m1Topics[i])) {
+                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",m1vl[i]);
+                        context.startActivity(intent);
+                    }
+                }
+
+
+
 
 
             }
