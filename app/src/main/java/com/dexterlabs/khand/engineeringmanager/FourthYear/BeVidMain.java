@@ -80,9 +80,23 @@ public class BeVidMain extends AppCompatActivity{
                 //Add topics to each units
                 //DA
 
-                String[] dau1topics=new String[]{"sample topic"};
-                String[] dau2topics=new String[]{"st"};
-                String[] dau3topics=new String[]{"st"};
+                String[] dau1topics = new String[] {"Big data overview","BI Vs Data Science",
+                        "BI Vs Data Science Part-2","BI Vs Data Science Part-3",
+                        "Drivers of Big Data","Emerging Big Data Ecosystem and new approach",
+                        "Emerging Big Data Ecosystem and new approach (hindi)",
+                        "Data Analytic Life Cycle"};
+
+
+                String[] dau2topics = new String[] {"Hypothesis testing","Intro to Hypo thesis testing",
+                        "Wilcoxon rank–sum test","Type 1 type 2 errors, Power and Sample Size",
+                        "ANNOVA","Clustering-Intro","Clustering Overview","K means- Use cases"};
+
+
+                String[] dau3topics = new String[] {"Association Rules- Overview Basic Concepts",
+                        "Association Rules- Analysis","Market Basket Analysis , Support and Confidence",
+                        "A-priori algorithm","Regression","Linear Regression",
+                        "linear Regression Solved example","Logistics"};
+
 
                 thirdLevelq1.put(q1[0], dau1topics);
                 thirdLevelq1.put(q1[1], dau2topics);
@@ -91,9 +105,17 @@ public class BeVidMain extends AppCompatActivity{
 
                 //HPC
 
-                String[] hpcu1topics=new String[]{"sample topic"};
-                String[] hpcu2topics=new String[]{"st"};
-                String[] hpcu3topics=new String[]{"st"};
+
+
+
+                String[] hpcu1topics = new String[] {"Parallel Computing and types of Architecture","Parallel Computing Basics","Dichotomy of Parallel Computing Platforms"};
+
+
+                String[] hpcu2topics = new String[] {"GPU and its working","Decomposition technique"};
+
+
+                String[] hpcu3topics = new String[] {"Scatter and gather"};
+
                 thirdLevelq2.put(q2[0], hpcu1topics);
                 thirdLevelq2.put(q2[1], hpcu2topics);
                 thirdLevelq2.put(q2[2], hpcu3topics);
@@ -103,9 +125,17 @@ public class BeVidMain extends AppCompatActivity{
 
                 //AIR
 
-                String[] airu1topics=new String[]{"sample topic"};
-                String[] airu2topics=new String[]{"st"};
-                String[] airu3topics=new String[]{"st"};
+
+
+                String[] airu1topics = new String[] {"Artificial Intelligence","State Space search",
+                        "Search Strategies","8 Puzzle Problem","Hill Climb","Hill Climb (hindi)",
+                        "A*","Tabu Search"};
+
+                String[] airu2topics = new String[] {"Goal Stack Planning","STRIPS","N Queens"};
+
+                String[] airu3topics = new String[] {"Forward and Backward Chaining","PL vs FOL",
+                        "Conceptual Dependency","Knowledge Representation"};
+
                 thirdLevelq3.put(q3[1], airu1topics);
                 thirdLevelq3.put(q3[2], airu2topics);
                 thirdLevelq3.put(q3[3], airu3topics);
@@ -113,12 +143,59 @@ public class BeVidMain extends AppCompatActivity{
 
                 //MC
 
-                String[] mcu1topics=new String[]{"sample topic"};
-                String[] mcu2topics=new String[]{"st"};
-                String[] mcu3topics=new String[]{"st"};
+                String[] mcu1topics = new String[]  {"1G, 2G, 3G, 4G, 5G of Cellular Mobile Communications",
+                        "GSM,IMSI,SIM,IMEI,The GSM Architecture,HLR, VLR and EIR",
+                        "Mobile Switching Center","Mobile Phones and Base Stations",
+                        "Personal Communication Services (PCS)","(PCS Architecture)",
+                        "multipath fading","Long and Short Term Fading","Line of sight",
+                        "Signal-to-Noise Ratio -1","Signal-to-Noise Ratio -2 ",
+                        "Free Space Path Loss","Path Loss","Radio Spectrum Animation"};
+
+                String[] mcu2topics = new String[] {"GSM architecture","Mobility management",
+                        "Cell splitting & cell sectoring",
+                        "Cell splitting & Cell Site ,Mobile Computing , Wireless Communication ",
+                        "CO-CHANNEL INTERFERENCE","Frequency Reuse and Co-Channel Interference",
+                        "Frequency Reuse Concept ","Handover in GSM ,Hard Handoff vs Soft Handoff",
+                        "Hard hand off and Soft Hand off"};
+
+
+
+
+                String[] mcu3topics = new String[] {"SDMA","FDMA, TDMA and CDMA","FHSS ",
+                        "Spread Spectrum Technique and Direct Sequence Spread Spectrum"," DSSS",
+                        "FHSS and DSSS","MSK, GMSK, FSK, GFSK Modulator","GMSK","8PSK",
+                        "Modulation & QAM Basics","OFDM/ OFDMA  - Fundamentals of 4G (LTE)",
+                        "Orthogonal Frequency Division Multiplexing",
+                        "MAC,Near and far terminals,Hidden and Exposed Terminals,SDMA,FDMA,TDMA,CDMA",
+                        "SDMA-1"};
+
+
+                String[] mcu4topics = new String[] {"GSM Call Flow","GPRS Architecture-1",
+                        "GPRS Architecture -2","2G GSM Location Update",
+                        "GSM Architecture,Call Routing,GSM Architecture in Mobile computing",
+                        "IMSI, TMSI and MSISDN ","Traffic Channels","Logical channels",
+                        "BURST TRANSMISSION","SPEECH CODING"};
+
+
+                String[] mcu5topics = new String[] {"EDGE ","Working Principle Of EDGE",
+                        "3G WCDMA (UMTS) ","CDMA","CDMA 2000 Architecure",
+                        "3G Architecture,UTRAN Architecture,UMTS call flow",
+                        "Mpirical - UMTS Architecture","HSPA","HSDPA ",
+                        "HSDPA Tutorial Artitecture ","HSDPA ","3.5G-HSDPA-HSUPA",
+                        "4G LTE Fundamentals"};
+
+
+
+                String[] mcu6topics = new String[] {"What Is a Millimeter Wave","LTE-A :super fast mobile internet","What is LTE-A?"};
+
+
+
                 thirdLevelq2.put(q4[0], mcu1topics);
                 thirdLevelq2.put(q4[1], mcu2topics);
                 thirdLevelq2.put(q4[2], mcu3topics);
+                thirdLevelq2.put(q4[3], mcu4topics);
+                thirdLevelq2.put(q4[4], mcu5topics);
+                thirdLevelq2.put(q4[5], mcu6topics);
 
 
                 //OR
@@ -162,366 +239,366 @@ public class BeVidMain extends AppCompatActivity{
 
             }
 
-//            else if(info.equals("it"))
-//            {
-//                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
-//
-//                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//
-//                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] des1 = new String[]{"blah blah blah"};
-//                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
-//                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//
-//                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
-//                /**
-//                 * Second level array list
-//                 */
-//                List<String[]> secondLevel = new ArrayList<>();
-//                /**
-//                 * Inner level data
-//                 */
-//                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
-//
-//
-//                secondLevel.add(q1);
-//                secondLevel.add(q2);
-//                secondLevel.add(q3);
-//                thirdLevelq1.put(q1[0], des1);
-//                thirdLevelq1.put(q1[1], des2);
-//                thirdLevelq1.put(q1[2], des2);
-//                thirdLevelq1.put(q1[3], des1);
-//
-//
-//                thirdLevelq2.put(q2[0], des3);
-//                thirdLevelq2.put(q2[1], des4);
-//                thirdLevelq2.put(q2[2], des2);
-//                thirdLevelq2.put(q2[3], des1);
-//                thirdLevelq3.put(q3[0], des5);
-//
-//                thirdLevelq3.put(q3[1], des4);
-//                thirdLevelq3.put(q3[2], des2);
-//                thirdLevelq3.put(q3[3], des1);
-//
-//
-//                data.add(thirdLevelq1);
-//                data.add(thirdLevelq2);
-//                data.add(thirdLevelq3);
-//                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
-//                //passing three level of information to constructor
-//
-//
-//                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
-//
-//                expandableListView.setAdapter(beVidThirdAdapter);
-//                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-//                    int previousGroup = -1;
-//
-//                    @Override
-//                    public void onGroupExpand(int groupPosition) {
-//                        if (groupPosition != previousGroup)
-//                            expandableListView.collapseGroup(previousGroup);
-//                        previousGroup = groupPosition;
-//                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//
-//                });
-//
-//
-//            }
-//
-//
-//
-//            else if(info.equals("mech")) {
-//                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
-//
-//                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//
-//                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] des1 = new String[]{"blah blah blah"};
-//                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
-//                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//
-//                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
-//                /**
-//                 * Second level array list
-//                 */
-//                List<String[]> secondLevel = new ArrayList<>();
-//                /**
-//                 * Inner level data
-//                 */
-//                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
-//
-//
-//                secondLevel.add(q1);
-//                secondLevel.add(q2);
-//                secondLevel.add(q3);
-//                thirdLevelq1.put(q1[0], des1);
-//                thirdLevelq1.put(q1[1], des2);
-//                thirdLevelq1.put(q1[2], des2);
-//                thirdLevelq1.put(q1[3], des1);
-//
-//
-//                thirdLevelq2.put(q2[0], des3);
-//                thirdLevelq2.put(q2[1], des4);
-//                thirdLevelq2.put(q2[2], des2);
-//                thirdLevelq2.put(q2[3], des1);
-//                thirdLevelq3.put(q3[0], des5);
-//
-//                thirdLevelq3.put(q3[1], des4);
-//                thirdLevelq3.put(q3[2], des2);
-//                thirdLevelq3.put(q3[3], des1);
-//
-//
-//                data.add(thirdLevelq1);
-//                data.add(thirdLevelq2);
-//                data.add(thirdLevelq3);
-//                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
-//                //passing three level of information to constructor
-//
-//
-//                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
-//
-//                expandableListView.setAdapter(beVidThirdAdapter);
-//                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-//                    int previousGroup = -1;
-//
-//                    @Override
-//                    public void onGroupExpand(int groupPosition) {
-//                        if (groupPosition != previousGroup)
-//                            expandableListView.collapseGroup(previousGroup);
-//                        previousGroup = groupPosition;
-//                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//
-//                });
-//
-//            }
-//
-//
-//            else if(info.equals("civil")) {
-//                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
-//
-//                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//
-//                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] des1 = new String[]{"blah blah blah"};
-//                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
-//                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//
-//                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
-//                /**
-//                 * Second level array list
-//                 */
-//                List<String[]> secondLevel = new ArrayList<>();
-//                /**
-//                 * Inner level data
-//                 */
-//                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
-//
-//
-//                secondLevel.add(q1);
-//                secondLevel.add(q2);
-//                secondLevel.add(q3);
-//                thirdLevelq1.put(q1[0], des1);
-//                thirdLevelq1.put(q1[1], des2);
-//                thirdLevelq1.put(q1[2], des2);
-//                thirdLevelq1.put(q1[3], des1);
-//
-//
-//                thirdLevelq2.put(q2[0], des3);
-//                thirdLevelq2.put(q2[1], des4);
-//                thirdLevelq2.put(q2[2], des2);
-//                thirdLevelq2.put(q2[3], des1);
-//                thirdLevelq3.put(q3[0], des5);
-//
-//                thirdLevelq3.put(q3[1], des4);
-//                thirdLevelq3.put(q3[2], des2);
-//                thirdLevelq3.put(q3[3], des1);
-//
-//
-//                data.add(thirdLevelq1);
-//                data.add(thirdLevelq2);
-//                data.add(thirdLevelq3);
-//                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
-//                //passing three level of information to constructor
-//
-//
-//                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
-//
-//                expandableListView.setAdapter(beVidThirdAdapter);
-//                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-//                    int previousGroup = -1;
-//
-//                    @Override
-//                    public void onGroupExpand(int groupPosition) {
-//                        if (groupPosition != previousGroup)
-//                            expandableListView.collapseGroup(previousGroup);
-//                        previousGroup = groupPosition;
-//                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//            }
-//
-//
-//            else if(info.equals("ele")) {
-//                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
-//
-//                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//
-//                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] des1 = new String[]{"blah blah blah"};
-//                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
-//                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//
-//                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
-//                /**
-//                 * Second level array list
-//                 */
-//                List<String[]> secondLevel = new ArrayList<>();
-//                /**
-//                 * Inner level data
-//                 */
-//                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
-//
-//
-//                secondLevel.add(q1);
-//                secondLevel.add(q2);
-//                secondLevel.add(q3);
-//                thirdLevelq1.put(q1[0], des1);
-//                thirdLevelq1.put(q1[1], des2);
-//                thirdLevelq1.put(q1[2], des2);
-//                thirdLevelq1.put(q1[3], des1);
-//
-//
-//                thirdLevelq2.put(q2[0], des3);
-//                thirdLevelq2.put(q2[1], des4);
-//                thirdLevelq2.put(q2[2], des2);
-//                thirdLevelq2.put(q2[3], des1);
-//                thirdLevelq3.put(q3[0], des5);
-//
-//                thirdLevelq3.put(q3[1], des4);
-//                thirdLevelq3.put(q3[2], des2);
-//                thirdLevelq3.put(q3[3], des1);
-//
-//
-//                data.add(thirdLevelq1);
-//                data.add(thirdLevelq2);
-//                data.add(thirdLevelq3);
-//                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
-//                //passing three level of information to constructor
-//
-//
-//                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
-//
-//                expandableListView.setAdapter(beVidThirdAdapter);
-//                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-//                    int previousGroup = -1;
-//
-//                    @Override
-//                    public void onGroupExpand(int groupPosition) {
-//                        if (groupPosition != previousGroup)
-//                            expandableListView.collapseGroup(previousGroup);
-//                        previousGroup = groupPosition;
-//                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//
-//                });
-//
-//            }
-//            else if(info.equals("entc")) {
-//                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
-//
-//                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//
-//                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
-//                String[] des1 = new String[]{"blah blah blah"};
-//                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
-//                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
-//
-//                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
-//                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
-//                /**
-//                 * Second level array list
-//                 */
-//                List<String[]> secondLevel = new ArrayList<>();
-//                /**
-//                 * Inner level data
-//                 */
-//                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
-//
-//
-//                secondLevel.add(q1);
-//                secondLevel.add(q2);
-//                secondLevel.add(q3);
-//                thirdLevelq1.put(q1[0], des1);
-//                thirdLevelq1.put(q1[1], des2);
-//                thirdLevelq1.put(q1[2], des2);
-//                thirdLevelq1.put(q1[3], des1);
-//
-//
-//                thirdLevelq2.put(q2[0], des3);
-//                thirdLevelq2.put(q2[1], des4);
-//                thirdLevelq2.put(q2[2], des2);
-//                thirdLevelq2.put(q2[3], des1);
-//                thirdLevelq3.put(q3[0], des5);
-//
-//                thirdLevelq3.put(q3[1], des4);
-//                thirdLevelq3.put(q3[2], des2);
-//                thirdLevelq3.put(q3[3], des1);
-//
-//
-//                data.add(thirdLevelq1);
-//                data.add(thirdLevelq2);
-//                data.add(thirdLevelq3);
-//                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
-//                //passing three level of information to constructor
-//
-//
-//                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
-//
-//                expandableListView.setAdapter(beVidThirdAdapter);
-//                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-//                    int previousGroup = -1;
-//
-//                    @Override
-//                    public void onGroupExpand(int groupPosition) {
-//                        if (groupPosition != previousGroup)
-//                            expandableListView.collapseGroup(previousGroup);
-//                        previousGroup = groupPosition;
-//                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
-//                    }
-//
-//
-//                });
-//            }
+            else if(info.equals("it"))
+            {
+                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
+
+                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+
+                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] des1 = new String[]{"blah blah blah"};
+                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
+                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+
+                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
+                /**
+                 * Second level array list
+                 */
+                List<String[]> secondLevel = new ArrayList<>();
+                /**
+                 * Inner level data
+                 */
+                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
+
+
+                secondLevel.add(q1);
+                secondLevel.add(q2);
+                secondLevel.add(q3);
+                thirdLevelq1.put(q1[0], des1);
+                thirdLevelq1.put(q1[1], des2);
+                thirdLevelq1.put(q1[2], des2);
+                thirdLevelq1.put(q1[3], des1);
+
+
+                thirdLevelq2.put(q2[0], des3);
+                thirdLevelq2.put(q2[1], des4);
+                thirdLevelq2.put(q2[2], des2);
+                thirdLevelq2.put(q2[3], des1);
+                thirdLevelq3.put(q3[0], des5);
+
+                thirdLevelq3.put(q3[1], des4);
+                thirdLevelq3.put(q3[2], des2);
+                thirdLevelq3.put(q3[3], des1);
+
+
+                data.add(thirdLevelq1);
+                data.add(thirdLevelq2);
+                data.add(thirdLevelq3);
+                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
+                //passing three level of information to constructor
+
+
+                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
+
+                expandableListView.setAdapter(beVidThirdAdapter);
+                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+                    int previousGroup = -1;
+
+                    @Override
+                    public void onGroupExpand(int groupPosition) {
+                        if (groupPosition != previousGroup)
+                            expandableListView.collapseGroup(previousGroup);
+                        previousGroup = groupPosition;
+                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                    }
+
+
+                });
+
+
+            }
+
+
+
+            else if(info.equals("mech")) {
+                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
+
+                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+
+                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] des1 = new String[]{"blah blah blah"};
+                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
+                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+
+                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
+                /**
+                 * Second level array list
+                 */
+                List<String[]> secondLevel = new ArrayList<>();
+                /**
+                 * Inner level data
+                 */
+                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
+
+
+                secondLevel.add(q1);
+                secondLevel.add(q2);
+                secondLevel.add(q3);
+                thirdLevelq1.put(q1[0], des1);
+                thirdLevelq1.put(q1[1], des2);
+                thirdLevelq1.put(q1[2], des2);
+                thirdLevelq1.put(q1[3], des1);
+
+
+                thirdLevelq2.put(q2[0], des3);
+                thirdLevelq2.put(q2[1], des4);
+                thirdLevelq2.put(q2[2], des2);
+                thirdLevelq2.put(q2[3], des1);
+                thirdLevelq3.put(q3[0], des5);
+
+                thirdLevelq3.put(q3[1], des4);
+                thirdLevelq3.put(q3[2], des2);
+                thirdLevelq3.put(q3[3], des1);
+
+
+                data.add(thirdLevelq1);
+                data.add(thirdLevelq2);
+                data.add(thirdLevelq3);
+                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
+                //passing three level of information to constructor
+
+
+                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
+
+                expandableListView.setAdapter(beVidThirdAdapter);
+                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+                    int previousGroup = -1;
+
+                    @Override
+                    public void onGroupExpand(int groupPosition) {
+                        if (groupPosition != previousGroup)
+                            expandableListView.collapseGroup(previousGroup);
+                        previousGroup = groupPosition;
+                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                    }
+
+
+                });
+
+            }
+
+
+            else if(info.equals("civil")) {
+                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
+
+                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+
+                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] des1 = new String[]{"blah blah blah"};
+                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
+                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+
+                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
+                /**
+                 * Second level array list
+                 */
+                List<String[]> secondLevel = new ArrayList<>();
+                /**
+                 * Inner level data
+                 */
+                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
+
+
+                secondLevel.add(q1);
+                secondLevel.add(q2);
+                secondLevel.add(q3);
+                thirdLevelq1.put(q1[0], des1);
+                thirdLevelq1.put(q1[1], des2);
+                thirdLevelq1.put(q1[2], des2);
+                thirdLevelq1.put(q1[3], des1);
+
+
+                thirdLevelq2.put(q2[0], des3);
+                thirdLevelq2.put(q2[1], des4);
+                thirdLevelq2.put(q2[2], des2);
+                thirdLevelq2.put(q2[3], des1);
+                thirdLevelq3.put(q3[0], des5);
+
+                thirdLevelq3.put(q3[1], des4);
+                thirdLevelq3.put(q3[2], des2);
+                thirdLevelq3.put(q3[3], des1);
+
+
+                data.add(thirdLevelq1);
+                data.add(thirdLevelq2);
+                data.add(thirdLevelq3);
+                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
+                //passing three level of information to constructor
+
+
+                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
+
+                expandableListView.setAdapter(beVidThirdAdapter);
+                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+                    int previousGroup = -1;
+
+                    @Override
+                    public void onGroupExpand(int groupPosition) {
+                        if (groupPosition != previousGroup)
+                            expandableListView.collapseGroup(previousGroup);
+                        previousGroup = groupPosition;
+                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+
+
+            else if(info.equals("ele")) {
+                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
+
+                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+
+                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] des1 = new String[]{"blah blah blah"};
+                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
+                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+
+                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
+                /**
+                 * Second level array list
+                 */
+                List<String[]> secondLevel = new ArrayList<>();
+                /**
+                 * Inner level data
+                 */
+                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
+
+
+                secondLevel.add(q1);
+                secondLevel.add(q2);
+                secondLevel.add(q3);
+                thirdLevelq1.put(q1[0], des1);
+                thirdLevelq1.put(q1[1], des2);
+                thirdLevelq1.put(q1[2], des2);
+                thirdLevelq1.put(q1[3], des1);
+
+
+                thirdLevelq2.put(q2[0], des3);
+                thirdLevelq2.put(q2[1], des4);
+                thirdLevelq2.put(q2[2], des2);
+                thirdLevelq2.put(q2[3], des1);
+                thirdLevelq3.put(q3[0], des5);
+
+                thirdLevelq3.put(q3[1], des4);
+                thirdLevelq3.put(q3[2], des2);
+                thirdLevelq3.put(q3[3], des1);
+
+
+                data.add(thirdLevelq1);
+                data.add(thirdLevelq2);
+                data.add(thirdLevelq3);
+                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
+                //passing three level of information to constructor
+
+
+                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
+
+                expandableListView.setAdapter(beVidThirdAdapter);
+                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+                    int previousGroup = -1;
+
+                    @Override
+                    public void onGroupExpand(int groupPosition) {
+                        if (groupPosition != previousGroup)
+                            expandableListView.collapseGroup(previousGroup);
+                        previousGroup = groupPosition;
+                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                    }
+
+
+                });
+
+            }
+            else if(info.equals("entc")) {
+                String[] parent = new String[]{"Subject name daalo 1", "Subject name daalo 2", "Subject name daalo 3"};
+
+                String[] q1 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+
+                String[] q2 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] q3 = new String[]{"u 1", "u 2", "u 3", "u 4"};
+                String[] des1 = new String[]{"blah blah blah"};
+                String[] des2 = new String[]{"blah blah blah links dhundo re blah blah blah", "asdfasdfasdfasdfasdf asfdsadfasfadsf", "login", "123", "123", "login", "123", "123", "123"};
+                String[] des3 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des4 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+                String[] des5 = new String[]{"blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah"};
+
+                LinkedHashMap<String, String[]> thirdLevelq1 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq2 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
+                /**
+                 * Second level array list
+                 */
+                List<String[]> secondLevel = new ArrayList<>();
+                /**
+                 * Inner level data
+                 */
+                List<LinkedHashMap<String, String[]>> data = new ArrayList<>();
+
+
+                secondLevel.add(q1);
+                secondLevel.add(q2);
+                secondLevel.add(q3);
+                thirdLevelq1.put(q1[0], des1);
+                thirdLevelq1.put(q1[1], des2);
+                thirdLevelq1.put(q1[2], des2);
+                thirdLevelq1.put(q1[3], des1);
+
+
+                thirdLevelq2.put(q2[0], des3);
+                thirdLevelq2.put(q2[1], des4);
+                thirdLevelq2.put(q2[2], des2);
+                thirdLevelq2.put(q2[3], des1);
+                thirdLevelq3.put(q3[0], des5);
+
+                thirdLevelq3.put(q3[1], des4);
+                thirdLevelq3.put(q3[2], des2);
+                thirdLevelq3.put(q3[3], des1);
+
+
+                data.add(thirdLevelq1);
+                data.add(thirdLevelq2);
+                data.add(thirdLevelq3);
+                expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
+                //passing three level of information to constructor
+
+
+                BeVidThirdAdapter beVidThirdAdapter = new BeVidThirdAdapter(this, parent, secondLevel, data);
+
+                expandableListView.setAdapter(beVidThirdAdapter);
+                expandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+                    int previousGroup = -1;
+
+                    @Override
+                    public void onGroupExpand(int groupPosition) {
+                        if (groupPosition != previousGroup)
+                            expandableListView.collapseGroup(previousGroup);
+                        previousGroup = groupPosition;
+                        Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                    }
+
+
+                });
+            }
 
 
 
