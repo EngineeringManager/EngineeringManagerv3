@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dexterlabs.khand.engineeringmanager.R;
 import com.dexterlabs.khand.engineeringmanager.webview;
@@ -95,9 +96,11 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             }
             else if(se.getPosition()==22)
             {
-                Intent intent=new Intent(context,SeVidMain.class);
+               /* Intent intent=new Intent(context,SeVidMain.class);
                 intent.putExtra("dept", "it");
-                context.startActivity(intent);
+                context.startActivity(intent);*/
+                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+
 
             }
             else if(se.getPosition()==33)
@@ -106,26 +109,36 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
                 intent.putExtra("dept", "mech");
                 context.startActivity(intent);
 
+/*
+                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+*/
+
             }
             else if(se.getPosition()==44)
             {
-                Intent intent=new Intent(context,SeVidMain.class);
+                /*Intent intent=new Intent(context,SeVidMain.class);
                 intent.putExtra("dept", "civil");
-                context.startActivity(intent);
+                context.startActivity(intent);*/
+                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+
 
             }
             else if(se.getPosition()==55)
             {
-                Intent intent=new Intent(context,SeVidMain.class);
+               /* Intent intent=new Intent(context,SeVidMain.class);
                 intent.putExtra("dept", "ele");
-                context.startActivity(intent);
+                context.startActivity(intent);*/
+                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+
 
             }
             else if(se.getPosition()==66)
             {
-                Intent intent=new Intent(context,SeVidMain.class);
+               /* Intent intent=new Intent(context,SeVidMain.class);
                 intent.putExtra("dept", "entc");
-                context.startActivity(intent);
+                context.startActivity(intent);*/
+                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+
 
             }
 
