@@ -128,12 +128,17 @@ public class Home extends AppCompatActivity
         //   showInterstitial();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//            Intent a = new Intent(Home.this, Home.class);
+//            startActivity(a);
+//        } else {
+//            super.onBackPressed();
+//
+//        }
 
-        }
+        finish();
+
 
 
     }

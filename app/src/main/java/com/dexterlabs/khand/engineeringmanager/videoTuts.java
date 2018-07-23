@@ -346,13 +346,13 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq6.put(q6[4],eg);
         thirdLevelq6.put(q6[5],eg);
 
-     /*   thirdLevelq7.put(q7[0],m1u1topics);
+        thirdLevelq7.put(q7[0],m1u1topics);
         thirdLevelq7.put(q7[1],m1u2topics);
         thirdLevelq7.put(q7[2],m1u3topics);
         thirdLevelq7.put(q7[3],m1u4topics);
         thirdLevelq7.put(q7[4],m1u5topics);
         thirdLevelq7.put(q7[5],m1u6topics);
-    */
+
 
         thirdLevelq9.put(q9[0],emu1topics);
         thirdLevelq9.put(q9[1],emu2topics);
