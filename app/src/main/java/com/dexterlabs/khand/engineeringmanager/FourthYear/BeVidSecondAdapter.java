@@ -96,7 +96,7 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//put logic here
                     Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
 
 

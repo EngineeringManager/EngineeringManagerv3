@@ -98,7 +98,7 @@ public class TeVidSecondAdapter extends BaseExpandableListAdapter {
             public void onClick(View view) {
                     Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
 
-
+//put logic here
 
             }
         });

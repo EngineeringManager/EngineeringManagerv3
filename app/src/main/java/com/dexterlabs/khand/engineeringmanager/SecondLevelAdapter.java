@@ -94,7 +94,6 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
         textView.setText(text);
 
-
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

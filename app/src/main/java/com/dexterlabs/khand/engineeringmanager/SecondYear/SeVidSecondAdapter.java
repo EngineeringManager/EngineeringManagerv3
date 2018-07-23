@@ -99,7 +99,7 @@ public class SeVidSecondAdapter extends BaseExpandableListAdapter {
 
                     Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
 
-
+//put logic here
 
             }
         });
