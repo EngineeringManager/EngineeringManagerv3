@@ -153,7 +153,14 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
 
                 String[] hpcvl = new String[] {"tWRL2VJL-FA","q7sgzDH1cR8","D7UK46gXhcA","0_TN845dxUU","B4yLUYm6lVc","AcULfKtWfoA"};
 
-
+                for (int i=0;i<hpcTopics.length;i++) {
+                    if (text.equals(hpcTopics[i])) {
+                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",hpcvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
 
 
 
