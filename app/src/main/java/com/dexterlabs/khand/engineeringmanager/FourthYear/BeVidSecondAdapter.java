@@ -159,6 +159,7 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",hpcvl[i]);
                         context.startActivity(intent);
+
                     }
                 }
 
