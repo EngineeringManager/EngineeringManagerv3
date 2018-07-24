@@ -141,6 +141,28 @@ public class BeVidMain extends AppCompatActivity{
                 thirdLevelq3.put(q3[3], airu3topics);
 
 
+
+
+                //OR
+
+                String [] oru1topics = new String[]{"Graphical LPP with two Constraints","Graphical LPP with three Constraints","LPP Simplex Method",
+                        "Infeasibility and Unbounded Solutions"};
+
+                String [] oru2topics = new String[]{"Duality in LPP","Primal to Dual Conversion","LPP Dual Simplex","Two phase Simplex Method"};
+
+
+                String [] oru3topics = new String[]{"The Transportation Problem (All 3 Methods)","Transportation Problem MODI method - U V method",
+                        "Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule"};
+
+
+                thirdLevelq2.put(q5[0], oru1topics);
+                thirdLevelq2.put(q5[1], oru2topics);
+                thirdLevelq2.put(q5[2], oru3topics);
+
+
+
+
+
                 //MC
 
                 String[] mcu1topics = new String[]  {"1G, 2G, 3G, 4G, 5G of Cellular Mobile Communications",
@@ -190,22 +212,13 @@ public class BeVidMain extends AppCompatActivity{
 
 
 
-                thirdLevelq2.put(q4[0], mcu1topics);
-                thirdLevelq2.put(q4[1], mcu2topics);
-                thirdLevelq2.put(q4[2], mcu3topics);
-                thirdLevelq2.put(q4[3], mcu4topics);
-                thirdLevelq2.put(q4[4], mcu5topics);
-                thirdLevelq2.put(q4[5], mcu6topics);
+                thirdLevelq6.put(q6[0], mcu1topics);
+                thirdLevelq6.put(q6[1], mcu2topics);
+                thirdLevelq6.put(q6[2], mcu3topics);
+                thirdLevelq6.put(q6[3], mcu4topics);
+                thirdLevelq6.put(q6[4], mcu5topics);
+                thirdLevelq6.put(q6[5], mcu6topics);
 
-
-                //OR
-
-                String[] oru1topics=new String[]{"sample topic"};
-                String[] oru2topics=new String[]{"st"};
-                String[] oru3topics=new String[]{"st"};
-                thirdLevelq2.put(q5[0], oru1topics);
-                thirdLevelq2.put(q5[1], oru2topics);
-                thirdLevelq2.put(q5[2], oru3topics);
 
 
                 data.add(thirdLevelq1);

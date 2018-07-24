@@ -32,7 +32,7 @@ public class videoTuts  extends AppCompatActivity {
             "Engineering Mathematics-I","Engineering Mathematics-II",
             "Engineering Mechanics","Engineering Physics"};
 
-    String[] q1 = new String[]{"Unit 1","Unit 2","Unit 3","Unit 4","Unit 5","Unit 6"};
+    String[] q1 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
     String[] q2 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
     String[] q3 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
     String[] q4 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};

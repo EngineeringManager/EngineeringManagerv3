@@ -199,10 +199,29 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
                 }
 
 
+                //OR
+
+                String [] orvl = new String[]{"8IRrgDoV8Eo","O6QO3J_85as","M8POtpPtQZc","_eMA0LWsRQQ","tlyrxudvEa0","HPoCW06WE2w","Dq1b_N4q5go"
+                        ,"zJhncZ5XUSU","ItOuvM2KmD4","-w2z3MVTcQA","rrfFTdO2Z7I","Hf7MHFEegI0","-0DEQmp7B9o"};
+
+                String [] orTopics = new String[]{"Graphical LPP with two Constraints","Graphical LPP with three Constraints","LPP Simplex Method",
+                        "Infeasibility and Unbounded Solutions",
+
+                        "Duality in LPP","Primal to Dual Conversion","LPP Dual Simplex","Two phase Simplex Method",
+
+                        "The Transportation Problem (All 3 Methods)","Transportation Problem MODI method - U V method",
+                        "Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule"};
 
                 // Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
 
-
+                for (int i=0;i<orTopics.length;i++) {
+                    if (text.equals(orTopics[i])) {
+                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",orvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
 
             }
         });
