@@ -43,11 +43,11 @@ public class TeVidMain extends AppCompatActivity {
                         "DBMS", "Theory of Computation",
                         "ISEE"};
 
-                String[] q1 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-                String[] q2 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-                String[] q3 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-                String[] q4 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-                String[] q5 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
+                String[] q1 = new String[]{"Unit 1", "Unit 2", "Unit 3","Unit 4", "Unit 5", "Unit 6"};
+                String[] q2 = new String[]{"Unit 1", "Unit 2", "Unit 3","Unit 4", "Unit 5", "Unit 6"};
+                String[] q3 = new String[]{"Unit 1", "Unit 2", "Unit 3","Unit 4", "Unit 5", "Unit 6"};
+                String[] q4 = new String[]{"Unit 1", "Unit 2", "Unit 3","Unit 4", "Unit 5", "Unit 6"};
+                String[] q5 = new String[]{"Unit 1", "Unit 2", "Unit 3","Unit 4", "Unit 5", "Unit 6"};
 
 
                 //Each subject Topics Array to be added here
@@ -81,13 +81,25 @@ public class TeVidMain extends AppCompatActivity {
 
                 //CN
 
-                String[] cnu1topics=new String[]{"sample topic"};
-                String[] cnu2topics=new String[]{"st"};
-                String[] cnu3topics=new String[]{"st"};
+                String[] cnu1topics = new String[] {"Introducton to PAN,LAN,MAN and WAN","Ad-Hoc Network","Peer to peer and Client-Server architecture","Network Topologies","OSI and TCP/IP Model","Design issues","Transmission Media",
+                        "Networking Device","Manchester Encoding","Diferential Encoding","FHSS and DSSS"};
+
+
+                String[] cnu2topics = new String[] {"Data Link Layer Inroduction","Services provided by Data Link layer","Framing Character count","Flag byte with byte Stuffing","Bit stuffing","Cyclic Redundency Check","Hamming Code introduction and rules","Hamming code example","Parity check","Stop and Wait","Stop and Wait ARQ","Sliding Window Protocol","PPP and HDLC"};
+
+                String[] cnu3topics = new String[] {"Pure and Slotted Aloha","CSMA","IEEE 802.3 standard and frame format","CSMA/CD","Binary Back-Off Algorithm","802.11 architecture","802.15 Bluetooth"};
+
+                String[] cnu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] cnu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] cnu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
 
                 thirdLevelq1.put(q1[0], cnu1topics);
                 thirdLevelq1.put(q1[1], cnu2topics);
                 thirdLevelq1.put(q1[2], cnu3topics);
+                thirdLevelq1.put(q1[3], cnu4topics);
+                thirdLevelq1.put(q1[4], cnu5topics);
+                thirdLevelq1.put(q1[5], cnu6topics);
 
 
 
@@ -97,29 +109,55 @@ public class TeVidMain extends AppCompatActivity {
                 String[] sepmu1topics=new String[]{"sample topic"};
                 String[] sepmu2topics=new String[]{"st"};
                 String[] sepmu3topics=new String[]{"st"};
-                thirdLevelq3.put(q2[1], sepmu1topics);
-                thirdLevelq3.put(q2[2], sepmu2topics);
-                thirdLevelq3.put(q2[3], sepmu3topics);
+                thirdLevelq2.put(q2[1], sepmu1topics);
+                thirdLevelq2.put(q2[2], sepmu2topics);
+                thirdLevelq2.put(q2[3], sepmu3topics);
 
 
                 //DBMS
 
-                String[] dbmsu1topics=new String[]{"sample topic"};
-                String[] dbmsu2topics=new String[]{"st"};
-                String[] dbmsu3topics=new String[]{"st"};
-                thirdLevelq2.put(q3[0], dbmsu1topics);
-                thirdLevelq2.put(q3[1], dbmsu2topics);
-                thirdLevelq2.put(q3[2], dbmsu3topics);
+                String[] dbmsu1topics = new String[] {"ER Diagram Introduction","ER Diagram Notation"};
+
+                String[] dbmsu2topics = new String[] {"DDL,DCL and DML","DDL,DCL,DML and TCL","Table operations","View operations","SELECT Query and WHERE Clause",
+                        "Joins","Implicit and Explicit Cursor PL/SQL","Functions PL/SQL","Procedures PL/SQL","Trigger PL/SQL"};
+
+                String[] dbmsu3topics = new String[] {"Relational Model","CODD'S Rule","First Normal Form","Second Normal Form","Third Normal Form",
+                        "BCNF","Functional Dependencies","Keys"};
+
+                String[] dbmsu4topics = new String[] {"Still searching best videos for you. Stay tuned for our next update."};
+                String[] dbmsu5topics = new String[] {"Still searching best videos for you. Stay tuned for our next update."};
+                String[] dbmsu6topics = new String[] {"Still searching best videos for you. Stay tuned for our next update."};
+
+
+                thirdLevelq3.put(q3[0], dbmsu1topics);
+                thirdLevelq3.put(q3[1], dbmsu2topics);
+                thirdLevelq3.put(q3[2], dbmsu3topics);
+                thirdLevelq3.put(q3[3], dbmsu4topics);
+                thirdLevelq3.put(q3[4], dbmsu5topics);
+                thirdLevelq3.put(q3[5], dbmsu6topics);
 
 
                 //TOC
 
-                String[] tocu1topics=new String[]{"sample topic"};
-                String[] tocu2topics=new String[]{"st"};
-                String[] tocu3topics=new String[]{"st"};
-                thirdLevelq2.put(q4[0], tocu1topics);
-                thirdLevelq2.put(q4[1], tocu2topics);
-                thirdLevelq2.put(q4[2], tocu3topics);
+                String[] tocu1topics = new String[] {"Finite State Machine","Deterministic Finite Automata","Non-Deterministic Finite automata","Moore to Mealy","Mealy to Moore"};
+
+                String[] tocu2topics = new String[] {"Identity Rules","NFA to DFA","State/Loop Elimination Method","Ardens Theorm","Pumping Lemma","RE to Finite Automata"};
+
+
+                String[] tocu3topics = new String[] {"Context Free Grammar and Language","Simplification of CFG(reduction of cfg)","Simplification of CFG(removal of unit productions)"
+                        ,"Simplification of CFG(removal of null productions)","Chomsky Normal Form","Greibach Normal Form"};
+
+                String[] tocu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] tocu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] tocu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+
+                thirdLevelq4.put(q4[0], tocu1topics);
+                thirdLevelq4.put(q4[1], tocu2topics);
+                thirdLevelq4.put(q4[2], tocu3topics);
+                thirdLevelq4.put(q4[3], tocu4topics);
+                thirdLevelq4.put(q4[4], tocu5topics);
+                thirdLevelq4.put(q4[5], tocu6topics);
 
 
                 //ISEE
@@ -127,9 +165,9 @@ public class TeVidMain extends AppCompatActivity {
                 String[] iseeu1topics=new String[]{"sample topic"};
                 String[] iseeu2topics=new String[]{"st"};
                 String[] iseeu3topics=new String[]{"st"};
-                thirdLevelq2.put(q5[0], iseeu1topics);
-                thirdLevelq2.put(q5[1], iseeu2topics);
-                thirdLevelq2.put(q5[2], iseeu3topics);
+                thirdLevelq5.put(q5[0], iseeu1topics);
+                thirdLevelq5.put(q5[1], iseeu2topics);
+                thirdLevelq5.put(q5[2], iseeu3topics);
 
 
                 data.add(thirdLevelq1);
@@ -155,7 +193,7 @@ public class TeVidMain extends AppCompatActivity {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -298,7 +336,7 @@ public class TeVidMain extends AppCompatActivity {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
                 });
@@ -368,7 +406,7 @@ public class TeVidMain extends AppCompatActivity {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
                 });
@@ -510,7 +548,7 @@ public class TeVidMain extends AppCompatActivity {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(TeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
                 });

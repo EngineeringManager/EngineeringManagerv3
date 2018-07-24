@@ -401,7 +401,8 @@ public class videoTuts  extends AppCompatActivity {
                 if (groupPosition != previousGroup)
                     expandableListView.collapseGroup(previousGroup);
                 previousGroup = groupPosition;
-                Toast.makeText(videoTuts.this, "asd", Toast.LENGTH_SHORT).show();            }
+                //Toast.makeText(videoTuts.this, "asd", Toast.LENGTH_SHORT).show();
+            }
 
         });
 

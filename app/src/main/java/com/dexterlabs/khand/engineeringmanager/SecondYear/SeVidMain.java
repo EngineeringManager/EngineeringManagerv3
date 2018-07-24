@@ -150,7 +150,7 @@ public class SeVidMain extends AppCompatActivity{
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -223,7 +223,7 @@ public class SeVidMain extends AppCompatActivity{
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -295,7 +295,7 @@ public class SeVidMain extends AppCompatActivity{
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -366,7 +366,7 @@ public class SeVidMain extends AppCompatActivity{
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -438,7 +438,7 @@ else if(info.equals("ele")) {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
@@ -509,7 +509,7 @@ else if(info.equals("entc")) {
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(SeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
                     }
 
 
