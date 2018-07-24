@@ -77,6 +77,8 @@ public class Syllabus extends AppCompatActivity
         HomeAdapterList.add(list1);
         HomeAdapterList list2 = new HomeAdapterList("THIRD YEAR",3);
         HomeAdapterList.add(list2);
+        HomeAdapterList list3 = new HomeAdapterList("FOURTH YEAR",4);
+        HomeAdapterList.add(list3);
 //        HomeAdapterList list3 = new HomeAdapterList("Fourth Year",4);
 //        HomeAdapterList.add(list3);
 

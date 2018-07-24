@@ -94,7 +94,7 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
                 Intent intent=new Intent(context,BeVidMain.class);
                 intent.putExtra("dept", "it");
                 context.startActivity(intent);*/
-                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
             }
             else if(se.getPosition()==33)
@@ -102,7 +102,7 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
                /* Intent intent=new Intent(context,BeVidMain.class);
                 intent.putExtra("dept", "mech");
                 context.startActivity(intent);*/
-                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
 
             }
@@ -111,7 +111,7 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
                /* Intent intent=new Intent(context,BeVidMain.class);
                 intent.putExtra("dept", "civil");
                 context.startActivity(intent);*/
-                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
 
             }
@@ -120,7 +120,7 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
                 /*Intent intent=new Intent(context,BeVidMain.class);
                 intent.putExtra("dept", "ele");
                 context.startActivity(intent);*/
-                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
 
             }
@@ -131,7 +131,7 @@ public class QuestionPaperBEAdapter extends RecyclerView.Adapter<QuestionPaperBE
                 context.startActivity(intent);
 
 */
-                Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
             }
 

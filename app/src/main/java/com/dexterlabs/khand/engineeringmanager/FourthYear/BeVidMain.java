@@ -37,7 +37,7 @@ public class BeVidMain extends AppCompatActivity{
             if (info.equals("comp"))
             {
                 String[] parent = new String[]{"Data Analytics", "High Performance Computing",
-                        "Artificial Intelligence and Robotics", "Data Mining",
+                        "Artificial Intelligence and Robotics",
                         "Operation Research","Mobile Communication"};
 
                 String[] q1 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
@@ -58,7 +58,7 @@ public class BeVidMain extends AppCompatActivity{
                 LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
                 LinkedHashMap<String, String[]> thirdLevelq4 = new LinkedHashMap<>();
                 LinkedHashMap<String, String[]> thirdLevelq5 = new LinkedHashMap<>();
-                LinkedHashMap<String, String[]> thirdLevelq6 = new LinkedHashMap<>();
+                //LinkedHashMap<String, String[]> thirdLevelq6 = new LinkedHashMap<>();
                 /**
                  * Second level array list
                  */
@@ -74,7 +74,7 @@ public class BeVidMain extends AppCompatActivity{
                 secondLevel.add(q3);
                 secondLevel.add(q4);
                 secondLevel.add(q5);
-                secondLevel.add(q6);
+                //secondLevel.add(q6);
 
 
                 //Add topics to each units
@@ -97,10 +97,18 @@ public class BeVidMain extends AppCompatActivity{
                         "A-priori algorithm","Regression","Linear Regression",
                         "linear Regression Solved example","Logistics"};
 
+                String[] dau4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+                String[] dau5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+                String[] dau6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
 
                 thirdLevelq1.put(q1[0], dau1topics);
                 thirdLevelq1.put(q1[1], dau2topics);
                 thirdLevelq1.put(q1[2], dau3topics);
+                thirdLevelq1.put(q1[3], dau4topics);
+                thirdLevelq1.put(q1[4], dau5topics);
+                thirdLevelq1.put(q1[5], dau6topics);
                // thirdLevelq1.put(q1[3], des1);
 
                 //HPC
@@ -116,9 +124,16 @@ public class BeVidMain extends AppCompatActivity{
 
                 String[] hpcu3topics = new String[] {"Scatter and gather"};
 
+                String[] hpcu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] hpcu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] hpcu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
                 thirdLevelq2.put(q2[0], hpcu1topics);
                 thirdLevelq2.put(q2[1], hpcu2topics);
                 thirdLevelq2.put(q2[2], hpcu3topics);
+                thirdLevelq2.put(q2[3], hpcu4topics);
+                thirdLevelq2.put(q2[4], hpcu5topics);
+                thirdLevelq2.put(q2[5], hpcu6topics);
 
 //                thirdLevelq2.put(q2[3], des1);
 //                thirdLevelq3.put(q3[0], des5);
@@ -136,9 +151,17 @@ public class BeVidMain extends AppCompatActivity{
                 String[] airu3topics = new String[] {"Forward and Backward Chaining","PL vs FOL",
                         "Conceptual Dependency","Knowledge Representation"};
 
-                thirdLevelq3.put(q3[1], airu1topics);
-                thirdLevelq3.put(q3[2], airu2topics);
-                thirdLevelq3.put(q3[3], airu3topics);
+                String[] airu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] airu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] airu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+                thirdLevelq3.put(q3[0], airu1topics);
+                thirdLevelq3.put(q3[1], airu2topics);
+                thirdLevelq3.put(q3[2], airu3topics);
+
+                thirdLevelq3.put(q3[3], airu4topics);
+                thirdLevelq3.put(q3[4], airu5topics);
+                thirdLevelq3.put(q3[5], airu6topics);
 
 
 
@@ -155,9 +178,18 @@ public class BeVidMain extends AppCompatActivity{
                         "Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule"};
 
 
-                thirdLevelq2.put(q5[0], oru1topics);
-                thirdLevelq2.put(q5[1], oru2topics);
-                thirdLevelq2.put(q5[2], oru3topics);
+                String[] oru4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] oru5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] oru6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+
+                thirdLevelq4.put(q4[0], oru1topics);
+                thirdLevelq4.put(q4[1], oru2topics);
+                thirdLevelq4.put(q4[2], oru3topics);
+
+                thirdLevelq4.put(q4[3], oru4topics);
+                thirdLevelq4.put(q4[4], oru5topics);
+                thirdLevelq4.put(q4[5], oru6topics);
 
 
 
@@ -202,8 +234,8 @@ public class BeVidMain extends AppCompatActivity{
                 String[] mcu5topics = new String[] {"EDGE ","Working Principle Of EDGE",
                         "3G WCDMA (UMTS) ","CDMA","CDMA 2000 Architecure",
                         "3G Architecture,UTRAN Architecture,UMTS call flow",
-                        "Mpirical - UMTS Architecture","HSPA","HSDPA ",
-                        "HSDPA Tutorial Artitecture ","HSDPA ","3.5G-HSDPA-HSUPA",
+                        "Mpirical - UMTS Architecture","HSPA","HSDPA Part-1",
+                        "HSDPA Tutorial Artitecture ","HSDPA Part-2","3.5G-HSDPA-HSUPA",
                         "4G LTE Fundamentals"};
 
 
@@ -212,12 +244,12 @@ public class BeVidMain extends AppCompatActivity{
 
 
 
-                thirdLevelq6.put(q6[0], mcu1topics);
-                thirdLevelq6.put(q6[1], mcu2topics);
-                thirdLevelq6.put(q6[2], mcu3topics);
-                thirdLevelq6.put(q6[3], mcu4topics);
-                thirdLevelq6.put(q6[4], mcu5topics);
-                thirdLevelq6.put(q6[5], mcu6topics);
+                thirdLevelq5.put(q5[0], mcu1topics);
+                thirdLevelq5.put(q5[1], mcu2topics);
+                thirdLevelq5.put(q5[2], mcu3topics);
+                thirdLevelq5.put(q5[3], mcu4topics);
+                thirdLevelq5.put(q5[4], mcu5topics);
+                thirdLevelq5.put(q5[5], mcu6topics);
 
 
 
@@ -226,7 +258,7 @@ public class BeVidMain extends AppCompatActivity{
                 data.add(thirdLevelq3);
                 data.add(thirdLevelq4);
                 data.add(thirdLevelq5);
-                data.add(thirdLevelq6);
+                //data.add(thirdLevelq6);
 
                 expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
                 //passing three level of information to constructor

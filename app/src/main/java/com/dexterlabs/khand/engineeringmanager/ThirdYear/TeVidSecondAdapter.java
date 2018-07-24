@@ -155,8 +155,67 @@ public class TeVidSecondAdapter extends BaseExpandableListAdapter {
                     }
                 }
 
+//
+//                String[] sepmTopics = new String[] {"Introduction to SEPM","Process Model","Agile Development","Understanding Requirements",
+//                        "Requirements Modelling","Flow,Behaviour,Pattern and Web Apps",
+//                        "Design Concepts","Architectural Design","Component Level Design",
+//                        "User Interface Design","Pattern Based Design","Quality Concepts",
+//                        "Review Techniques","Software Quality Assurance",
+//                        "Project Management Concepts","Project Estimation","Project Scheduling",
+//                        "Project Risk Management","Software Configuration Management","Maintenance & Reengineering",
+//                        "Software Testing","Testing","Testing Object Oriented Applications","Testing Web App","Veification vs Validation","Defect Life Cycle",
+//                "GUI Testing"};
+//
+//
+//
+//                String[] sepmvl = new String[] {"wrPP_rVX6jg","Ax7Qu_bxG4c","0cMA7P0p5GQ",
+//                        "J8Z8ocxhiIw","RQaZ1GEg-iw","6sYP-pNmsK4",
+//                        "DrBF3uKkNlo","K4rqH9DENaA","WJ1GfOqh0LQ","KIyj_ANryxo","Sw3pNELb-TU",
+//                        "SSqjynbAATA","ymhLtlnREP8","nNAtGxJ9C4M","w86aNGUCX-k","3I-PH3VEqdI","icDo3o-kJpA",
+//                        "TArKVhIuktc","2boT42lBg6A","ZxQdW8rrv4k",
+//                        "YOwX6ROYED8","y0d-XHVM0BQ","YiwB5eHMD7Y","v-r3HqhAtk4","2L3L_h4_Dzo","EZGDyFPHFMw","73jn7iAVQdA"};
+//
+//                for (int i=0;i<sepmTopics.length;i++) {
+//                    if (text.equals(sepmTopics[i])) {
+//                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+//                        Intent intent = new Intent(context, YoutubePlayer.class);
+//                        intent.putExtra("videoLink",sepmvl[i]);
+//                        context.startActivity(intent);
+//                    }
+//                }
+
+
+                String  [] iseeTopics= new String []{"Role of Information Systems in Organizations","Strategic planning",
+                        "Management information system","Information system security",
+                        "Information communication Technology","UIDAI",
+                        "Time value of money","Depreciation ",
+                        "Present worth","Annual worth and capital recovery","Inflation",
+                "Cash flow","Financial statement","Accounting for Depreciation and Income Taxes",
+};
+
+                String [] iseevl = new String[]{"Ff-L9eMa2i4","UbaoJZbDW-I",
+                        "jKaxXcs6AC8","zBFB34YGK1U",
+                        "tpR3JMnsOWo","2PWcQamcXkY",
+                        "733mgqrzNKs","j2V9oxB9dM4",
+                        "VaZLXTULXqE","DYHGgnqnshg","AaR1mPrdbTc",
+                "hISdzmjNO5w","Fw14qE_9B-A","GkPgSg9Eft4"
+
+};
+
+                for (int i=0;i<iseeTopics.length;i++) {
+                    if (text.equals(iseeTopics[i])) {
+                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",iseevl[i]);
+                        context.startActivity(intent);
+                    }
+                }
+
+
 
             }
+
+
         });
 
 
@@ -170,9 +229,9 @@ public class TeVidSecondAdapter extends BaseExpandableListAdapter {
     public void onGroupExpanded(int groupPosition) {
         super.onGroupExpanded(groupPosition);
 
-        if (getGroup(groupPosition).toString().equals("Unit 4") || getGroup(groupPosition).toString().equals("Unit 5") || getGroup(groupPosition).toString().equals("Unit 6")) {
-            Toast.makeText(context,"Working for providing best videos for you. Stay tuned",Toast.LENGTH_SHORT).show();
-        }
+//        if (getGroup(groupPosition).toString().equals("Unit 4") || getGroup(groupPosition).toString().equals("Unit 5") || getGroup(groupPosition).toString().equals("Unit 6")) {
+//            Toast.makeText(context,"Working for providing best videos for you. Stay tuned",Toast.LENGTH_SHORT).show();
+//        }
         //Toast.makeText(context, "open zala.click zala"+ getGroup(groupPosition).toString(), Toast.LENGTH_SHORT).show();
     }
 

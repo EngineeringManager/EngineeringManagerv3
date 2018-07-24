@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:background="#4CAF50"
+        android:background="#4fc3f7"
         android:fontFamily="@font/roboto_mono_thin"
         android:paddingBottom="15sp"
         android:paddingTop="50sp"

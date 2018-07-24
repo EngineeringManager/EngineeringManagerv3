@@ -70,6 +70,15 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.ViewHo
 
             }
 
+            else if(se.getPosition()==4)
+            {
+                Intent intent=new Intent(context,webview.class);
+                intent.putExtra("url", "https://drive.google.com/open?id=1bGDjniOWVKChi_1fAItIfypLf_FODhNs");
+
+                context.startActivity(intent);
+
+            }
+
 
         }
 

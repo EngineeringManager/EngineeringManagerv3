@@ -166,8 +166,8 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
                         "GSM Call Flow","GPRS Architecture-1","GPRS Architecture -2","2G GSM Location Update","GSM Architecture,Call Routing,GSM Architecture in Mobile computing","IMSI, TMSI and MSISDN ","Traffic Channels","Logical channels","BURST TRANSMISSION","SPEECH CODING",
 
                         "EDGE ","Working Principle Of EDGE","3G WCDMA (UMTS) ","CDMA","CDMA 2000 Architecure","3G Architecture,UTRAN Architecture,UMTS call flow",
-                        "Mpirical - UMTS Architecture","HSPA","HSDPA ","HSDPA Tutorial Artitecture ",
-                        "HSDPA ","3.5G-HSDPA-HSUPA","4G LTE Fundamentals",
+                        "Mpirical - UMTS Architecture","HSPA","HSDPA Part-1","HSDPA Tutorial Artitecture ",
+                        "HSDPA Part-2","3.5G-HSDPA-HSUPA","4G LTE Fundamentals",
 
                         "What Is a Millimeter Wave","LTE-A :super fast mobile internet","What is LTE-A?"
 };

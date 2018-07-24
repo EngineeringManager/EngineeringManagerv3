@@ -239,6 +239,15 @@ public class videoTuts  extends AppCompatActivity {
 
 
     // ENG M2
+    String[] m2u1topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+    String[] m2u2topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+    String[] m2u3topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+    String[] m2u4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+    String[] m2u5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+    String[] m2u6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+
+
 
 
 
@@ -354,6 +363,14 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq7.put(q7[4],m1u5topics);
         thirdLevelq7.put(q7[5],m1u6topics);
 
+        thirdLevelq8.put(q8[0], m2u1topics);
+        thirdLevelq8.put(q8[1], m2u2topics);
+        thirdLevelq8.put(q8[2], m2u3topics);
+        thirdLevelq8.put(q8[3], m2u4topics);
+        thirdLevelq8.put(q8[4], m2u5topics);
+        thirdLevelq8.put(q8[5], m2u6topics);
+
+
 
         thirdLevelq9.put(q9[0],emu1topics);
         thirdLevelq9.put(q9[1],emu2topics);
@@ -361,9 +378,6 @@ public class videoTuts  extends AppCompatActivity {
         thirdLevelq9.put(q9[3],emu4topics);
         thirdLevelq9.put(q9[4],emu5topics);
         thirdLevelq9.put(q9[5],emu6topics);
-
-
-
 
         thirdLevelq10.put(q10[0],phyu1topics);
         thirdLevelq10.put(q10[1],phyu2topics);

@@ -106,12 +106,38 @@ public class TeVidMain extends AppCompatActivity {
 
                 //SEPM
 
-                String[] sepmu1topics=new String[]{"sample topic"};
-                String[] sepmu2topics=new String[]{"st"};
-                String[] sepmu3topics=new String[]{"st"};
-                thirdLevelq2.put(q2[1], sepmu1topics);
-                thirdLevelq2.put(q2[2], sepmu2topics);
-                thirdLevelq2.put(q2[3], sepmu3topics);
+//                String[] sepmu1topics = new String[] {"Introduction to SEPM",
+//                        "Process Model","Agile Development"};
+//
+//                String[] sepmu2topics = new String[] {"Understanding Requirements","Requirements Modelling","Flow,Behaviour,Pattern and Web Apps"};
+//
+//                String[] sepmu3topics = new String[] {"Design Concepts","Architectural Design",
+//                        "Component Level Design","User Interface Design","Pattern Based Design"};
+//
+//                String[] sepmu4topics = new String[] {"Quality Concepts","Review Techniques","Software Quality Assurance","Project Management Concepts","Project Estimation",
+//                "Project Scheduling"};
+//
+//                String[] sepmu5topics = new String[] {"Project Risk Management","Software Configuration Management",
+//                        "Maintenance & Reengineering"};
+//
+//                String[] sepmu6topics = new String[] {"Software Testing","Testing","Testing Object Oriented Applications","Testing Web App","Veification vs Validation",
+//                        "Defect Life Cycle","GUI Testing"};
+//
+                String[] sepmu1topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] sepmu2topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] sepmu3topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] sepmu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] sepmu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] sepmu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+
+
+
+                thirdLevelq2.put(q2[0], sepmu1topics);
+                thirdLevelq2.put(q2[1], sepmu2topics);
+                thirdLevelq2.put(q2[2], sepmu3topics);
+                thirdLevelq2.put(q2[3], sepmu4topics);
+                thirdLevelq2.put(q2[4], sepmu5topics);
+                thirdLevelq2.put(q2[5], sepmu6topics);
 
 
                 //DBMS
@@ -162,12 +188,25 @@ public class TeVidMain extends AppCompatActivity {
 
                 //ISEE
 
-                String[] iseeu1topics=new String[]{"sample topic"};
-                String[] iseeu2topics=new String[]{"st"};
-                String[] iseeu3topics=new String[]{"st"};
+                String[] iseeu1topics = new String[] {"Role of Information Systems in Organizations","Strategic planning"};
+                String[] iseeu2topics = new String[] {"Management information system","Information system security"};
+
+
+                String[] iseeu3topics = new String[] {"Information communication Technology","UIDAI"};
+
+                String[] iseeu4topics = new String[] {"Time value of money","Depreciation "};
+
+                String[] iseeu5topics = new String[] {"Present worth","Annual worth and capital recovery","Inflation"};
+
+                String[] iseeu6topics = new String[] {"Cash flow","Financial statement","Accounting for Depreciation and Income Taxes"};
+
+
                 thirdLevelq5.put(q5[0], iseeu1topics);
                 thirdLevelq5.put(q5[1], iseeu2topics);
                 thirdLevelq5.put(q5[2], iseeu3topics);
+                thirdLevelq5.put(q5[3], iseeu4topics);
+                thirdLevelq5.put(q5[4], iseeu5topics);
+                thirdLevelq5.put(q5[5], iseeu6topics);
 
 
                 data.add(thirdLevelq1);

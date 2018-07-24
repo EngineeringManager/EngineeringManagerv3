@@ -122,7 +122,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<civilTopics.length;i++) {
                     if (text.equals(civilTopics[i])) {
-                        Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",civilvl[i]);
                         context.startActivity(intent);
@@ -156,7 +156,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<electricalTopics.length;i++) {
                     if (text.equals(electricalTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",electricalvl[i]);
                         context.startActivity(intent);
@@ -198,7 +198,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<chemTopics.length;i++) {
                     if (text.equals(chemTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",chemvl[i]);
                         context.startActivity(intent);
@@ -238,7 +238,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<bxeTopics.length;i++) {
                     if (text.equals(bxeTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",bxevl[i]);
                         context.startActivity(intent);
@@ -277,7 +277,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<bmeTopics.length;i++) {
                     if (text.equals(bmeTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",bmevl[i]);
                         context.startActivity(intent);
@@ -330,7 +330,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<phyTopics.length;i++) {
                     if (text.equals(phyTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",phyvl[i]);
                         context.startActivity(intent);
@@ -374,7 +374,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<emTopics.length;i++) {
                     if (text.equals(emTopics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",emvl[i]);
                         context.startActivity(intent);
@@ -388,7 +388,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
                 String egvl="https://www.youtube.com";///playlist?list=PLm_MSClsnwm_guTpKrkYk_gQ6rrynbI5d";
 
                 if (text.equals(eg)) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, webview.class);
                         intent.putExtra("url",egvl);
                         context.startActivity(intent);
@@ -419,7 +419,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
 
                 for (int i=0;i<m1Topics.length;i++) {
                     if (text.equals(m1Topics[i])) {
-                        Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context, "Child Position:", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",m1vl[i]);
                         context.startActivity(intent);
