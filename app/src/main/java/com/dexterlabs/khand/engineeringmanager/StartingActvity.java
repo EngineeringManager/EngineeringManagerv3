@@ -1,8 +1,11 @@
 package com.dexterlabs.khand.engineeringmanager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -18,7 +21,17 @@ public class StartingActvity extends AppCompatActivity {
 
     EditText phoneNumber,email;
     Button send;
+    boolean exit = false;
     DatabaseReference databaseReference;
+    private PrefManager prefManager;
+
+
+
+//    private void launchHomeScreen() {
+//        prefManager.setFirstTimeLaunch(false);
+//        startActivity(new Intent(StartingActvity.this, Home.class));
+//        finish();
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +40,18 @@ public class StartingActvity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        //
+
+
+
+        // Checking for first time launch - before calling setContentView()
+//        prefManager = new PrefManager(this);
+//        if (!prefManager.isFirstTimeLaunch()) {
+//            launchHomeScreen();
+//            finish();
+//        }
+
 
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
 
@@ -52,6 +77,12 @@ public class StartingActvity extends AppCompatActivity {
         if (firstStart) {
             Toast.makeText(StartingActvity.this,"",Toast.LENGTH_SHORT).show();
             addUser();
+//            Intent launchNextActivity;
+//            launchNextActivity = new Intent(StartingActvity.class, Home.class);
+//            launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//            startActivity(launchNextActivity);
         }
 
         else {
@@ -59,16 +90,12 @@ public class StartingActvity extends AppCompatActivity {
             startActivity(intent);
         }
 
-
-
-
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addUser();
             }
         });
-
 
     }
 
@@ -99,14 +126,57 @@ public class StartingActvity extends AppCompatActivity {
         UserModelClass userModelClass = new UserModelClass(id,phone,emailAdd);
         databaseReference.child(id).setValue(userModelClass);
 
-        Toast.makeText(getApplicationContext(),"Successfully added",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Welcome Aboard",Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(StartingActvity.this, Home.class);
         startActivity(intent);
+
+       // Intent launchNextActivity;
+//        Intent launchNextActivity = new Intent(StartingActvity.class, Home.class);
+//        launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        launchNextActivity.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+//        startActivity(launchNextActivity);
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean("firstStart", false);
         editor.apply();
+
+    }
+
+    @Override
+
+    public void onBackPressed() {
+//        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+//                .setMessage("Are you sure?")
+//                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//
+//                        Intent intent = new Intent(Intent.ACTION_MAIN);
+//                        intent.addCategory(Intent.CATEGORY_HOME);
+//                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                        startActivity(intent);
+//                        finish();
+//                    }
+//                }).setNegativeButton("no", null).show();
+
+
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
     }
 }

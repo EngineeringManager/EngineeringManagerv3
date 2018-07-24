@@ -6,6 +6,7 @@ package com.dexterlabs.khand.engineeringmanager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.GridLayoutManager;
@@ -20,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.dexterlabs.khand.engineeringmanager.SecondYear.QuestionPaperSEAdapter;
 import com.dexterlabs.khand.engineeringmanager.SecondYear.QuestionPaperSEList;
@@ -36,6 +38,7 @@ public class Home extends AppCompatActivity
 
     private RecyclerView recyclerView;
     private HomeAdapter adapter;
+    boolean exit = false;
     List<HomeAdapterList> HomeAdapterList;
 
 
@@ -50,7 +53,6 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
         // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         // setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -85,27 +87,24 @@ public class Home extends AppCompatActivity
         int numberOfColumns = 2;
 
 
-
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
 
         HomeAdapterList = new ArrayList<>();
 
-        HomeAdapterList list = new HomeAdapterList("Question Paper",1);
+        HomeAdapterList list = new HomeAdapterList("Question Paper", 1);
         HomeAdapterList.add(list);
-        HomeAdapterList list1 = new HomeAdapterList("Syllabus",2);
+        HomeAdapterList list1 = new HomeAdapterList("Syllabus", 2);
         HomeAdapterList.add(list1);
-        HomeAdapterList list2 = new HomeAdapterList("Practicals",3);
+        HomeAdapterList list2 = new HomeAdapterList("Practicals", 3);
         HomeAdapterList.add(list2);
-        HomeAdapterList list3 = new HomeAdapterList("Video Tutorials",4);
+        HomeAdapterList list3 = new HomeAdapterList("Video Tutorials", 4);
         HomeAdapterList.add(list3);
-        HomeAdapterList list4 = new HomeAdapterList("About Us",5);
+        HomeAdapterList list4 = new HomeAdapterList("About Us", 5);
         HomeAdapterList.add(list4);
 
 
-
-
-        adapter = new HomeAdapter(HomeAdapterList,this);
+        adapter = new HomeAdapter(HomeAdapterList, this);
         recyclerView.setAdapter(adapter);
 
     }
@@ -118,8 +117,6 @@ public class Home extends AppCompatActivity
 //        }
 //
 //    }
-
-
 
 
     @Override
@@ -137,11 +134,36 @@ public class Home extends AppCompatActivity
 //
 //        }
 
-        finish();
 
+//        if (exit) {
+//            finish(); // finish activity
+//        } else {
+//            Toast.makeText(this, "Press Back again to Exit.",
+//                    Toast.LENGTH_SHORT).show();
+//            exit = true;
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    exit = false;
+//                }
+//            }, 3 * 1000);
+//
+////            System.gc();
+////            System.exit(0);
+//
+//            finish();
+
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//***Change Here***
+        startActivity(intent);
+        finish();
+        System.exit(0);
 
 
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -206,4 +228,6 @@ public class Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
