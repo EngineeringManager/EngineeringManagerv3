@@ -638,7 +638,7 @@ public class BeVidMain extends AppCompatActivity{
                         if (groupPosition != previousGroup)
                             expandableListView.collapseGroup(previousGroup);
                         previousGroup = groupPosition;
-                        //Toast.makeText(BeVidMain.this, "abra ka dabra", Toast.LENGTH_SHORT).show();
+
                     }
 
 

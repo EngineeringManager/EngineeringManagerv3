@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -24,6 +26,8 @@ public class StartingActvity extends AppCompatActivity {
     boolean exit = false;
     DatabaseReference databaseReference;
     private PrefManager prefManager;
+
+    private AdView mAdView;
 
 
 
@@ -37,6 +41,13 @@ public class StartingActvity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_actvity);
+
+
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();

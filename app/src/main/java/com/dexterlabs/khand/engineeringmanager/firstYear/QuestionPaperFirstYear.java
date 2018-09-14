@@ -6,6 +6,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.dexterlabs.khand.engineeringmanager.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,11 @@ public class QuestionPaperFirstYear extends AppCompatActivity {
     private RecyclerView recyclerView;
     private AdapterQuestionPapersFirstYear adapter;
     List<QuestionPaperItemsFirstYear> QuestionPaperItemsFirstYear;
+
+
+
+    //For Banner Ads
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +64,12 @@ public class QuestionPaperFirstYear extends AppCompatActivity {
 
         adapter = new AdapterQuestionPapersFirstYear(QuestionPaperItemsFirstYear,this);
         recyclerView.setAdapter(adapter);
+
+
+//        // Banner Ads
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
+
     }
 }

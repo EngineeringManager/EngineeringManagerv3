@@ -14,6 +14,9 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -147,18 +150,25 @@ public class videoTuts  extends AppCompatActivity {
 
     //BME
 
-    String[] bmeu1topics = new String[] {"SHAFTS-AXLE , SPINDLE , COUNTER & INLINE SHAFTS-KEYS & COUPLING",
-            "Single Plate Clutch","Disc Brakes","Disc brakes working Part-2","Belts and Belt-Drives","Chain Drive","TYPES OF GEAR"};
+    String[] bmeu1topics = new String[] {
+            "SHAFTS-AXLE , SPINDLE , COUNTER & INLINE SHAFTS-KEYS & COUPLING",
+            "Single Plate Clutch","Disc Brakes",
+            "Disc brakes working Part-2","Belts and Belt-Drives",
+            "Chain Drive","TYPES OF GEAR"};
 
 
     String[] bmeu2topics = new String[] {"Mechanical properties of material","Mechanical properties of material Part-2","Mechanical properties of material Part-3",
             "Four bar linkage Mechanism","Slider Crank Mechanism"};
 
-    String[] bmeu3topics = new String[] {"Casting and its special types","Casting and its special types","Forging process",
-            "SHEET METAL OPERATIONS","SHEET METAL OPERATIONS part-2","Metal Joining Processes","Sand Casting","ELECTRIC ARC WELDING"};
+    String[] bmeu3topics = new String[] {"Casting and its special types",
+            "Forging process",
+            "SHEET METAL OPERATIONS","SHEET METAL OPERATIONS part-2",
+            "Metal Joining Processes","Sand Casting",
+            "ELECTRIC ARC WELDING"};
 
 
-    String[] bmeu4topics = new String[] {"MACHINE TOOL","CONSTRUCTION DETAILS OF LATHE MACHINE","DRILLING MACHINE","GRINDING MACHINE"};
+    String[] bmeu4topics = new String[] {"MACHINE TOOL",
+            "CONSTRUCTION DETAILS OF LATHE MACHINE","DRILLING MACHINE","GRINDING MACHINE"};
 
 
     String[] bmeu5topics = new String[] {"Thermodynamic Systems","Properties of Thermodynamics","Law of thermodynamics","Heatsink","HEAT ENGINE,HEAT PUMP AND REFRIGERATOR",
@@ -289,6 +299,12 @@ public class videoTuts  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_tuts);
         setUpAdapter();
+
+        //Banner Ads
+//        AdView mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
+
     }
 
     private void setUpAdapter() {

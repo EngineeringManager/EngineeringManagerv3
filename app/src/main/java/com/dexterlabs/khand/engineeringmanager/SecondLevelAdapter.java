@@ -97,11 +97,7 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //int i=0;
-//                for (int i=0,i<100;i++)
-//                {
-//
-//                }
+
                 String[] civilTopics = new String[] {"Surveying","Fluid Mechanics","Structural Engineering",
                         "Construction Engineering","Transport Engineering","Irrigation Engineering","Geotechnical Engineering","Foundation","Responsibilities and Interdisciplinary Approach","Brick","Cement",
                         "Concrete","PCC RCC","Sand","Artificial Sand","Reinforcement Steel","Substructure to Automation","Introduction to Automation","Types of Maps","Principles of Surveying",
@@ -254,9 +250,11 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
                         "Single Plate Clutch","Disc Brakes","Disc brakes working Part-2","Belts and Belt-Drives",
                         "Chain Drive","TYPES OF GEAR"
                 ,"Mechanical properties of material","Mechanical properties of material Part-2","Mechanical properties of material Part-3",
-                        "Four bar linkage Mechanism","Slider Crank Mechanism","Casting and its special types","Casting and its special types","Forging process",
-                        "SHEET METAL OPERATIONS","SHEET METAL OPERATIONS part-2","Metal Joining Processes",
-                        "Sand Casting","ELECTRIC ARC WELDING","MACHINE TOOL","CONSTRUCTION DETAILS OF LATHE MACHINE","DRILLING MACHINE","GRINDING MACHINE",
+                        "Four bar linkage Mechanism","Slider Crank Mechanism","Casting and its special types","Forging process",
+                        "SHEET METAL OPERATIONS","SHEET METAL OPERATIONS part-2",
+                        "Metal Joining Processes",
+                        "Sand Casting","ELECTRIC ARC WELDING","MACHINE TOOL",
+                        "CONSTRUCTION DETAILS OF LATHE MACHINE","DRILLING MACHINE","GRINDING MACHINE",
                         "Thermodynamic Systems","Properties of Thermodynamics","Law of thermodynamics","Heatsink","HEAT ENGINE,HEAT PUMP AND REFRIGERATOR",
                         "How to Measure Temperature with a Thermocouple","Barometer","PRESSURE GAUGE (BOURDON GAUGE)","U-tube Manometer"
                ,"Energy Resources - Conventional and Non-Conventional","HYDRO-ELECTRIC POWER PLANT",
@@ -264,7 +262,9 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
                         "FOUR STROKE PETROL ENGINE","Reciprocating pump","Centrifugal pump","Compressor","Refrigerator","Air Conditioner" };
 
 
-                String []  bmevl= new String[]{"TCwgrh4SW6Q","ADpvN0o3I-E","MAuVDB-G-HQ","bGKJOICWmFQ","0mb_XMGja_c","4PsJkXO70Xc","jTfUFQ-sbas"
+                String []  bmevl= new String[]{"TCwgrh4SW6Q","ADpvN0o3I-E"
+                        ,"MAuVDB-G-HQ","bGKJOICWmFQ","0mb_XMGja_c","4PsJkXO70Xc",
+                        "jTfUFQ-sbas"
                         ,"Ztjra5pl4eY","l6ilvFL5Zys","S45d1Gq79kg","KBFFwgCCP0U","ZO8QEG4x0wY",
                         "Ox6M3UdyLWU","dFnN1YtomNc","L0YgSmfwzWY","c-G98EJvxoE",
                         "alW67rAe5Bk","LmjAQGvSrF0","_2cdc_QtsYo"

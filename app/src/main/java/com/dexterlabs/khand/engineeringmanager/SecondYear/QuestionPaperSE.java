@@ -19,7 +19,7 @@ public class QuestionPaperSE extends AppCompatActivity {
     List<QuestionPaperSEList> QuestionPaperSEList;
 
     //For Banner Ads
-   // private AdView mAdView;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

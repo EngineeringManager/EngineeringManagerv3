@@ -65,22 +65,33 @@ public class Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // Banner Ads
-//        mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //Interstitial Ads
         //Replace Ad Unit ID with our ID
-//        mInterstitialAd = new InterstitialAd(this);
-//        mInterstitialAd.setAdUnitId("ca-app-pub-8465300425811174/9000323987");
-//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-//        mInterstitialAd.setAdListener(new AdListener() {
-//            @Override
-//            public void onAdClosed() {
-//                super.onAdClosed();
-//                finish();
-//            }
-//        });
+        mInterstitialAd = new InterstitialAd(this);
+
+//        Sample Test ID
+       // mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+
+
+//       Own Interstitial Id
+
+        mInterstitialAd.setAdUnitId("ca-app-pub-5511563189229990/4019260315");
+
+
+
+
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+                finish();
+            }
+        });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -108,57 +119,34 @@ public class Home extends AppCompatActivity
         recyclerView.setAdapter(adapter);
 
     }
-//    public  void showInterstitial(){
-//        if (mInterstitialAd.isLoaded()) {
-//            mInterstitialAd.show();
-//        } else {
-//            Log.d("TAG", "The interstitial wasn't loaded yet.");
-//            finish();
-//        }
-//
-//    }
+
+    public  void showInterstitial(){
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.");
+            finish();
+        }
+
+    }
 
 
     @Override
     public void onBackPressed() {
 
-        //   showInterstitial();
+           showInterstitial();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        if (drawer.isDrawerOpen(GravityCompat.START)) {
-//            drawer.closeDrawer(GravityCompat.START);
-//            Intent a = new Intent(Home.this, Home.class);
-//            startActivity(a);
-//        } else {
-//            super.onBackPressed();
-//
-//        }
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+            Intent a = new Intent(Home.this, Home.class);
+            startActivity(a);
+        } else {
+            super.onBackPressed();
+
+        }
 
 
-//        if (exit) {
-//            finish(); // finish activity
-//        } else {
-//            Toast.makeText(this, "Press Back again to Exit.",
-//                    Toast.LENGTH_SHORT).show();
-//            exit = true;
-//            new Handler().postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    exit = false;
-//                }
-//            }, 3 * 1000);
-//
-////            System.gc();
-////            System.exit(0);
-//
-//            finish();
-
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_HOME);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//***Change Here***
-        startActivity(intent);
-        finish();
-        System.exit(0);
 
 
     }

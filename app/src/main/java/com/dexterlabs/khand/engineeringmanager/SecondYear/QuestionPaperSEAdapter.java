@@ -107,10 +107,10 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             }
             else if(se.getPosition()==33)
             {
-//                Intent intent=new Intent(context,SeVidMain.class);
-//                intent.putExtra("dept", "mech");
-//                context.startActivity(intent);
-                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "mech");
+                context.startActivity(intent);
+//                Toast.makeText(context, "Still searching for the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();
 
 /*
                 Toast.makeText(context, "Still searching fot the best videos for you :) please wait for our next update", Toast.LENGTH_LONG).show();

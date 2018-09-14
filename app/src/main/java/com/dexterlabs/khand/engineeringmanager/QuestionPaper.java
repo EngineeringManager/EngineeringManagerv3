@@ -32,6 +32,8 @@ public class QuestionPaper extends AppCompatActivity
 
     //For Banner Ads
     private AdView mAdView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,7 @@ public class QuestionPaper extends AppCompatActivity
         //   Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //  setSupportActionBar(toolbar);
 
-//        // Banner Ads
+        // Banner Ads
 //        mAdView = (AdView) findViewById(R.id.adView);
 //        AdRequest adRequest = new AdRequest.Builder().build();
 //        mAdView.loadAd(adRequest);
