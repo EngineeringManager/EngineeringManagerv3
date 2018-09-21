@@ -89,10 +89,10 @@ public class QuestionPaperSEAdapter extends RecyclerView.Adapter<QuestionPaperSE
             }
             else if(se.getPosition()==11)
             {
-//                Intent intent=new Intent(context,SeVidMain.class);
-//                intent.putExtra("dept", "comp");
-//                context.startActivity(intent);
-                Toast.makeText(context, "Still searching for the best videos for you :) Please wait for our next update.", Toast.LENGTH_LONG).show();
+                Intent intent=new Intent(context,SeVidMain.class);
+                intent.putExtra("dept", "comp");
+                context.startActivity(intent);
+//                Toast.makeText(context, "Still searching for the best videos for you :) Please wait for our next update.", Toast.LENGTH_LONG).show();
 
 
             }

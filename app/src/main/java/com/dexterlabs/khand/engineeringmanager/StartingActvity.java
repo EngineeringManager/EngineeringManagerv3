@@ -44,9 +44,9 @@ public class StartingActvity extends AppCompatActivity {
 
 
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        mAdView = findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
 
         ActionBar actionBar = getSupportActionBar();

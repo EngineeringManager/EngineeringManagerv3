@@ -32,9 +32,9 @@ public class SplashActivity extends Activity {
         MobileAds.initialize(this, "ca-app-pub-5511563189229990~2793808551");
 
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        mAdView = findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
 
         /* New Handler to start the Menu-Activity
