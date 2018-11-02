@@ -50,7 +50,7 @@ public class BeVidMain extends AppCompatActivity{
                 String[] q5 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
                 String[] q6 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
                 String[] q7 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-//                String[] q8 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
+                String[] q8 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
 
 
                 //Each subject Topics Array to be added here
@@ -175,7 +175,6 @@ public class BeVidMain extends AppCompatActivity{
                 thirdLevelq3.put(q3[0], airu1);
                 thirdLevelq3.put(q3[1], airu2);
                 thirdLevelq3.put(q3[2], airu3);
-
                 thirdLevelq3.put(q3[3], airu4);
                 thirdLevelq3.put(q3[4], airu5);
                 thirdLevelq3.put(q3[5], airu6);
@@ -299,13 +298,18 @@ public class BeVidMain extends AppCompatActivity{
                 String[] stqau3Topic = new String[] {"Test Automation","Automation for XP/Agile Model","Selecting Test Tool"};
 
 
-                String[] stqau4Topic = new String[] {"Selenium Tool","Introduction to Selenium RC","Introduction to Selenium Webdriver","Introduction to Selenium Grid",
+                String[] stqau4Topic = new String[] {"Selenium Tool",
+                        "Introduction to Selenium RC","Introduction to Selenium Webdriver",
+                        "Introduction to Selenium Grid",
                         "Selenium Tutorial"};
 
-                String[] stqau5Topic = new String[] {"ISO 9001","What is Six Sigma","What is Software Quality","Software Quality Assurance",
-                        "Software Quality Assurance activities","Six Sigma for Software Development"};
+                String[] stqau5Topic = new String[] {"ISO 9001","What is Six Sigma",
+                        "What is Software Quality","Software Quality Assurance",
+                        "Software Quality Assurance activities",
+                        "Six Sigma for Software Development"};
 
-                String[] stqau6Topic = new String[] {"Isikawa's 7 basic tools","Total Quality Management","Software Quality Metrics"};
+                String[] stqau6Topic = new String[] {"Isikawa's 7 basic tools",
+                        "Total Quality Management","Software Quality Metrics"};
 
                 thirdLevelq7.put(q7[0], stqau1Topic);
                 thirdLevelq7.put(q7[1], stqau2Topic);
