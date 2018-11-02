@@ -36,9 +36,12 @@ public class BeVidMain extends AppCompatActivity{
 
             if (info.equals("comp"))
             {
-                String[] parent = new String[]{"Data Analytics", "High Performance Computing",
+                String[] parent = new String[]{"Data Analytics",
+                        "High Performance Computing",
                         "Artificial Intelligence and Robotics",
-                        "Operation Research","Mobile Communication"};
+                        "Operation Research",
+                        "Mobile Communication","Data Mining and Warehouse",
+                        "Software Testing and Quality Assurance"};
 
                 String[] q1 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
                 String[] q2 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
@@ -46,7 +49,7 @@ public class BeVidMain extends AppCompatActivity{
                 String[] q4 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
                 String[] q5 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
                 String[] q6 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
-//                String[] q7 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
+                String[] q7 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
 //                String[] q8 = new String[]{"Unit 1", "Unit 2", "Unit 3", "Unit 4","Unit 5", "Unit 6"};
 
 
@@ -58,7 +61,8 @@ public class BeVidMain extends AppCompatActivity{
                 LinkedHashMap<String, String[]> thirdLevelq3 = new LinkedHashMap<>();
                 LinkedHashMap<String, String[]> thirdLevelq4 = new LinkedHashMap<>();
                 LinkedHashMap<String, String[]> thirdLevelq5 = new LinkedHashMap<>();
-                //LinkedHashMap<String, String[]> thirdLevelq6 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq6 = new LinkedHashMap<>();
+                LinkedHashMap<String, String[]> thirdLevelq7 = new LinkedHashMap<>();
                 /**
                  * Second level array list
                  */
@@ -74,42 +78,56 @@ public class BeVidMain extends AppCompatActivity{
                 secondLevel.add(q3);
                 secondLevel.add(q4);
                 secondLevel.add(q5);
-                //secondLevel.add(q6);
+                secondLevel.add(q6);
+                secondLevel.add(q7);
 
 
                 //Add topics to each units
                 //DA
 
-                String[] dau1topics = new String[] {"Big data overview","BI Vs Data Science",
-                        "BI Vs Data Science Part-2","BI Vs Data Science Part-3",
+                String[] dau1Topics = new String[] {"Big data Overview","BI vs Data Science",
+                        "BI Vs Data Science video 2","BI Vs Data Science video 3",
                         "Drivers of Big Data","Emerging Big Data Ecosystem and new approach",
                         "Emerging Big Data Ecosystem and new approach (hindi)",
                         "Data Analytic Life Cycle"};
 
+                String[] dau2Topics = new String[] {"Hypothesis Testing",
+                        "Intro to HypoThesis Testing","One Sample T-Test",
+                        "Independent Samples t-Test","Dependent Sample t-Test",
+                        "Wilcoxon Rank–Sum Test",
+                        "Type 1 Type 2 errors, Power and Sample Size",
+                        "ANNOVA","Clustering-Intro","Clustering Overview",
+                        "K means- Use cases","K means Solved Numerical"};
 
-                String[] dau2topics = new String[] {"Hypothesis testing","Intro to Hypo thesis testing",
-                        "Wilcoxon rank–sum test","Type 1 type 2 errors, Power and Sample Size",
-                        "ANNOVA","Clustering-Intro","Clustering Overview","K means- Use cases"};
+                String[] dau3Topics = new String[] {"Association Rules- Overview",
+                        "Association Rules","Market Basket Analysis, Support and Confidence",
+                        "A-priori Algorithm","Regression","Linear regression","Logistics"};
 
+                String[] dau4Topics = new String[] {"Decision Tree ID3 Algorithm",
+                        "Decision Tree Solved Example","Decision Tree Solved Example 1",
+                        "Decision Tree Solved Example 2","Naive Bayes Algorithm Introduction",
+                        "Naive Bayes Algorithm","Naive Bayes Algorithm Solved Example",
+                        "Naive Bayes Algorithm with Solved Example 1",
+                        "Naive Bayes Algorithm Solved Example 2"};
 
-                String[] dau3topics = new String[] {"Association Rules- Overview Basic Concepts",
-                        "Association Rules- Analysis","Market Basket Analysis , Support and Confidence",
-                        "A-priori algorithm","Regression","Linear Regression",
-                        "linear Regression Solved example","Logistics"};
+                String[] dau5Topics = new String[] {"Big Data Visualization",
+                        "Big Data Visualization Techniques","Various Types of Graphs",
+                        "Big Data Visualization Types in short",
+                        "Analytical Methods used in Big Data"};
 
-                String[] dau4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] dau6Topics = new String[] {"Map Reduce Concept",
+                        "Map Reduce Architecture","What is Hadoop",
+                        "Hadoop Basics with Architecture",
+                        "Hadoop Basics with Architecture Part-2","Hadoop Ecosystem",
+                        "Basics of NOSQL"};
 
-                String[] dau5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                thirdLevelq1.put(q1[0], dau1Topics);
+                thirdLevelq1.put(q1[1], dau2Topics);
+                thirdLevelq1.put(q1[2], dau3Topics);
+                thirdLevelq1.put(q1[3], dau4Topics);
+                thirdLevelq1.put(q1[4], dau5Topics);
+                thirdLevelq1.put(q1[5], dau6Topics);
 
-                String[] dau6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-
-                thirdLevelq1.put(q1[0], dau1topics);
-                thirdLevelq1.put(q1[1], dau2topics);
-                thirdLevelq1.put(q1[2], dau3topics);
-                thirdLevelq1.put(q1[3], dau4topics);
-                thirdLevelq1.put(q1[4], dau5topics);
-                thirdLevelq1.put(q1[5], dau6topics);
-               // thirdLevelq1.put(q1[3], des1);
 
                 //HPC
 
@@ -142,26 +160,25 @@ public class BeVidMain extends AppCompatActivity{
 
 
 
-                String[] airu1topics = new String[] {"Artificial Intelligence","State Space search",
-                        "Search Strategies","8 Puzzle Problem","Hill Climb","Hill Climb (hindi)",
-                        "A*","Tabu Search"};
+                String[] airu1 = new String[] {"Artificial Intelligence","State Space Search","Search Strategies","Heuristic Search and Strategies","8 puzzle problem","DFS and DFID","Best First Search","Hill Climb","Hill Climb (hindi)","A*","Tabu Search","Pruning"};
 
-                String[] airu2topics = new String[] {"Goal Stack Planning","STRIPS","N Queens"};
+                String[] airu2 = new String[] {"Backward and Forward chaining","STRIPS","Goal Stack Planning Concept","Block World Problem","State Space Search (Water Jug Problem)","N Queens","Cryptarithmatic Problem (SEND + MORE =MONEY)","Graph Coloring Problem"};
 
-                String[] airu3topics = new String[] {"Forward and Backward Chaining","PL vs FOL",
-                        "Conceptual Dependency","Knowledge Representation"};
+                String[] airu3 = new String[] {"Agents and PEAS","WUMPUS","Propositional Logic","FOL","PL vs FOL","Horn Clause","Unification","Unification Algorithm","Convert to FOL Part 1","Rules FOL to CNF","Resolution Graph","Forward Chaining","Backward Chaining","Conceptual Dependency","Knowledge Representation"};
 
-                String[] airu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-                String[] airu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-                String[] airu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] airu4 = new String[] {"NLP and Components of NLP","Steps and Stages in NLP","Statistical Processing Of NLP","Information Retrieval Challenges in Big Data","N-Grams and Stop Words","Learning Agent Architecture","Supervised vs Unsupervised Learning","Supervised Learning","Unsupervised Learning","Reinforced Learning","Artificial Neural Network","Activation Function in ANN","Feed Forward in Neural Network","Feed Back Network","Back Propagation and Error","Agent and PEAS"};
 
-                thirdLevelq3.put(q3[0], airu1topics);
-                thirdLevelq3.put(q3[1], airu2topics);
-                thirdLevelq3.put(q3[2], airu3topics);
+                String[] airu5 = new String[] {"Robotics Introduction","Robotic Locomotion","Path Planning for Robots Bug 1","Path Planning for Robots Bug 2","Contact Sensors","Inertial Sensor","Infrared Sensor","Rangefinder Working","Biological Sensors","Human Robot Interface"};
 
-                thirdLevelq3.put(q3[3], airu4topics);
-                thirdLevelq3.put(q3[4], airu5topics);
-                thirdLevelq3.put(q3[5], airu6topics);
+                String[] airu6 = new String[] {"Space Robotics","Autonomous Aircraft","Domestic Robots","Mining Automation"};
+
+                thirdLevelq3.put(q3[0], airu1);
+                thirdLevelq3.put(q3[1], airu2);
+                thirdLevelq3.put(q3[2], airu3);
+
+                thirdLevelq3.put(q3[3], airu4);
+                thirdLevelq3.put(q3[4], airu5);
+                thirdLevelq3.put(q3[5], airu6);
 
 
 
@@ -252,13 +269,58 @@ public class BeVidMain extends AppCompatActivity{
                 thirdLevelq5.put(q5[5], mcu6topics);
 
 
+                //DMW
+                String[] dmwu1 = new String[] {"Data Mining Introduction","KDD Process and Data Preprocessing","Attribute Types","Data Cleansing Steps","Dealing with Missing Values","Noisy Data and Binning Technique","Data Integration","Data Normalization Min Max","Data Normalisation Z-Score","Data Normalization Decimal Scaling"};
+
+                String[] dmwu2 = new String[] {"Data Warehouse: Introduction and Features","OLTP vs OLAP","Star,Snowflake Schemas","OLAP Operations","Datamarts","Dataware House Architecture","OLAP Servers:ROLAP, MOLAP, HOLAP"};
+
+                String[] dmwu3 = new String[] {"Attributes","Proximity measure of Nominal Attributes","Proximity measure of Binary Attributes","Proximity measure of Ordinal Attributes","Euclidean Distance","Cosine Distance"};
+
+                String[] dmwu4 = new String[] {"Apriori Algorithm with Solved Example","FP Tree Algorithm","FP Growth Algorithm","Mining Multilevel Associations","Constraint Based Association"};
+
+                String[] dmwu5 = new String[] {"Classification and Regression","Data Mining and Classification","Decision Tree Algorithm Solved Algorithm","Rule Based Classifier IF THEN Rules","Bayesian Belief Network","KNN Classifier","KNN Solved Example"};
+
+                String[] dmwu6 = new String[] {"Multi classification One vs All","Semi Supervised Classification","Reinforcement Learning","Reinforcement Learning and Elements","Influence Diagram","Cross Validation"};
+
+
+                thirdLevelq6.put(q6[0], dmwu1);
+                thirdLevelq6.put(q6[1], dmwu2);
+                thirdLevelq6.put(q6[2], dmwu3);
+                thirdLevelq6.put(q6[3], dmwu4);
+                thirdLevelq6.put(q6[4], dmwu5);
+                thirdLevelq6.put(q6[5], dmwu6);
+
+                //STQA
+
+                String[] stqau1Topic = new String[] {"QMS","Software Quality","Software Testing and its Importance","Quality and Productivity","Quality process"};
+
+                String[] stqau2Topic = new String[] {"Test Planning","SDLC and STLC","Mutation Testing"};
+
+                String[] stqau3Topic = new String[] {"Test Automation","Automation for XP/Agile Model","Selecting Test Tool"};
+
+
+                String[] stqau4Topic = new String[] {"Selenium Tool","Introduction to Selenium RC","Introduction to Selenium Webdriver","Introduction to Selenium Grid",
+                        "Selenium Tutorial"};
+
+                String[] stqau5Topic = new String[] {"ISO 9001","What is Six Sigma","What is Software Quality","Software Quality Assurance",
+                        "Software Quality Assurance activities","Six Sigma for Software Development"};
+
+                String[] stqau6Topic = new String[] {"Isikawa's 7 basic tools","Total Quality Management","Software Quality Metrics"};
+
+                thirdLevelq7.put(q7[0], stqau1Topic);
+                thirdLevelq7.put(q7[1], stqau2Topic);
+                thirdLevelq7.put(q7[2], stqau3Topic);
+                thirdLevelq7.put(q7[3], stqau4Topic);
+                thirdLevelq7.put(q7[4], stqau5Topic);
+                thirdLevelq7.put(q7[5], stqau6Topic);
 
                 data.add(thirdLevelq1);
                 data.add(thirdLevelq2);
                 data.add(thirdLevelq3);
                 data.add(thirdLevelq4);
                 data.add(thirdLevelq5);
-                //data.add(thirdLevelq6);
+                data.add(thirdLevelq6);
+                data.add(thirdLevelq7);
 
                 expandableListView = (ExpandableListView) findViewById(R.id.expandible_listview);
                 //passing three level of information to constructor

@@ -99,50 +99,110 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
             public void onClick(View view) {
 //put logic here
 
-                String[] daTopics = new String[] {"Big data overview","BI Vs Data Science","BI Vs Data Science Part-2","BI Vs Data Science Part-3",
-                        "Drivers of Big Data","Emerging Big Data Ecosystem and new approach","Emerging Big Data Ecosystem and new approach (hindi)","Data Analytic Life Cycle",
-                        "Hypothesis testing","Intro to Hypo thesis testing","Wilcoxon rank–sum test","Type 1 type 2 errors, Power and Sample Size",
-                        "ANNOVA","Clustering-Intro","Clustering Overview","K means- Use cases",
-                        "Association Rules- Overview Basic Concepts","Association Rules- Analysis","Market Basket Analysis , Support and Confidence",
-                        "A-priori algorithm","Regression","Linear Regression","linear Regression Solved example","Logistics"};
-
-                String[] davl = new String[] {"GZ5eTtzpIhI","3_ymFyT103I","xHCT4IShYHc","ed2m8gleNbA","KhPW2EypKXQ","1WY63n2XRLM","DfDlNOtb41s","L9uRq8CT5N4",
-                        "VK-rnA3-41c","USH2cFhweBo","TqCg2tb4wJ0","OhDZIO8vtGw","q48uKU_KWas","2QTeuO0C-fY","UiTermj_Sw0","YWgcKSa_2ag",
-                        "RiFrbyiYpRs","QN3_wxqnSlw","1D2um4u-BeM","l7n4K12EjY0","GK9XdZaQMpI","c5GOOYa1xQM","Z-PXfIJMVN4","7E7Nu_Ky-WQ"};
+                //DA
+                String[] dafinalTopics = new String[] {"Big data Overview","BI vs Data Science","BI Vs Data Science video 2","BI Vs Data Science video 3","Drivers of Big Data","Emerging Big Data Ecosystem and new approach","Emerging Big Data Ecosystem and new approach (hindi)","Data Analytic Life Cycle",
+                        "Hypothesis Testing","Intro to HypoThesis Testing","One Sample T-Test","Independent Samples t-Test","Dependent Sample t-Test","Wilcoxon Rank–Sum Test","Type 1 Type 2 errors, Power and Sample Size","ANNOVA","Clustering-Intro","Clustering Overview","K means- Use cases","K means Solved Numerical",
+                        "Association Rules- Overview","Association Rules","Market Basket Analysis, Support and Confidence","A-priori Algorithm","Regression","Linear regression","Logistics",
+                        "Decision Tree ID3 Algorithm","Decision Tree Solved Example","Decision Tree Solved Example 1","Decision Tree Solved Example 2","Naive Bayes Algorithm Introduction","Naive Bayes Algorithm","Naive Bayes Algorithm Solved Example","Naive Bayes Algorithm with Solved Example 1","Naive Bayes Algorithm Solved Example 2",
+                        "Big Data Visualization","Big Data Visualization Techniques","Various Types of Graphs","Big Data Visualization Types in short","Analytical Methods used in Big Data",
+                        "Map Reduce Concept","Map Reduce Architecture","What is Hadoop","Hadoop Basics with Architecture","Hadoop Basics with Architecture Part-2","Hadoop Ecosystem","Basics of NOSQL"};
 
 
-                for (int i=0;i<daTopics.length;i++) {
-                    if (text.equals(daTopics[i])) {
+                String[] daFinalvl = new String[] {"GZ5eTtzpIhI","3_ymFyT103I","xHCT4IShYHc","ed2m8gleNbA","KhPW2EypKXQ","1WY63n2XRLM","DfDlNOtb41s","L9uRq8CT5N4",
+                        "VK-rnA3-41c","USH2cFhweBo","VPd8DOL13Iw","jyoO4i8yUag","zD3VIBkwc-0","TqCg2tb4wJ0","OhDZIO8vtGw","q48uKU_KWas","2QTeuO0C-fY","UiTermj_Sw0",
+                        "YWgcKSa_2ag","P2KZisgs4A4","RiFrbyiYpRs","QN3_wxqnSlw","1D2um4u-BeM","l7n4K12EjY0","GK9XdZaQMpI","CtKeHnfK5uA","7qJ7GksOXoA",
+                        "gkse-G7Uvzg","cKl7WV_EKDU","NsmAEmoSRjk","JsbaJp6VaaU","CPqOCI0ahss","jgCl590VwT0","73OO5ze7ETU","zdkma7Lfbbw","uMKu2swUMwI",
+                        "1_c18g_Lpu8","NOIfMY0KajE","2RCy5hTxuYA","-3WLwg2V1Ys","qYdNFqWHKQA","PhdRyrmbRYQ","LGTXg8IynlM","9s-vSeWej1U","jijK6GiU528","UVtaxRGjeiE",
+                        "1WY63n2XRLM","BgQFJ_UNIgw"};
+
+
+
+                for (int i=0;i<dafinalTopics.length;i++) {
+                    if (text.equals(dafinalTopics[i])) {
                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
-                        intent.putExtra("videoLink",davl[i]);
+                        intent.putExtra("videoLink",daFinalvl[i]);
                         context.startActivity(intent);
                     }
                 }
 
 
                 //AIR
-                String[] airTopics = new String[] {"Artificial Intelligence",
-                        "State Space search","Search Strategies","8 Puzzle Problem",
-                        "Hill Climb","Hill Climb (hindi)","A*","Tabu Search",
-                        "Goal Stack Planning","STRIPS","N Queens",
-                        "Forward and Backward Chaining","PL vs FOL","Conceptual Dependency","Knowledge Representation"};
+                String[] airfinal = new String[] {"Artificial Intelligence","State Space Search","Search Strategies","Heuristic Search and Strategies","8 puzzle problem","DFS and DFID","Best First Search","Hill Climb","Hill Climb (hindi)","A*","Tabu Search","Pruning",
+                        "Backward and Forward chaining","STRIPS","Goal Stack Planning Concept","Block World Problem","State Space Search (Water Jug Problem)","N Queens","Cryptarithmatic Problem (SEND + MORE =MONEY)","Graph Coloring Problem",
+                        "Agents and PEAS","WUMPUS","Propositional Logic","FOL","PL vs FOL","Horn Clause","Unification","Unification Algorithm","Convert to FOL Part 1","Rules FOL to CNF","Resolution Graph","Forward Chaining","Backward Chaining","Conceptual Dependency","Knowledge Representation",
+                        "NLP and Components of NLP","Steps and Stages in NLP","Statistical Processing Of NLP","Information Retrieval Challenges in Big Data","N-Grams and Stop Words","Learning Agent Architecture","Supervised vs Unsupervised Learning","Supervised Learning","Unsupervised Learning","Reinforced Learning","Artificial Neural Network","Activation Function in ANN","Feed Forward in Neural Network","Feed Back Network","Back Propagation and Error","Agent and PEAS",
+                        "Robotics Introduction","Robotic Locomotion","Path Planning for Robots Bug 1","Path Planning for Robots Bug 2","Contact Sensors","Inertial Sensor","Infrared Sensor","Rangefinder Working","Biological Sensors","Human Robot Interface",
+                        "Space Robotics","Autonomous Aircraft","Domestic Robots","Mining Automation"};
 
-                String[] airvl = new String[] {"2ePf9rue1Ao","gUIiE7gI0Co","xFIKfowHK8E",
-                        "9JyBz8-WNO8","FU6ZzRs6szE","50Z_HdSYjoI","vP5TkF0xJgI","wrkMM6a4S-U",
-                        "PaKRt05Zk50","No9obxdXn6w","xFv_Hl4B83A","aVwcNDKXcHU"
-                        ,"GS3HKR6CV8E","oL8ApH82s6s","y2HQmvqXON4"};
+                String[] finalairvl = new String[] {"2ePf9rue1Ao","gUIiE7gI0Co","xFIKfowHK8E","japhjrVxJdg","9JyBz8-WNO8","W2FFDygadgc","i9NvNJgIlHo","FU6ZzRs6szE","50Z_HdSYjoI","vP5TkF0xJgI","wrkMM6a4S-U","7X_2vRO7YAM",
+                        "aVwcNDKXcHU","No9obxdXn6w","PaKRt05Zk50","-NrzPWUnYIE","u9KMMudAQ6M","xFv_Hl4B83A","-UGzrsVFneo","uLD7eKLaJr4",
+                        "Aytf8DxatvM","bDu9iNJ8h58","tpDU9UXqsUo","pcV2lL6yNZ8","GS3HKR6CV8E","xLyL7RcPaVQ","k_vRMh82gzU","9hE1CLCzjLM","eaCVH8XWaPc","TR7iWaN_nHQ","-LT96Et6b0A","PBTSdx_C9WM","W5O8QAWu-OM","oL8ApH82s6s","y2HQmvqXON4",
+                        "IpBZ01g0pGE","pHiIwQk57dc","o93Qk9uqMD0","znZdfvfarpE","wo9OHUDsP-Y","yfsaJJLNBXk","_2vLGpjxWjY",
+                        "WtmL_MRwtMM","qbCC4B5YsbU","3yJTInvfQvw","8eaORgKmmh4","K3c2QytXqwU","svZBH0_qSt0","krAQIFzSIFQ","QZ8ieXZVjuE","Aytf8DxatvM",
+                        "C8FX-p6UjsU","l4AMhrXlsaM","MqI60rtctOw","G8oPY9njTXc","4sfzCdJKSiw","MYxvmkgleGY","zq51oZMzyP0","bfld6HKrQLI","Dh6uovuDc80","ewH5A_wtqig"};
 
 
-                for (int i=0;i<airTopics.length;i++) {
-                    if (text.equals(airTopics[i])) {
+                for (int i=0;i<airfinal.length;i++) {
+                    if (text.equals(airfinal[i])) {
                         // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
-                        intent.putExtra("videoLink",airvl[i]);
+                        intent.putExtra("videoLink",finalairvl[i]);
                         context.startActivity(intent);
                     }
                 }
 
+
+                //STQA
+
+                String[] stqaFinalTopics = new String[] {"QMS","Software Quality","Software Testing and its Importance","Quality and Productivity","Quality process",
+                        "Test Planning","SDLC and STLC","Mutation Testing",
+                        "Test Automation","Automation for XP/Agile Model","Selecting Test Tool",
+                        "Selenium Tool","Introduction to Selenium RC","Introduction to Selenium Webdriver","Introduction to Selenium Grid","Selenium Tutorial",
+                        "ISO 9001","What is Six Sigma","What is Software Quality","Software Quality Assurance","Software Quality Assurance activities","Six Sigma for Software Development",
+                        "Isikawa's 7 basic tools","Total Quality Management","Software Quality Metrics"};
+
+
+                String[] stqaFinalvl = new String[] {"BL4-_tVx2rE","Xspcn2anUcU","QJ2DvvJ9QLc","jcsyJdLbkys","gsHyDIyA3dg",
+                        "FDyIcM-AFzU","Kz_7njsDUMQ","fhKwJbmaCEg","M7ZVcQOSVF4","yFa4qIzLFp0","leIlhaUtjm8","NWkFfjJT7ME","YKwcxjUnots","Jj7dLM8cLuE",
+                        "RbSlW8jZFe8","t6GgTWlkhXw","n6iGoqMl8Ao","BTdJP9y8M9o","An7HC1LolDM","cLh3yMKEqHc","RzpZJzUZo5Y","fhKwJbmaCEg","TDynSmrzpXw","LvCBYQC-3m4",
+                        "bN3TqOu0iEg"};
+
+                for (int i=0;i<stqaFinalTopics.length;i++) {
+                    if (text.equals(stqaFinalTopics[i])) {
+                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",stqaFinalvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
+
+
+
+                //DMW
+
+                String[] dmwFinal = new String[] {"Data Mining Introduction","KDD Process and Data Preprocessing","Attribute Types","Data Cleansing Steps","Dealing with Missing Values","Noisy Data and Binning Technique","Data Integration","Data Normalization Min Max","Data Normalisation Z-Score","Data Normalization Decimal Scaling",
+                        "Data Warehouse: Introduction and Features","OLTP vs OLAP","Star,Snowflake Schemas","OLAP Operations","Datamarts","Dataware House Architecture","OLAP Servers:ROLAP, MOLAP, HOLAP",
+                        "Attributes","Proximity measure of Nominal Attributes","Proximity measure of Binary Attributes","Proximity measure of Ordinal Attributes","Euclidean Distance","Cosine Distance",
+                        "Apriori Algorithm with Solved Example","FP Tree Algorithm","FP Growth Algorithm","Mining Multilevel Associations","Constraint Based Association",
+                        "Classification and Regression","Data Mining and Classification","Decision Tree Algorithm Solved Algorithm","Rule Based Classifier IF THEN Rules","Bayesian Belief Network","KNN Classifier","KNN Solved Example",
+                        "Multi classification One vs All","Semi Supervised Classification","Reinforcement Learning","Reinforcement Learning and Elements","Influence Diagram","Cross Validation"};
+
+                String[] finaldmwvl = new String[] {"dvRZ1VYXMJ0","zfF10xcb3uE","ss3mDm3mjsc","p8pdxLU1zMI","LfS2lVLuW6g","DvsGNtqQj08","ZsW6r2zkOYU","peyFnD33uXc","18Rrri7XrIk","OLaotS4mY50",
+                        "KgjUsie50WQ","5nGDhp_LrA4","TujtzphdVe0","y-kgrMISYHA","rrIBsKOoj3Q","vKh0JVGvlJk","OjvYMe5ZfaU",
+                        "ss3mDm3mjsc","QTOBwmwLNkM","6BMZ-dzwnyM","EDvRw1zA8g4","wVM4SC5IQPs","yM2JbjM2-kU","LbBOvH8Xafo",
+                        "l7n4K12EjY0","y8iHL6vKgIo","z3RahyYk68A","fxUFmPfhD6M","C9u-rR1pgOI",
+                        "i04Pfrb71vk","AcRNpG37Q8E","cKl7WV_EKDU","_-FC_rJFoaQ","FcN0ZSgXfEQ","MDniRwXizWo","3EQw8awLQJ4",
+                        "Jt5wEb_9NFc","tVsVmy6w7FE","e3Jy2vShroE","3yJTInvfQvw","3yJTInvfQvw","ExVhiEaKD1o","TIgfjmp-4BA"};
+
+                for (int i=0;i<dmwFinal.length;i++) {
+                    if (text.equals(dmwFinal[i])) {
+                        // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(context, YoutubePlayer.class);
+                        intent.putExtra("videoLink",finaldmwvl[i]);
+                        context.startActivity(intent);
+                    }
+                }
 
 
                 //HPC
