@@ -103,7 +103,6 @@ public class PracticalsAdapter extends RecyclerView.Adapter<PracticalsAdapter.Vi
              {
                  Intent intent=new Intent(context,webview.class);
                  intent.putExtra("url", "https://drive.google.com/open?id=1B6tHjd2JeUOnh5IJGsUaFR7jfxaqQxMk");
-
                  context.startActivity(intent);
 
              }
