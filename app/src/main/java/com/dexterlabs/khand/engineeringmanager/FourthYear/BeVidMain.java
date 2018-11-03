@@ -269,17 +269,38 @@ public class BeVidMain extends AppCompatActivity{
 
 
                 //DMW
-                String[] dmwu1 = new String[] {"Data Mining Introduction","KDD Process and Data Preprocessing","Attribute Types","Data Cleansing Steps","Dealing with Missing Values","Noisy Data and Binning Technique","Data Integration","Data Normalization Min Max","Data Normalisation Z-Score","Data Normalization Decimal Scaling"};
+                String[] dmwu1 = new String[] {"Data Mining Introduction",
+                        "KDD Process and Data Preprocessing","Attribute Types",
+                        "Data Cleansing Steps","Dealing with Missing Values",
+                        "Noisy Data and Binning Technique","Data Integration",
+                        "Data Normalization Min Max","Data Normalisation Z-Score",
+                        "Data Normalization Decimal Scaling"};
 
-                String[] dmwu2 = new String[] {"Data Warehouse: Introduction and Features","OLTP vs OLAP","Star,Snowflake Schemas","OLAP Operations","Datamarts","Dataware House Architecture","OLAP Servers:ROLAP, MOLAP, HOLAP"};
+                String[] dmwu2 = new String[] {"Data Warehouse: Introduction and Features",
+                        "OLTP vs OLAP","Star,Snowflake Schemas","OLAP Operations",
+                        "Datamarts","Dataware House Architecture",
+                        "OLAP Servers:ROLAP, MOLAP, HOLAP"};
 
-                String[] dmwu3 = new String[] {"Attributes","Proximity measure of Nominal Attributes","Proximity measure of Binary Attributes","Proximity measure of Ordinal Attributes","Euclidean Distance","Cosine Distance"};
+                String[] dmwu3 = new String[] {"Attributes",
+                        "Proximity measure of Nominal Attributes",
+                        "Proximity measure of Binary Attributes","Proximity measure of Numerical Attributes",
+                        "Proximity measure of Ordinal Attributes",
+                        "Euclidean Distance","Cosine Distance"};
 
-                String[] dmwu4 = new String[] {"Apriori Algorithm with Solved Example","FP Tree Algorithm","FP Growth Algorithm","Mining Multilevel Associations","Constraint Based Association"};
+                String[] dmwu4 = new String[] {"Apriori Algorithm with Solved Example",
+                        "FP Tree Algorithm","FP Growth Algorithm",
+                        "Mining Multilevel Associations","Constraint Based Association"};
 
-                String[] dmwu5 = new String[] {"Classification and Regression","Data Mining and Classification","Decision Tree Algorithm Solved Algorithm","Rule Based Classifier IF THEN Rules","Bayesian Belief Network","KNN Classifier","KNN Solved Example"};
+                String[] dmwu5 = new String[] {"Classification and Regression",
+                        "Data Mining and Classification",
+                        "Decision Tree Algorithm Solved Algorithm",
+                        "Rule Based Classifier IF THEN Rules","Bayesian Belief Network",
+                        "KNN Classifier","KNN Solved Example"};
 
-                String[] dmwu6 = new String[] {"Multi classification One vs All","Semi Supervised Classification","Reinforcement Learning","Reinforcement Learning and Elements","Influence Diagram","Cross Validation"};
+                String[] dmwu6 = new String[] {"Multi classification One vs All",
+                        "Semi Supervised Classification","Reinforcement Learning",
+                        "Reinforcement Learning and Elements","Influence Diagram",
+                        "Cross Validation"};
 
 
                 thirdLevelq6.put(q6[0], dmwu1);

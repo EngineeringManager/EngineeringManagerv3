@@ -99,6 +99,14 @@ public class PracticalsAdapter extends RecyclerView.Adapter<PracticalsAdapter.Vi
                  context.startActivity(intent);
 
              }
+             else if(se.getPosition()==6)
+             {
+                 Intent intent=new Intent(context,webview.class);
+                 intent.putExtra("url", "https://drive.google.com/open?id=1B6tHjd2JeUOnh5IJGsUaFR7jfxaqQxMk");
+
+                 context.startActivity(intent);
+
+             }
 
         }
 

@@ -94,6 +94,8 @@ public class Practicals extends AppCompatActivity
         HomeAdapterList.add(list3);
         HomeAdapterList list4 = new HomeAdapterList("FIRST YEAR",5);
         HomeAdapterList.add(list4);
+        HomeAdapterList list5 = new HomeAdapterList("COMPUTER (B.E)",6);
+        HomeAdapterList.add(list5);
 
 
 
