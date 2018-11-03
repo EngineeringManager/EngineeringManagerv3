@@ -8,6 +8,8 @@ import android.widget.Toast;
 import com.dexterlabs.khand.engineeringmanager.R;
 import com.dexterlabs.khand.engineeringmanager.SecondYear.SeVidMain;
 import com.dexterlabs.khand.engineeringmanager.SecondYear.SeVidThirdAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -29,6 +31,10 @@ public class TeVidMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_tuts);
 
+        // Banner Ads
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         if (getIntent() != null) {
 

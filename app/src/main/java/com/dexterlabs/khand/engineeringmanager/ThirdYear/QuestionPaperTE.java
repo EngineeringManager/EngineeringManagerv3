@@ -33,9 +33,9 @@ public class QuestionPaperTE extends AppCompatActivity {
         int numberOfColumns = 2;
 
         // Banner Ads
-//        mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 

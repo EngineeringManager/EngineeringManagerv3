@@ -36,9 +36,9 @@ public class QuestionPaperBE extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 
         // Banner Ads
-//        mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
 

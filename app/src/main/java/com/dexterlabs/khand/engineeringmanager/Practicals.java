@@ -48,9 +48,9 @@ public class Practicals extends AppCompatActivity
 
 
         // Banner Ads
-//        mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
 
@@ -104,16 +104,18 @@ public class Practicals extends AppCompatActivity
         recyclerView.setAdapter(adapter);
 
     }
-    public  void showInterstitial(){
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-            finish();
-        }
 
 
-    }
+//    public  void showInterstitial(){
+//        if (mInterstitialAd.isLoaded()) {
+//            mInterstitialAd.show();
+//        } else {
+//            Log.d("TAG", "The interstitial wasn't loaded yet.");
+//            finish();
+//        }
+//
+//
+//    }
 
     @Override
     public void onBackPressed() {

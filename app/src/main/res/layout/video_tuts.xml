@@ -19,12 +19,12 @@
         android:background="#4fc3f7"
         android:fontFamily="@font/roboto_mono_thin"
         android:paddingBottom="15sp"
-        android:paddingTop="50sp"
+        android:paddingTop="20sp"
         android:text="Video Selector"
 
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         />
     <ExpandableListView
@@ -32,10 +32,24 @@
         android:groupIndicator="@null"
         android:id="@+id/expandible_listview"
         android:layout_width="match_parent"
-android:layout_marginTop="40sp"
+android:layout_marginTop="20sp"
+        android:layout_marginBottom="50sp"
 
         android:layout_height="match_parent">
 
     </ExpandableListView>
+
+
+    <!-- Banner Ads XML With our Banner unit id-->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5511563189229990/9850171496">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

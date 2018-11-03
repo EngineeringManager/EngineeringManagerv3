@@ -50,9 +50,9 @@ public class vidTutSel extends AppCompatActivity
 //        });
 
 //        // Banner Ads
-//        AdView mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -138,8 +138,8 @@ public class vidTutSel extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.Syllabus) {
-//            Intent intent= new Intent(Syllabus.this,Syllabus.class);
-//            startActivity(intent);
+            Intent intent= new Intent(vidTutSel.this,Syllabus.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 

@@ -65,9 +65,9 @@ public class Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // Banner Ads
-//        mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //Interstitial Ads
         //Replace Ad Unit ID with our ID
@@ -84,14 +84,14 @@ public class Home extends AppCompatActivity
 
 
 
-//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-//        mInterstitialAd.setAdListener(new AdListener() {
-//            @Override
-//            public void onAdClosed() {
-//                super.onAdClosed();
-//                finish();
-//            }
-//        });
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+                finish();
+            }
+        });
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -134,7 +134,7 @@ public class Home extends AppCompatActivity
     @Override
     public void onBackPressed() {
 
-//           showInterstitial();
+           showInterstitial();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
