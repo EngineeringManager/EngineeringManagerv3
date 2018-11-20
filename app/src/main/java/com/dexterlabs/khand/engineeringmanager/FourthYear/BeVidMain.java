@@ -142,14 +142,13 @@ public class BeVidMain extends AppCompatActivity{
 
                 String[] hpcu1topics = new String[] {"Parallel Computing and types of Architecture","Parallel Computing Basics","Dichotomy of Parallel Computing Platforms"};
 
+                String[] hpcu2topics = new String[] {"Data Decomposition Techniques","GPU and its Working","Characteristics of Task"};
 
-                String[] hpcu2topics = new String[] {"GPU and its working","Decomposition technique"};
+                String[] hpcu3topics = new String[] {"One to All Broadcast and All to One Reduction","All to All Broadcast and Reduction","Scatter and Gather Definition","Scatter and Gather","All Reduce","Improving Communication Speed in Operations"};
 
+                String[] hpcu4topics = new String[] {"Sources of  Overheads in Parallel Programs","Performance metrics for Parallel Systems","Speed Up in Performance","Effect of Granularity on Performance","Matrix Vector Multiplication","Row wise 1D Partitioning","2D Partitioning","Matrix Matrix Multiplication"};
 
-                String[] hpcu3topics = new String[] {"Scatter and gather"};
-
-                String[] hpcu4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-                String[] hpcu5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] hpcu5topics = new String[] {"Issues in Parallel Sorting Algorithm","One Element per Process"};
                 String[] hpcu6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
 
                 thirdLevelq2.put(q2[0], hpcu1topics);
@@ -200,9 +199,11 @@ public class BeVidMain extends AppCompatActivity{
                         "Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule"};
 
 
-                String[] oru4topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-                String[] oru5topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
-                String[] oru6topics = new String[]{"Still searching best videos for you. Stay tuned for our next update."};
+                String[] oru4topics = new String[] {"Game Theory Pure and Mixed Strategy","Game Theory Dominance Property","Game Theory Graphical Method 2 X N","Game Theory Graphical Method N X N","Dynamic Programming Knapsack 0/1"};
+
+                String[] oru5topics = new String[] {"Critical Path Method","Calculating TF,IF,FF","PERT","Crashing of Project Network","Revisiting Simplex Method","Gomory's Cut Method","Branch and Bound LPP","Monte Carlo Simulation Technique"};
+
+                String[] oru6topics = new String[] {"Decision Theory Under Uncertainty","Decision Theory Under Risk","Decision Theory : EMV and EVPI","Decision Tree in Decision Theory"};
 
 
                 thirdLevelq4.put(q4[0], oru1topics);

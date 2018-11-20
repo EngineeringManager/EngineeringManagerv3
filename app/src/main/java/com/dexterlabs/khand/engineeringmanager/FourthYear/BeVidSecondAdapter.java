@@ -209,17 +209,23 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
 
                 //HPC
 
-                String[] hpcTopics = new String[] {"Parallel Computing and types of Architecture","Parallel Computing Basics","Dichotomy of Parallel Computing Platforms",
-                        "GPU and its working","Decomposition technique,Scatter and gather"};
+                String[] finalhpcvl = new String[] {"tWRL2VJL-FA","q7sgzDH1cR8","D7UK46gXhcA",
+                        "SUBTVBzCqOw","0_TN845dxUU","Xou32Th2Eos",
+                        "fsllCdhWQYc","_HQPf7MoYDg","AcULfKtWfoA","a2hTxkp8mcY","nLipVoZTDCc","w9RpEYDo7Hw",
+                        "vmiXjUQ4bZE","h0XY7xEpA7s","dKdUjxv1hGI","gOv7t5yYvmo","0-uajl0skxA","4py-tfXTld8","kpQheszFaEI","YmugJ2SLA5g",
+                        "LRm72qmCBRA","P0wOgYasp6w"};
 
+                String[] finalhpctopics = new String[] {"Parallel Computing and types of Architecture","Parallel Computing Basics","Dichotomy of Parallel Computing Platforms",
+                        "Data Decomposition Techniques","GPU and its Working","Characteristics of Task",
+                        "One to All Broadcast and All to One Reduction","All to All Broadcast and Reduction","Scatter and Gather Definition","Scatter and Gather","All Reduce","Improving Communication Speed in Operations",
+                        "Sources of  Overheads in Parallel Programs","Performance metrics for Parallel Systems","Speed Up in Performance","Effect of Granularity on Performance","Matrix Vector Multiplication","Row wise 1D Partitioning","2D Partitioning","Matrix Matrix Multiplication",
+                        "Issues in Parallel Sorting Algorithm","One Element per Process"};
 
-                String[] hpcvl = new String[] {"tWRL2VJL-FA","q7sgzDH1cR8","D7UK46gXhcA","0_TN845dxUU","B4yLUYm6lVc","AcULfKtWfoA"};
-
-                for (int i=0;i<hpcTopics.length;i++) {
-                    if (text.equals(hpcTopics[i])) {
+                for (int i=0;i<finalhpctopics.length;i++) {
+                    if (text.equals(finalhpctopics[i])) {
                         // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
-                        intent.putExtra("videoLink",hpcvl[i]);
+                        intent.putExtra("videoLink",finalhpcvl[i]);
                         context.startActivity(intent);
 
                     }
@@ -272,20 +278,22 @@ public class BeVidSecondAdapter extends BaseExpandableListAdapter {
                 //OR
 
                 String [] orvl = new String[]{"8IRrgDoV8Eo","O6QO3J_85as","M8POtpPtQZc","_eMA0LWsRQQ","tlyrxudvEa0","HPoCW06WE2w","Dq1b_N4q5go"
-                        ,"zJhncZ5XUSU","ItOuvM2KmD4","-w2z3MVTcQA","rrfFTdO2Z7I","Hf7MHFEegI0","-0DEQmp7B9o"};
+                        ,"zJhncZ5XUSU","ItOuvM2KmD4","-w2z3MVTcQA","rrfFTdO2Z7I","Hf7MHFEegI0","-0DEQmp7B9o",
+                        "fSuqTgnCVRg","YJvbxAvxkDc","KUskbAasVCY","VWQIpwLmhGk","nLmhmB6NzcM",
+                        "vUMGvpsb8dc","gBmP5rZCFfs","WrAf6zdteXI","U7kXfNnAjcE","M8POtpPtQZc","c-xCQau5hP8","dd8yfvw_Va8","L3mmO7RlQ3M",
+                        "7Qd4QIaz-kc","77kYJ9liOSw","uf7mlrEMcXc","8-HJh3jHvA8"};
 
-                String [] orTopics = new String[]{"Graphical LPP with two Constraints","Graphical LPP with three Constraints","LPP Simplex Method",
-                        "Infeasibility and Unbounded Solutions",
-
+                String [] orfinalTopics = new String[]{"Graphical LPP with two Constraints","Graphical LPP with three Constraints","LPP Simplex Method","Infeasibility and Unbounded Solutions",
                         "Duality in LPP","Primal to Dual Conversion","LPP Dual Simplex","Two phase Simplex Method",
-
-                        "The Transportation Problem (All 3 Methods)","Transportation Problem MODI method - U V method",
-                        "Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule"};
+                        "The Transportation Problem (All 3 Methods)","Transportation Problem MODI method - U V method","Assignment Problem Hungarian Method 1","Assignment Problem Unbalanced Matrix","Assignment Problem Hungarian Method Diagonal Rule",
+                        "Game Theory Pure and Mixed Strategy","Game Theory Dominance Property","Game Theory Graphical Method 2 X N","Game Theory Graphical Method N X N","Dynamic Programming Knapsack 0/1",
+                        "Critical Path Method","Calculating TF,IF,FF","PERT","Crashing of Project Network","Revisiting Simplex Method","Gomory's Cut Method","Branch and Bound LPP","Monte Carlo Simulation Technique",
+                        "Decision Theory Under Uncertainty","Decision Theory Under Risk","Decision Theory : EMV and EVPI","Decision Tree in Decision Theory"};
 
                 // Toast.makeText(context, "login", Toast.LENGTH_SHORT).show();
 
-                for (int i=0;i<orTopics.length;i++) {
-                    if (text.equals(orTopics[i])) {
+                for (int i=0;i<orfinalTopics.length;i++) {
+                    if (text.equals(orfinalTopics[i])) {
                         // Toast.makeText(context, "Child Position:"+getGroupCount(), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(context, YoutubePlayer.class);
                         intent.putExtra("videoLink",orvl[i]);
